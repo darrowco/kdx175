@@ -66,6 +66,54 @@ Figure
    | .. image:: peak.png   | Mountain              |
    +-----------------------+-----------------------+
 
+
+sidebar
+-------
+
+.. sidebar:: Rendered result
+
+
+   .. role:: red
+
+   An example of :red:`red text`.
+
+   .. container:: red
+
+      Here the full block  is red.
+
+   An undecorated paragraph.
+
+   .. rst-class:: red
+
+   This paragraph too is is red.
+
+   .. admonition:: Big warning
+      :class: red
+
+      Big warning text is red.
+
+
+.. code-block:: rest
+
+   .. role:: red
+
+   An example of :red:`red text`.
+
+   .. container:: red
+
+      Here the full block is red.
+
+   An undecorated paragraph.
+
+   .. class:: red
+
+   This paragraph too is is red.
+
+   .. admonition:: Big warning
+      :class: red
+
+      Big warning text is red.
+
 The End
 -------
 
