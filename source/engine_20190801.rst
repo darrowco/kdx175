@@ -48,5 +48,4 @@ The approach relies on two core technologies: deep learning and photonic time st
 
 The End
 -------
-more
-`more ... <engine_20190801.html>`__
+
