@@ -5,8 +5,8 @@ Aug-01-2019 | `Engine Logs <engine_logs.html>`__ | `Engine Prep <engine_20190801
    :hidden:
    :caption: Contents:
 
-Engine today consisted of prep
-------------------------------
+Engine Prep for Removal
+-----------------------
 
 * Remove all components
 * Degrease
