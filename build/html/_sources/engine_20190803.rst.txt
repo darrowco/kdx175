@@ -73,8 +73,6 @@ sidebar
 .. sidebar:: Rendered result
 
   .. figure:: ./_static/images/mess.jpeg
-    :align: right
-    :figwidth: 300px
     :target: ./_static/images/mess.jpeg
 
 
