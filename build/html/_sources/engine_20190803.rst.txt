@@ -90,7 +90,7 @@ Note, Warning, Seealso.
 
 They are :sphinx:`paragraph-level markups <markup/para.html>`
 
-.. sidebar::
+.. sidebar:: Mess
 
   .. figure:: ./_static/images/mess.jpeg
     :target: ./_static/images/mess.jpeg
