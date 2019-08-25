@@ -42,6 +42,30 @@ The approach relies on two core technologies: deep learning and photonic time st
     :figwidth: 300px
     :target: ./_static/images/mess.jpeg
 
+
+Figure
+------
+
+.. figure:: ./_static/images/mess.jpeg
+   :scale: 50 %
+   :alt: map to buried treasure
+
+   This is the caption of the figure (a simple paragraph).
+
+   The legend consists of all elements after the caption.  In this
+   case, the legend consists of this paragraph and the following
+   table:
+
+   +-----------------------+-----------------------+
+   | Symbol                | Meaning               |
+   +=======================+=======================+
+   | .. image:: tent.png   | Campground            |
+   +-----------------------+-----------------------+
+   | .. image:: waves.png  | Lake                  |
+   +-----------------------+-----------------------+
+   | .. image:: peak.png   | Mountain              |
+   +-----------------------+-----------------------+
+
 The End
 -------
 
