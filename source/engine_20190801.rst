@@ -1,8 +1,5 @@
 Aug-01-2019 | `Engine Logs <engine_logs.html>`__ | `Engine Prep <engine_20190801.html>`__
 
-  Engine Prep
-  ===========
-
 .. toctree::
    :maxdepth: 2
    :hidden:
