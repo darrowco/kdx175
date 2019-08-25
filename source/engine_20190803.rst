@@ -75,27 +75,13 @@ sidebar
   .. figure:: ./_static/images/mess.jpeg
     :target: ./_static/images/mess.jpeg
 
+* Dsconnect wiring
+* Drain fluids
+* Remove hood
+* Remove radiator
+* Remove accessories (starter, alternator, etc)
 
-.. code-block:: rest
-
-   .. role:: red
-
-   An example of :red:`red text`.
-
-   .. container:: red
-
-      Here the full block is red.
-
-   An undecorated paragraph.
-
-   .. class:: red
-
-   This paragraph too is is red.
-
-   .. admonition:: Big warning
-      :class: red
-
-      Big warning text is red.
+At the start, it was a mess
 
 The End
 -------
