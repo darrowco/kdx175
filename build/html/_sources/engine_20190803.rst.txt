@@ -90,42 +90,17 @@ Note, Warning, Seealso.
 
 They are :sphinx:`paragraph-level markups <markup/para.html>`
 
-.. sidebar:: Code
+.. sidebar:: Rendered result
 
-   ::
-
-      .. note:: ‹text›
-
-
-   ::
-
-       .. warning:: ‹text›
-
-   ::
-
-      .. seealso::
-
-         ‹reST definition list›
-
+  .. figure:: ./_static/images/mess.jpeg
+    :target: ./_static/images/mess.jpeg
 
 .. note:: This is a note.
-
-
-.. warning:: This is a warning.
-
-
-.. seealso::
-
-   `Apples <http://en.wikipedia.org/wiki/Apple>`_
-      A kind of `fruit <http://en.wikipedia.org/wiki/Fruit>`_.
-
-.. index::
-   include; selective
-   pair: only; directive
-   pair: ifconfig; directive
-   pair: ifconfig; extension
-   config value
-   tag
+          * Dsconnect wiring
+          * Drain fluids
+          * Remove hood
+          * Remove radiator
+          * Remove accessories (starter, alternator, etc)
 
 .. _only:
 
