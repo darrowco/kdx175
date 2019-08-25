@@ -9,4 +9,8 @@ Welcome to Engine Logs
 
 .. include:: engine_20190801.rst
   :end-line: 18
+`more ... <engine_20190801.html>`__
 
+----
+
+footer
