@@ -25,15 +25,4 @@ Indices and tables
 
 ----
 
-
-But still, that's nothing compared to a name like
-|j2ee-cas|__.
-
-.. |j2ee-cas| replace::
-   the Java `TM` :super: 2 Platform, Enterprise Edition Client
-   Access Services
-__ http://developer.java.sun.com/developer/earlyAccess/
-   j2eecas/
-
-
 footer
