@@ -11,6 +11,7 @@ Welcome to KDX175's documentation!
    :caption: Contents:
 
    engine_logs
+   electrical_logs
 
 Indices and tables
 ==================
