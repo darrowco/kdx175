@@ -7,18 +7,15 @@ Aug-03-2019 | `Engine Logs <engine_logs.html>`__ | `Engine Removal <engine_20190
 Engine Removal
 --------------
 
-* Dsconnect wiring
-* Drain fluids
-* Remove hood
-* Remove radiator
-* Remove accessories (starter, alternator, etc)
-
-At the start, it was a mess
-
-.. figure:: ./_static/images/mess.jpeg
-    :align: right
-    :figwidth: 300px
-    :target: ./_static/images/mess.jpeg
++--------------------------------------------------+-----------------------------------------+
+| * Dsconnect wiring                               | .. figure:: ./_static/images/mess.jpeg  |
+| * Drain fluids                                   |    :align: right                        |
+| * Remove hood                                    |    :figwidth: 300px                     |
+| * Remove radiator                                | :target: ./_static/images/mess.jpeg     |
+| * Remove accessories (starter, alternator, etc)  |                                         |
+|                                                  |                                         |
+| At the start, it was a mess                      |                                         |
++--------------------------------------------------+-----------------------------------------+
 
 .. _extensions: http://www.sphinx-doc.org/en/master/ext/builtins.html#builtin-sphinx-extensions
 
