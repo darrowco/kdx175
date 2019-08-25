@@ -96,11 +96,12 @@ They are :sphinx:`paragraph-level markups <markup/para.html>`
     :target: ./_static/images/mess.jpeg
 
 .. note:: This is a note.
-          * Dsconnect wiring
-          * Drain fluids
-          * Remove hood
-          * Remove radiator
-          * Remove accessories (starter, alternator, etc)
+
+| Dsconnect wiring
+| Drain fluids
+| Remove hood
+| Remove radiator
+| Remove accessories (starter, alternator, etc)
 
 .. _only:
 
