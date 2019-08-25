@@ -75,11 +75,11 @@ sidebar
   .. figure:: ./_static/images/mess.jpeg
     :target: ./_static/images/mess.jpeg
 
-* Dsconnect wiring
-* Drain fluids
-* Remove hood
-* Remove radiator
-* Remove accessories (starter, alternator, etc)
+| * Dsconnect wiring
+| * Drain fluids
+| * Remove hood
+| * Remove radiator
+| * Remove accessories (starter, alternator, etc)
 
 At the start, it was a mess
 
