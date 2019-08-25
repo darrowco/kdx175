@@ -8,6 +8,7 @@ Welcome to KDX175's documentation!
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Contents:
 
    engine_logs
