@@ -7,7 +7,7 @@ Welcome to KDX175's documentation!
 ==================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 0
    :hidden:
    :caption: Contents:
 
