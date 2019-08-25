@@ -6,10 +6,6 @@
 Welcome to KDX175's documentation!
 ==================================
 
-.. toctree::
-   :maxdepth: 0
-   :hidden:
-   :caption: Contents:
 
 Indices and tables
 ==================
