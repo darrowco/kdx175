@@ -83,6 +83,64 @@ sidebar
 
 At the start, it was a mess
 
+
+
+Note, Warning, Seealso.
+-----------------------
+
+They are :sphinx:`paragraph-level markups <markup/para.html>`
+
+.. sidebar:: Code
+
+   ::
+
+      .. note:: ‹text›
+
+
+   ::
+
+       .. warning:: ‹text›
+
+   ::
+
+      .. seealso::
+
+         ‹reST definition list›
+
+
+.. note:: This is a note.
+
+
+.. warning:: This is a warning.
+
+
+.. seealso::
+
+   `Apples <http://en.wikipedia.org/wiki/Apple>`_
+      A kind of `fruit <http://en.wikipedia.org/wiki/Fruit>`_.
+
+.. index::
+   include; selective
+   pair: only; directive
+   pair: ifconfig; directive
+   pair: ifconfig; extension
+   config value
+   tag
+
+.. _only:
+
+
+
+
+
+
+
+
+
+
+
+
+
 The End
 -------
 
