@@ -8,7 +8,7 @@ Engine Removal
 --------------
 
 +--------------------------------------------------+-----------------------------------------+
-| * Dsconnect wiring                              | .. figure:: ./_static/images/mess.jpeg  |
+| * The wiring was disconnected                    | .. figure:: ./_static/images/mess.jpeg  |
 | * Drain fluids                                   |    :align: right                        |
 | * Remove hood                                    |    :figwidth: 300px                     |
 | * Remove radiator                                | :target: ./_static/images/mess.jpeg     |
