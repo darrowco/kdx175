@@ -90,18 +90,18 @@ Note, Warning, Seealso.
 
 They are :sphinx:`paragraph-level markups <markup/para.html>`
 
-.. sidebar:: Rendered result
+.. sidebar::
 
   .. figure:: ./_static/images/mess.jpeg
     :target: ./_static/images/mess.jpeg
 
 .. note:: This is a note.
 
-  | Dsconnect wiring
-  | Drain fluids
-  | Remove hood
-  | Remove radiator
-  | Remove accessories (starter, alternator, etc)
+  | * Dsconnect wiring
+  | * Drain fluids
+  | * Remove hood
+  | * Remove radiator
+  | * Remove accessories (starter, alternator, etc)
 
 .. _only:
 
