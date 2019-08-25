@@ -14,9 +14,8 @@ Engine today consisted of prep
 * Chemical degrease
 * Dry
 
-Assuming you are ready,
-
-`more ... <engine_20190801.html>`__
+| Assuming you are ready,
+| `more ... <engine_20190801.html>`__
 
 .. figure:: ./_static/images/tools.png
     :align: right
