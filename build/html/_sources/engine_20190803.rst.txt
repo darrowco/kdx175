@@ -8,6 +8,8 @@ Engine Removal
 ==============
 
 +--------------------------------------------------+-----------------------------------------+
+| Engine Removal                                                                             |
++--------------------------------------------------+-----------------------------------------+
 | * The wiring was disconnected                    | .. figure:: ./_static/images/mess.jpeg  |
 | * Drain fluids                                   |    :align: right                        |
 | * Remove hood                                    |    :figwidth: 300px                     |
