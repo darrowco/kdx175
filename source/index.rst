@@ -21,6 +21,9 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+Engine Removal
+==============
+
 +---------------------------------------------------------------------------+
 | .. include:: engine_20190803.rst                                          |
 |   :end-line: 18                                                           |

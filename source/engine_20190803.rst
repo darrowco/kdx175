@@ -1,8 +1,5 @@
 Aug-03-2019 | `Engine Logs <engine_logs.html>`__ | `Engine Removal <engine_20190803.html>`__
 
-Engine Removal
-==============
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
