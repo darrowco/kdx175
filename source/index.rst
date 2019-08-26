@@ -22,10 +22,6 @@ Indices and tables
 * :ref:`search`
 
 +---------------------------------------------------------------------------+
-|                                                                           |
-| Engine Removal                                                            |
-| ==============                                                            |
-|                                                                           |
 | .. include:: engine_20190803.rst                                          |
 |   :end-line: 18                                                           |
 | `Complete details of this log entry ... <engine_20190803.html>`__         |
