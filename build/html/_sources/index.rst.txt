@@ -25,15 +25,15 @@ Indices and tables
 | .. include:: engine_20190803.rst                                          |
 |   :end-line: 18                                                           |
 | `Complete details of this log entry ... <engine_20190803.html>`__         |
-|   :align: right                                                           |
 +---------------------------------------------------------------------------+
-
 
 ----
 
-.. include:: engine_20190801.rst
-  :end-line: 18
-`mores ... <engine_20190801.html>`__
++---------------------------------------------------------------------------+
+| .. include:: engine_20190801.rst                                          |
+|   :end-line: 18                                                           |
+| `Complete details of this log entry ... <engine_20190803.html>`__         |
++---------------------------------------------------------------------------+
 
 ----
 
