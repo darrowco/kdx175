@@ -21,6 +21,12 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+.. include:: engine_20190803.rst
+  :end-line: 18
+`Complete details of this log entry ... <engine_20190803.html>`__
+
+----
+
 +---------------------------------------------------------------------------+
 | .. include:: engine_20190803.rst                                          |
 |   :end-line: 18                                                           |
