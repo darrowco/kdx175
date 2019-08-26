@@ -12,8 +12,8 @@ Engine Removal
 | * Drain fluids                                   |    :align: right                        |
 | * Remove hood                                    |    :figwidth: 300px                     |
 | * Remove radiator                                |    :target: ./_static/images/mess.jpeg  |
-| * Remove accessories (starter, alternator, etc)  |    :caption: A big mess                 |
-|                                                  |                                         |
+| * Remove accessories (starter, alternator, etc)  |                                         |
+|                                                  |    A big mess                           |
 | At the start, it was a mess                      |                                         |
 +--------------------------------------------------+-----------------------------------------+
 
