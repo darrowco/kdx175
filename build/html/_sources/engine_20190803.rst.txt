@@ -36,12 +36,6 @@ Quick start
 
 The approach relies on two core technologies: deep learning and photonic time stretch. Deep learning is a type of machine learning, an artificial intelligence technique in which algorithms are “trained” to perform tasks using large volumes of data. In deep learning, algorithms called neural networks are modeled after how the human brain works. Compared to other types of machine learning, deep learning has proven to be especially effective for recognizing and generating images, speech, music and videos.
 
-.. figure:: ./_static/images/mess.jpeg
-    :align: right
-    :figwidth: 300px
-    :target: ./_static/images/mess.jpeg
-
-
 Figure
 ------
 
@@ -55,67 +49,6 @@ Figure
    case, the legend consists of this paragraph and the following
    table:
 
-   +-----------------------+-----------------------+
-   | Symbol                | Meaning               |
-   +=======================+=======================+
-   | .. image:: tent.png   | Campground            |
-   +-----------------------+-----------------------+
-   | .. image:: waves.png  | Lake                  |
-   +-----------------------+-----------------------+
-   | .. image:: peak.png   | Mountain              |
-   +-----------------------+-----------------------+
-
-
-sidebar
--------
-
-.. sidebar:: Rendered result
-
-  .. figure:: ./_static/images/mess.jpeg
-    :target: ./_static/images/mess.jpeg
-
-| * Dsconnect wiring
-| * Drain fluids
-| * Remove hood
-| * Remove radiator
-| * Remove accessories (starter, alternator, etc)
-
-At the start, it was a mess
-
-
-
-Note, Warning, Seealso.
------------------------
-
-They are :sphinx:`paragraph-level markups <markup/para.html>`
-
-.. sidebar:: Mess
-
-  .. figure:: ./_static/images/mess.jpeg
-    :target: ./_static/images/mess.jpeg
-
-.. note:: This is a note.
-
-  | * Dsconnect wiring
-  | * Drain fluids
-  | * Remove hood
-  | * Remove radiator
-  | * Remove accessories (starter, alternator, etc)
-
-.. _only:
-
-
-
-
-
-
-
-
-
-
-
-
-
-The End
--------
+The End for today
+-----------------
 
