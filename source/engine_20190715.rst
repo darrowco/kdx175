@@ -13,8 +13,8 @@ Jul-15-2019 | `Engine Logs <engine_logs.html>`__ | `Prep for Engine Removal <eng
 | * Chemical Degrease                              |    :target: ./_static/images/extract.jpeg  |
 | * Dry                                            |                                            |
 |                                                  |    Finding the floor jack                  |
-| The steam cleaner is offline so bo it            |                                            |
-| by hand                                          |                                            |
+| | The steam cleaner is offline so do it          |                                            |
+| | by hand                                        |                                            |
 +--------------------------------------------------+--------------------------------------------+
 
 .. _extensions: http://www.sphinx-doc.org/en/master/ext/builtins.html#builtin-sphinx-extensions
