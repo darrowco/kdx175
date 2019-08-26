@@ -24,8 +24,8 @@ Indices and tables
 +---------------------------------------------------------------------------+
 | .. include:: engine_20190803.rst                                          |
 |   :end-line: 18                                                           |
-| `Complete details of this log entry ... <engine_20190803.html>`__         |
 |   :align: right                                                           |
+| `Complete details of this log entry ... <engine_20190803.html>`__         |
 +---------------------------------------------------------------------------+
 
 
