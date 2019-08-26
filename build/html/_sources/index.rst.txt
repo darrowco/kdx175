@@ -9,7 +9,7 @@ Welcome to KDX175's documentation!
 .. toctree::
    :maxdepth: 1
    :hidden:
-   :caption: Contents:
+   :caption: Logs:
 
    engine_logs
    electrical_logs
