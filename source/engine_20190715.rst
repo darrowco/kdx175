@@ -1,0 +1,54 @@
+Aug-03-2019 | `Engine Logs <engine_logs.html>`__ | `Engine Removal <engine_20190803.html>`__
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
++--------------------------------------------------------------------------------------------+
+| Engine Removal                                                                             |
++--------------------------------------------------+-----------------------------------------+
+| * The wiring was disconnected                    | .. figure:: ./_static/images/mess.jpeg  |
+| * Drain fluids                                   |    :align: right                        |
+| * Remove hood                                    |    :figwidth: 300px                     |
+| * Remove radiator                                |    :target: ./_static/images/mess.jpeg  |
+| * Remove accessories (starter, alternator, etc)  |                                         |
+|                                                  |    A big mess                           |
+| At the start, it was a mess                      |                                         |
++--------------------------------------------------+-----------------------------------------+
+
+.. _extensions: http://www.sphinx-doc.org/en/master/ext/builtins.html#builtin-sphinx-extensions
+
+Today's video
+-------------
+
+This screencast will help you get started or you can
+read our guide below
+
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/JKCC4Tcx18A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+
+Quick start
+-----------
+
+The approach relies on two core technologies: deep learning and photonic time stretch. Deep learning is a type of machine learning, an artificial intelligence technique in which algorithms are “trained” to perform tasks using large volumes of data. In deep learning, algorithms called neural networks are modeled after how the human brain works. Compared to other types of machine learning, deep learning has proven to be especially effective for recognizing and generating images, speech, music and videos.
+
+Figure
+------
+
+.. figure:: ./_static/images/mess.jpeg
+   :scale: 50 %
+   :alt: map to buried treasure
+
+   This is the caption of the figure (a simple paragraph).
+
+   The legend consists of all elements after the caption.  In this
+   case, the legend consists of this paragraph and the following
+   table:
+
+The End for today
+-----------------
+

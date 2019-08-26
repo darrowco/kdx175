@@ -17,7 +17,7 @@ Assuming you are ready,
 .. figure:: ./_static/images/tools.png
     :align: right
     :figwidth: 300px
-    :target: ./_static/images/first-steps/sphinx-hello-world.png
+    :target: ./_static/images/tools.png
 
 .. _extensions: http://www.sphinx-doc.org/en/master/ext/builtins.html#builtin-sphinx-extensions
 
