@@ -49,9 +49,9 @@ Indices and tables
    "Crunchy Frog", 1.49, "If we took the bones out, it wouldn't be
    crunchy, now would it?"
    "Gannet Ripple", 1.99, "On a stick!"
-.. include:: engine_20190715.rst
 
 .. raw:: html
+
     <blockquote>
     <div><table border="1" class="colwidths-given docutils" id="id3">
     <caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
@@ -68,7 +68,10 @@ Indices and tables
     </thead>
     <tbody valign="top">
 
+.. include:: engine_20190715.rst
     :start-after: Crunchy
+
+.. raw:: html
 
     </tbody>
     </table>

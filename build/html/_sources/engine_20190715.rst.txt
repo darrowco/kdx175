@@ -59,8 +59,10 @@ Parts, equipment, supplies, services, etc
 +----------------+----------------+----------------+----------------+----------------+
 
 Crunchy 
-  <tr class="row-even"><td>Albatross</td>
-  <td>2.99</td>
-  <td>On a stick!</td>
-  </tr>
+.. raw:: html
+
+    <tr class="row-even"><td>Albatross</td>
+    <td>2.99</td>
+    <td>On a stick!</td>
+    </tr>
 
