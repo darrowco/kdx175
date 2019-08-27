@@ -53,8 +53,8 @@ Indices and tables
 .. raw:: html
 
     <blockquote>
-    <div><table border="1" class="colwidths-given docutils" id="id3" class="searchable sortable">>
-    <caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+    <div>
+    <table border="1" class="searchable sortable colwidths-given docutils" id="id3">
     <colgroup>
     <col width="27%" />
     <col width="18%" />
@@ -79,6 +79,9 @@ Indices and tables
     </pre></div>
     </div>
     </div></blockquote>
+
+
+<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 
 
 footer
