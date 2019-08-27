@@ -38,11 +38,11 @@ extensions = ['sphinx.ext.intersphinx',
 
 
 html_css_files = [
-    '<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">',
+    'https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css',
 ]
 
 html_js_files = [
-    '<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>',
+    'https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
