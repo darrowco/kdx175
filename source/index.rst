@@ -13,6 +13,7 @@ Welcome to KDX175's documentation!
 
    engine_logs
    electrical_logs
+   parts_logs
 
 Indices and tables
 ==================
