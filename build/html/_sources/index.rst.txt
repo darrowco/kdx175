@@ -83,79 +83,80 @@ Indices and tables
 
 <caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 
+.. raw:: html
 
-<table class="sortable">
-<thead>
-<tr style="background-color: #ebebeb;">
-<th>Athlete</th>
-<th>Age</th>
-<th>Country</th>
-<th>Gold Medals</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>David Boudia</td>
-<td>23</td>
-<td>United States</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Chen Ruolin</td>
-<td>19</td>
-<td>China</td>
-<td>2</td>
-</tr>
-<tr>
-<td>He Zi</td>
-<td>21</td>
-<td>China</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Qin Kai</td>
-<td>26</td>
-<td>China</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Wu Minxia</td>
-<td>26</td>
-<td>China</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Ilya Zakharov</td>
-<td>21</td>
-<td>Russia</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Cao Yuan</td>
-<td>17</td>
-<td>China</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Luo Yutong</td>
-<td>26</td>
-<td>China</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Wang Hao</td>
-<td>19</td>
-<td>China</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Zhang Yanquan</td>
-<td>18</td>
-<td>China</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
+    <table class="sortable">
+    <thead>
+    <tr style="background-color: #ebebeb;">
+    <th>Athlete</th>
+    <th>Age</th>
+    <th>Country</th>
+    <th>Gold Medals</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>David Boudia</td>
+    <td>23</td>
+    <td>United States</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>Chen Ruolin</td>
+    <td>19</td>
+    <td>China</td>
+    <td>2</td>
+    </tr>
+    <tr>
+    <td>He Zi</td>
+    <td>21</td>
+    <td>China</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>Qin Kai</td>
+    <td>26</td>
+    <td>China</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>Wu Minxia</td>
+    <td>26</td>
+    <td>China</td>
+    <td>2</td>
+    </tr>
+    <tr>
+    <td>Ilya Zakharov</td>
+    <td>21</td>
+    <td>Russia</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>Cao Yuan</td>
+    <td>17</td>
+    <td>China</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>Luo Yutong</td>
+    <td>26</td>
+    <td>China</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>Wang Hao</td>
+    <td>19</td>
+    <td>China</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>Zhang Yanquan</td>
+    <td>18</td>
+    <td>China</td>
+    <td>1</td>
+    </tr>
+    </tbody>
+    </table>
 
 
 
