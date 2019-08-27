@@ -8,7 +8,7 @@ Welcome to Parts Log
    :caption: Contents:
 
 .. include:: engine_20190803.rst
-  :start-after: Parts
+  :start-after: Parts, equipment, supplies, services, etc
 `more ... <engine_20190803.html>`__
 
 ----
