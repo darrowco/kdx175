@@ -58,7 +58,7 @@ Parts, equipment, supplies, services, etc
 |       1        | Bolt           |     3.00       |    Burbank     |                |
 +----------------+----------------+----------------+----------------+----------------+
 
-Crunchy 
+Parts List 
 .. raw:: html
 
     <tr class="row-even"><td> Albatross       </td><td>    2.99    </td><td> On a stick        </td></tr>
