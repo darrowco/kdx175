@@ -61,6 +61,7 @@ Parts, equipment, supplies, services, etc
 Crunchy 
 .. raw:: html
 
-    <tr class="row-even"><td>    Albatross    </td><td>    2.99    </td><td>    On a stick!    </td></tr>
-    <tr class="row-even"><td>    Peanuts      </td><td>    22.99   </td><td>    On a stick!    </td></tr>
+    <tr class="row-even"><td> Albatross       </td><td>    2.99    </td><td> On a stick        </td></tr>
+    <tr class="row-even"><td> Peanuts         </td><td>    22.99   </td><td> With a straw      </td></tr>
+    <tr class="row-even"><td> Cotton Candy    </td><td>    22.99   </td><td> Spoon included    </td></tr>
 
