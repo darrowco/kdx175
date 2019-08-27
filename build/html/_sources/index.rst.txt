@@ -49,9 +49,8 @@ Indices and tables
    "Crunchy Frog", 1.49, "If we took the bones out, it wouldn't be
    crunchy, now would it?"
    "Gannet Ripple", 1.99, "On a stick!"
-
-.. include:: engine_20190715.rst
-  :start-after: Crunchy
+   .. include:: engine_20190715.rst
+     :start-after: Crunchy
 
 
 footer
