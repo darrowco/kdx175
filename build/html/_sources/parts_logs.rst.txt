@@ -11,6 +11,12 @@ Welcome to Parts Log
   :start-after: Parts, equipment, supplies, services, etc
 `more ... <engine_20190803.html>`__
 
+
+.. include:: engine_20190715.rst
+  :start-after: Parts, equipment, supplies, services, etc
+`more ... <engine_20190803.html>`__
+
+
 ----
 
 .. include:: engine_20190715.rst
@@ -19,4 +25,4 @@ Welcome to Parts Log
 
 ----
 
-footer
+footers
