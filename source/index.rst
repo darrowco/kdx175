@@ -85,9 +85,11 @@ Indices and tables
 
 .. raw:: html
 
-    $(document).ready( function () {
-        $('#table_id').DataTable();
+    <script type="text/javascript" class="init">
+    $(document).ready(function() {
+    $('#example').DataTable();
     } );
+    </script>
     <table class="sortable">
     <thead>
     <tr style="background-color: #ebebeb;">
