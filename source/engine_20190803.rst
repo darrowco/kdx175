@@ -53,7 +53,6 @@ The End for today
 -----------------
 
 Parts, equipment, supplies, services, etc
------------------------------------------
 
 +----------------+----------------+----------------+----------------+
 |    Quantity    |      Item      |     Cost       |    Source      |
