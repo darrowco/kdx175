@@ -73,8 +73,8 @@ Parts List
     <script type="text/javascript" class="init">
     $(document).ready(function() {
     $('#example').DataTable( {
-    "searching": false
-    "lengthChange": false
+    "searching": false,
+    "paging": false
     } );
     $('#example').tableTotal();
     } );
