@@ -126,12 +126,6 @@
 </tbody>
 </table>
 <hr class="docutils" />
-<script type="text/javascript" class="init">
-$(document).ready(function() {
-$('#example').DataTable();
-$('#example').tableTotal();
-} );
-</script>
 <table id="example" class="display table table-bordered" style="width:100%">
 <thead>
 <tr>
@@ -143,7 +137,13 @@ $('#example').tableTotal();
 <th>Salary</th>
 </tr>
 </thead>
-<tbody><p>footer</p>
+<tbody>
+<script type="text/javascript" class="init">
+$(document).ready(function() {
+$('#example').DataTable();
+$('#example').tableTotal();
+} );
+</script><p>footer</p>
 </div>
 
 

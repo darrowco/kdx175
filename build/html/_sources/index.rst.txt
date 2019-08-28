@@ -42,12 +42,6 @@ Indices and tables
 
 .. raw:: html
 
-    <script type="text/javascript" class="init">
-    $(document).ready(function() {
-    $('#example').DataTable();
-    $('#example').tableTotal();
-    } );
-    </script>
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
     <tr>
@@ -60,5 +54,12 @@ Indices and tables
     </tr>
     </thead>
     <tbody>
+    <script type="text/javascript" class="init">
+    $(document).ready(function() {
+    $('#example').DataTable();
+    $('#example').tableTotal();
+    } );
+    </script>
+
 
 footer
