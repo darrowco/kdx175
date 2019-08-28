@@ -119,7 +119,6 @@ Indices and tables
     <td>2011/07/25</td>
     <td>$170,750</td>
     </tr>
-    </tfoot>
     </table>
 
 footer
