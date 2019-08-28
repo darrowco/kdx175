@@ -104,7 +104,7 @@ Indices and tables
     </thead>
     <tbody>
     <tr>
-    <td>&nbsp;</td>
+    <th>&nbsp;</th>
     <td>System Architect</td>
     <td>Edinburgh</td>
     <td>61</td>
@@ -112,7 +112,7 @@ Indices and tables
     <td>$320,800</td>
     </tr>
     <tr>
-    <td>&nbsp;</td>
+    <th>&nbsp;</th>
     <td>Accountant</td>
     <td>Tokyo</td>
     <td>63</td>
