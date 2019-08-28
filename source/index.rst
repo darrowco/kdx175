@@ -34,12 +34,6 @@ Indices and tables
 
 ----
 
-+---------+
-| 1       |
-+---------+
-
-----
-
 .. raw:: html
 
     <script type="text/javascript" class="init">
