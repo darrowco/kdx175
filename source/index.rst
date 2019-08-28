@@ -49,9 +49,6 @@ Indices and tables
     </div>
     </div></blockquote>
 
-
-<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
-
 .. raw:: html
 
     <script type="text/javascript" class="init">
