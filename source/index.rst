@@ -68,10 +68,6 @@ Indices and tables
     </thead>
     <tbody valign="top">
 
-.. include:: engine_20190715.rst
-    :start-after: Parts List
-
-
 
 .. raw:: html
 
