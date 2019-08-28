@@ -34,29 +34,4 @@ Indices and tables
 
 ----
 
-.. raw:: html
-
-    <script type="text/javascript" class="init">
-    $(document).ready(function() {
-    $('#example').DataTable();
-    $('#example').tableTotal();
-    } );
-    </script>
-    <table id="example" class="display table table-bordered" style="width:100%">
-    <thead>
-    <tr>
-    <th>&nbsp;</th>
-    <th>Position</th>
-    <th>Office</th>
-    <th>Age</th>
-    <th>Start date</th>
-    <th>Salary</th>
-    </tr>
-    </thead>
-    <tbody>
-
-.. include:: engine_20190715.rst
-    :start-after: <!-- dbRowsParts -->
-
-
 footer
