@@ -88,6 +88,7 @@ Indices and tables
     <script type="text/javascript" class="init">
     $(document).ready(function() {
     $('#example').DataTable();
+    $('#example').tableTotal();
     } );
     </script>
     <table id="example" class="display" style="width:100%">
