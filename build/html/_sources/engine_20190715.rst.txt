@@ -91,6 +91,11 @@ Parts List
     </tr>
     </thead>
     <tbody>
+
+<!-- dbRowsParts -->
+
+.. raw:: html
+
     <tr>
     <th>&nbsp;</th>
     <td>System Architect</td>
@@ -108,37 +113,4 @@ Parts List
     <td>$170,750</td>
     </tr>
     </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
