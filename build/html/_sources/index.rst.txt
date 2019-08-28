@@ -104,7 +104,4 @@ Indices and tables
     </thead>
     <tbody>
 
-.. include:: engine_20190715.rst
-    :start-after: <!-- dbRowsParts -->
-
 footer
