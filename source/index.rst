@@ -42,15 +42,6 @@ Indices and tables
 
 .. raw:: html
 
-    </tbody>
-    </table>
-    <div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="s2">&quot;Water Ice&quot;</span><span class="p">,</span> <span class="mf">12.99</span><span class="p">,</span> <span class="s2">&quot;On a stick!&quot;</span>
-    </pre></div>
-    </div>
-    </div></blockquote>
-
-.. raw:: html
-
     <script type="text/javascript" class="init">
     $(document).ready(function() {
     $('#example').DataTable();
