@@ -27,7 +27,6 @@ Welcome to Parts Log
     </tr>
     </thead>
     <tbody>
-
 .. include:: engine_20190715.rst
     :start-after: <!-- dbRowsParts -->
 
