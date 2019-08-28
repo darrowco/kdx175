@@ -58,16 +58,6 @@ Parts, equipment, supplies, services, etc
 |       1        | Bolt           |     3.00       |    Burbank     |                |
 +----------------+----------------+----------------+----------------+----------------+
 
-Parts List
-
-.. raw:: html
-
-    <tr class="row-even"><td> Albatross       </td><td>    2.99    </td><td> On a stick        </td></tr>
-    <tr class="row-even"><td> Peanuts         </td><td>    22.99   </td><td> With a straw      </td></tr>
-    <tr class="row-even"><td> Cotton Candy    </td><td>    22.99   </td><td> Spoon included    </td></tr>
-
-
-
 .. raw:: html
 
     <script type="text/javascript" class="init">
