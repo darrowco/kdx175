@@ -71,14 +71,6 @@ Indices and tables
 .. include:: engine_20190715.rst
     :start-after: Parts List
 
-.. raw:: html
-
-    </tbody>
-    </table>
-    <div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="s2">&quot;Water Ice&quot;</span><span class="p">,</span> <span class="mf">12.99</span><span class="p">,</span> <span class="s2">&quot;On a stick!&quot;</span>
-    </pre></div>
-    </div>
-    </div></blockquote>
 
 
 .. raw:: html
