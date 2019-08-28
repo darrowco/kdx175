@@ -40,27 +40,6 @@ Indices and tables
 
 ----
 
-
-.. raw:: html
-
-    <blockquote>
-    <div>
-    <table border="1" class="searchable sortable colwidths-given docutils" id="id3">
-    <colgroup>
-    <col width="27%" />
-    <col width="18%" />
-    <col width="55%" />
-    </colgroup>
-    <thead valign="bottom">
-    <tr class="row-odd"><th class="head">Treat</th>
-    <th class="head">Quantity</th>
-    <th class="head">Description</th>
-    </tr>
-    </thead>
-    <tbody valign="top">
-
-
-
 .. raw:: html
 
     <script type="text/javascript" class="init">
