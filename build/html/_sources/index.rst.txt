@@ -94,7 +94,7 @@ Indices and tables
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
     <tr>
-    <th>Name</th>
+    <th>&nbsp;</th>
     <th>Position</th>
     <th>Office</th>
     <th>Age</th>
@@ -104,7 +104,7 @@ Indices and tables
     </thead>
     <tbody>
     <tr>
-    <td>Tiger Nixon</td>
+    <td>&nbsp;</td>
     <td>System Architect</td>
     <td>Edinburgh</td>
     <td>61</td>
@@ -112,7 +112,7 @@ Indices and tables
     <td>$320,800</td>
     </tr>
     <tr>
-    <td>Garrett Winters</td>
+    <td>&nbsp;</td>
     <td>Accountant</td>
     <td>Tokyo</td>
     <td>63</td>
