@@ -91,7 +91,7 @@ Indices and tables
     $('#example').tableTotal();
     } );
     </script>
-    <table id="example" class="display" style="width:100%">
+    <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
     <tr>
     <th>Name</th>
