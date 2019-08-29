@@ -16,7 +16,7 @@ Welcome to Parts Log
     } );
       $('#example tbody')
      .off()
-     .on( 'click', 'tr td.dt-view', function (e) {
+     .on( 'click', 'tr', function (e) {
        alert();
        } );
     </script>
