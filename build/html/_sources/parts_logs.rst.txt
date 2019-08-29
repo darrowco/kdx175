@@ -18,12 +18,7 @@ Welcome to Parts Log
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
     <tr>
-    <th>&nbsp;</th>
-    <th name="id1">Position</th>
-    <th>Office</th>
-    <th>Age</th>
-    <th>Start date</th>
-    <th>Salary</th>
+    <th>&nbsp;</th><th> #      </th><th> Part Number    </th><th> Description    </th><th> Source         </th><th> Contact          </th><th> Order Number    </th><th> Cost      </th>
     </tr>
     </thead>
     <tbody>
