@@ -30,6 +30,9 @@ Welcome to Parts Log
 .. include:: engine_20190715.rst
     :start-after: <!-- dbRowsParts -->
 
-<button value="Refresh Page" onClick="window.location.reload();">
+.. raw:: html
+
+    <button value="Refresh Page" onClick="window.location.reload();">
+
 
 footers
