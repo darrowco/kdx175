@@ -14,7 +14,7 @@ Welcome to Parts Log
     $('#example').DataTable();
     $('#example').tableTotal();
     } );
-    document.getElementById("id1").addEventListener("click", ({target}) => {
+    document.getElementByName("id1").addEventListener("click", ({target}) => {
       // discard direct clicks on input elements
       alert("poipoi");
     });
@@ -23,7 +23,7 @@ Welcome to Parts Log
     <thead>
     <tr>
     <th>&nbsp;</th>
-    <th id="id1">Position</th>
+    <th name="id1">Position</th>
     <th>Office</th>
     <th>Age</th>
     <th>Start date</th>
