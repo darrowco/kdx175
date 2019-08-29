@@ -15,6 +15,7 @@ Welcome to Parts Log
     $('#example').tableTotal();
     } );
     document.querySelector("table").addEventListener("click", ({target}) => {
+      alert("asd");
       // get the nearest tr
       const tr = target.closest("tr");
       if (tr) {
