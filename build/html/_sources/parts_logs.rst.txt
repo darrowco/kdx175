@@ -17,7 +17,7 @@ Welcome to Parts Log
       $('#example tbody')
      .off()
      .on( 'click', 'tr td.dt-view', function (e) {
-       self.updateDocument(record);
+       alert();
        } );
     </script>
     <table id="example" class="display table table-bordered" style="width:100%">
