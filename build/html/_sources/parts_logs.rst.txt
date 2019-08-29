@@ -14,6 +14,24 @@ Welcome to Parts Log
     $('#example').DataTable();
     $('#example').tableTotal();
     } );
+    $(document).ready(function() {
+	table = $('#example').DataTable( {
+		"ajax": "/ajax/objects.txt",
+		"columns": [
+			{ "data": "name" },
+			{ "data": "position" },
+			{ "data": "office" },
+			{ "data": "extn" },
+			{ "data": "start_date" },
+			{ "data": "salary" }
+		],
+        dom: 'frtip',
+        select: true,
+	} );
+    table = $('#example').DataTable({
+        dom: 'frtip',
+        select: true,
+    });
     </script>
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
