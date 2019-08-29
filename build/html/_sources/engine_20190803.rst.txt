@@ -4,17 +4,17 @@ Aug-03-2019 | `Engine Logs <engine_logs.html>`__ | `Engine Removal <engine_20190
    :maxdepth: 2
    :caption: Contents:
 
-+-----------------------------------------------------------------------------------------------+
-| Engine Removal                                                                                |
-+--------------------------------------------------+--------------------------------------------+
-| * The wiring was disconnected                    | .. figure:: ./_static/images/mess.jpeg     |
-| * Drain fluids                                   |    :align: right                           |
-| * Remove hood                                    |    :figwidth: 300px                        |
-| * Remove radiator                                |    :target: ./_static/images/mess.jpeg     |
-| * Remove accessories (starter, alternator, etc)  |                                            |
-|                                                  |    A big mess                              |
-| At the start, it was a mess                      |                                            |
-+--------------------------------------------------+--------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+| Engine Removal                                   + Aug-03-2019   `Engine Logs <engine_logs.html>`__   `Engine Removal <engine_20190803.html>`__ |
++--------------------------------------------------+----------------------------------------------------------------------------------------------+
+| * The wiring was disconnected                    | .. figure:: ./_static/images/mess.jpeg                                                       |
+| * Drain fluids                                   |    :align: right                                                                             |
+| * Remove hood                                    |    :figwidth: 300px                                                                          |
+| * Remove radiator                                |    :target: ./_static/images/mess.jpeg                                                       |
+| * Remove accessories (starter, alternator, etc)  |                                                                                              |
+|                                                  |    A big mess                                                                                |
+| At the start, it was a mess                      |                                                                                              |
++--------------------------------------------------+----------------------------------------------------------------------------------------------+
 
 .. _extensions: http://www.sphinx-doc.org/en/master/ext/builtins.html#builtin-sphinx-extensions
 

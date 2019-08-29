@@ -23,13 +23,13 @@ Indices and tables
 * :ref:`search`
 
 .. include:: engine_20190803.rst
-  :end-line: 18
+  :end-line: 26
 `Complete details of this log entry ... <engine_20190803.html>`__
 
 ----
 
 .. include:: engine_20190715.rst
-  :end-line: 18
+  :end-line: 26
 `Complete details of this log entry ... <engine_20190715.html>`__
 
 ----
