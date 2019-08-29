@@ -32,5 +32,5 @@ Welcome to Parts Log
 
 .. raw:: html
 
-    <button value="Generate Total" onClick="window.location.reload();">
+    <button value="Generate Total" onClick="window.location.reload();">Generate Total</buttom>
 
