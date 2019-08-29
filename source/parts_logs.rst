@@ -14,19 +14,20 @@ Welcome to Parts Log
     $('#example').DataTable();
     $('#example').tableTotal();
     } );
-    var table = document.getElementById("example");
-    if (table != null) {
-        for (var i = 0; i < table.rows.length; i++) {
-            for (var j = 0; j < table.rows[i].cells.length; j++)
-            table.rows[i].cells[j].onclick = function () {
-                tableText(this);
-            };
+    document.querySelector("table").addEventListener("click", ({target}) => {
+      // discard direct clicks on input elements
+      if (target.nodeName === "INPUT") return;
+      // get the nearest tr
+      const tr = target.closest("tr");
+      if (tr) {
+        // if it exists, get the first checkbox
+        const checkbox = tr.querySelector("input[type='checkbox']");
+        if (checkbox) {
+          // if it exists, toggle the checked property
+          checkbox.checked = !checkbox.checked;
         }
-    }
-
-    function tableText(tableCell) {
-        alert(tableCell.innerHTML);
-    }
+      }
+    });
     </script>
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
