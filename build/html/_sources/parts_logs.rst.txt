@@ -14,13 +14,11 @@ Welcome to Parts Log
     $('#example').DataTable();
     $('#example').tableTotal();
     } );
-    "initComplete": function () {
       $('#example tbody')
      .off()
      .on( 'click', 'tr td.dt-view', function (e) {
        self.updateDocument(record);
        } );
-    }
     </script>
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
