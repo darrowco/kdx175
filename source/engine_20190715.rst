@@ -67,6 +67,7 @@ Parts, equipment, supplies, services, etc
     "paging": false
     } );
     $('#example').tableTotal();
+     onclick=alert();
     } );
     </script>
     <table id="example" class="display table table-bordered" style="width:100%">
