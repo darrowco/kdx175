@@ -14,10 +14,6 @@ Welcome to Parts Log
     $('#example').DataTable();
     $('#example').tableTotal();
     } );
-    document.getElementByName("id1").addEventListener("click", ({target}) => {
-      // discard direct clicks on input elements
-      alert("poipoi");
-    });
     </script>
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
