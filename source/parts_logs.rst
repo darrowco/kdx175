@@ -14,8 +14,7 @@ Welcome to Parts Log
     $('#example').DataTable();
     $('#example').tableTotal();
     } );
-    $(document).ready(function() {
-	table = $('#example').DataTable( {
+    table = $('#example').DataTable( {
 		"ajax": "/ajax/objects.txt",
 		"columns": [
 			{ "data": "name" },
@@ -28,7 +27,7 @@ Welcome to Parts Log
         dom: 'frtip',
         select: true,
 	} );
-    table = $('#example').DataTable({
+    table2 = $('#example2').DataTable({
         dom: 'frtip',
         select: true,
     });
