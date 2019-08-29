@@ -73,7 +73,7 @@ Parts, equipment, supplies, services, etc
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
     <tr>
-    <th>&nbsp;</th><th> #      </th><th> Part Number    </th><th> Description    </th><th> Source         </th><th> Contact          </th><th> Order Number    </th><th> Cost      </th>
+    <th>&nbsp;</th><th> #      </th><th> Description, part#, etc    </th><th> Source         </th><th> Cost      </th>
     </tr>
     </thead>
     <tbody>
@@ -83,10 +83,10 @@ Parts, equipment, supplies, services, etc
 .. raw:: html
 
     <tr>
-    <th>&nbsp;</th><td> 1      </td><td> 0956-12363     </td><td> Axle Nut       </td><td> Yamabits       </td><td> www.yamabits.com </td><td> 8954            </td><td> 8.79      </td>
+    <th>&nbsp;</th><td> 1      </td><td> Axle Nut                   </td><td> Yamabits       </td><td> 8.79      </td>
     </tr>
     <tr>
-    <th>&nbsp;</th><td> 2      </td><td> 896as-uya      </td><td> Piston         </td><td> Yamaha Dealer  </td><td> 310-348-4321      </td><td>                 </td><td> 128.43   </td>
+    <th>&nbsp;</th><td> 2      </td><td> Piston         </td>       <td> Yamaha Dealer       </td><td> 128.43    </td>
      </tr>
 
 
