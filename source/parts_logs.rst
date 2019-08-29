@@ -20,7 +20,6 @@ Welcome to Parts Log
       if (tr) {
         alert("iop");
         }
-      }
     });
     </script>
     <table id="example" class="display table table-bordered" style="width:100%">
