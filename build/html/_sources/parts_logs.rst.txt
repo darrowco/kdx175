@@ -14,11 +14,6 @@ Welcome to Parts Log
     $('#example').DataTable();
     $('#example').tableTotal();
     } );
-
-    $('#example tbody').on( 'click', 'tr td.dt-view', function (e) {
-       alert();
-       } );
-    </script>
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
     <tr>
@@ -36,8 +31,5 @@ Welcome to Parts Log
 
 .. raw:: html
 
-    <button value="Refresh Page" onClick="window.location.reload();">
+    <button value="Generate Total" onClick="window.location.reload();">
 
-
-
-footers
