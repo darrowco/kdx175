@@ -50,20 +50,16 @@ $(document).ready(function() {
 $('#example').DataTable();
 $('#example').tableTotal();
 } );
-document.querySelector("table").addEventListener("click", ({target}) => {
-  alert("asd");
-  // get the nearest tr
-  const tr = target.closest("tr");
-  if (tr) {
-    alert("iop");
-    }
+document.getElementById("id1").addEventListener("click", ({target}) => {
+  // discard direct clicks on input elements
+  alert("poipoi");
 });
 </script>
 <table id="example" class="display table table-bordered" style="width:100%">
 <thead>
 <tr>
 <th>&nbsp;</th>
-<th>Position</th>
+<th id="id1">Position</th>
 <th>Office</th>
 <th>Age</th>
 <th>Start date</th>
