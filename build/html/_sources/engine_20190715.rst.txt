@@ -10,7 +10,7 @@ Prep for engine removal
 
 
 +----------+----------+----------+
-| Header 1   Header 2   Header 3 |
+| Summary of activities          |
 +==========+==========+==========+
 | Item 1   |          |          |
 |          |          |          |
