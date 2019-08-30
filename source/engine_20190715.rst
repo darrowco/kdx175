@@ -23,11 +23,14 @@ Today's video
 This screencast will help you get started or you can
 read our guide below
 
-  .. raw:: html
+
+.. raw:: html
 
     <div style="text-align: center; margin-bottom: 2em;">
-      <iframe width="100%" height="350" src="https://www.youtube.com/embed/JKCC4Tcx18A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/JKCC4Tcx18A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
+
+
 
 Quick start
 -----------
@@ -54,6 +57,7 @@ Parts, equipment, supplies, services, etc
 +----------------+----------------+----------------+----------------+----------------+
 |       1        | Bolt           |     3.00       |    Burbank     |                |
 +----------------+----------------+----------------+----------------+----------------+
+
 
 .. raw:: html
 
@@ -96,6 +100,7 @@ Parts, equipment, supplies, services, etc
     <tbody>
 
 <!-- dbRowsParts -->
+
 
 .. raw:: html
 
