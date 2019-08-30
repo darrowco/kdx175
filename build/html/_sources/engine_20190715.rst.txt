@@ -60,7 +60,7 @@ Parts, equipment, supplies, services, etc
 
 .. raw:: html
 
-    <script type="text/javascript" class="init">
+    <script type="text/html" class="init">
   $(document).ready(function() {
     var table = $('#example').DataTable({
       "initComplete": function (settings, json) {
@@ -91,7 +91,7 @@ Parts, equipment, supplies, services, etc
         <tr>
             <th></th>
             <th></th>
-            <th>qweqwe</th>
+            <th></th>
             <th></th>
             <th></th>
         </tr>
