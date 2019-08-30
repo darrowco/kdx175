@@ -30,6 +30,19 @@ Prep for engine removal
 
 
 
++--------------------------------------------------+--------------------------------------------+
+| Prep for Engine Removal                                                                       |
++==================================================+============================================+
+| * Remove all components                          | .. figure:: ./_static/images/extract.jpeg  |
+| * Degrease                                       |    :align: right                           |
+| * Wire wheel and/or Sanding                      |    :figwidth: 300px                        |
+| * Chemical Degrease                              |    :target: ./_static/images/extract.jpeg  |
+| * Dry                                            |                                            |
+|                                                  |    Finding the floor jack                  |
+| | The steam cleaner is offline so do it          |                                            |
+| | by hand                                        |                                            |
++--------------------------------------------------+--------------------------------------------+
+
 
 
 
