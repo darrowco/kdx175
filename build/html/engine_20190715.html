@@ -104,7 +104,9 @@ $(document).ready(function() {
           var sum = column
              .data()
              .reduce(function (a, b) {
+                 a = parseFloat(a, 10);
                  if(isNaN(a)){ a = 0; }
+                 b = parseFloat(b, 10);
                  if(isNaN(b)){ b = 0; }
                  return a + b;
              });
