@@ -17,20 +17,17 @@ Jul-15-2019 | `Engine Logs <engine_logs.html>`__ | `Prep for Engine Removal <eng
 | | by hand                                        |                                            |
 +--------------------------------------------------+--------------------------------------------+
 
-.. _extensions: http://www.sphinx-doc.org/en/master/ext/builtins.html#builtin-sphinx-extensions
-
 Today's video
 -------------
 
 This screencast will help you get started or you can
 read our guide below
 
-.. raw:: html
+  .. raw:: html
 
     <div style="text-align: center; margin-bottom: 2em;">
-    <iframe width="100%" height="350" src="https://www.youtube.com/embed/JKCC4Tcx18A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe width="100%" height="350" src="https://www.youtube.com/embed/JKCC4Tcx18A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-
 
 Quick start
 -----------
@@ -61,6 +58,25 @@ Parts, equipment, supplies, services, etc
 .. raw:: html
 
     <script type="text/javascript" class="init">
+  $(document).ready(function() {
+    var table = $('#example').DataTable({
+      "initComplete": function (settings, json) {
+        this.api().columns('.sum').every(function () {
+            var column = this;
+            var sum = column
+               .data()
+               .reduce(function (a, b) { 
+                   a = parseInt(a, 10);
+                   if(isNaN(a)){ a = 0; }
+                   b = parseInt(b, 10);
+                   if(isNaN(b)){ b = 0; }
+                   return a + b;
+               });
+            $(column.footer()).html('Sum: ' + sum);
+        });
+      }
+    });
+    });
     </script>
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
@@ -78,6 +94,11 @@ Parts, equipment, supplies, services, etc
         </tr>
     </tfoot>
     <tbody>
+
+<!-- dbRowsParts -->
+
+.. raw:: html
+
     <tr>
     <th>&nbsp;</th><td> 1      </td><td> Axle Nut                   </td><td> Yamabits       </td><td> 8.79      </td>
     </tr>
