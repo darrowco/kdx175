@@ -100,7 +100,7 @@ table:</div>
 |       1        | Bolt           |     3.00       |    Burbank     |                |
 +—————-+—————-+—————-+—————-+—————-+</p>
 <script type="text/javascript" class="init">
-var table = $('#ticketTable').DataTable({
+var table = $('#example').DataTable({
   "initComplete": function (settings, json) {
     this.api().columns('.sum').every(function () {
         var column = this;
