@@ -60,7 +60,7 @@ Parts, equipment, supplies, services, etc
 
 .. raw:: html
 
-    <script type="text/html" class="init">
+    <script type="text/javascript" class="init">
   $(document).ready(function() {
     var table = $('#example').DataTable({
       "initComplete": function (settings, json) {
