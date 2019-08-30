@@ -53,11 +53,6 @@ Figure
 The End for today
 -----------------
 
-Parts, equipment, supplies, services, etc
-+----------------+----------------+----------------+----------------+----------------+
-|       1        | Bolt           |     3.00       |    Burbank     |                |
-+----------------+----------------+----------------+----------------+----------------+
-
 
 .. raw:: html
 
@@ -85,7 +80,7 @@ Parts, equipment, supplies, services, etc
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
     <tr>
-    <th>&nbsp;</th><th> #      </th><th> Description, part#, etc    </th><th> Source         </th><th> Cost      </th>
+    <th>&nbsp;</th><th> #      </th><th> Description, part#, etc    </th><th> Source         </th><th class="sum"> Cost      </th>
     </tr>
     </thead>
     <tfoot>
