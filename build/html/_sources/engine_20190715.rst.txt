@@ -1,21 +1,31 @@
+
 Prep for engine removal
+=======================
 	
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-+-----------------------------------------------------------------------------------------------+
-| Prep for Engine Removal                                                                       |
+
+
++----------+----------+----------+
+| Header 1 | Header 2 | Header 3 |
++==========+==========+==========+
+| Item 1   |          |          |
+|          |          |          |
+| Item 2   |          |          |
++----------+----------+----------+
+
+
+
 +--------------------------------------------------+--------------------------------------------+
-| * Remove all components                          | .. figure:: ./_static/images/extract.jpeg  |
-| * Degrease                                       |    :align: right                           |
-| * Wire wheel and/or Sanding                      |    :figwidth: 300px                        |
-| * Chemical Degrease                              |    :target: ./_static/images/extract.jpeg  |
-| * Dry                                            |                                            |
-|                                                  |    Finding the floor jack                  |
-| | The steam cleaner is offline so do it          |                                            |
-| | by hand                                        |                                            |
+| * Remove all components                          |                                            |
+| * Degrease                                       |                                            |
+| * Wire wheel and/or Sanding                      |                                            |
 +--------------------------------------------------+--------------------------------------------+
+
+
+
 
 Today's video
 -------------
