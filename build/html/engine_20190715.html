@@ -99,32 +99,34 @@ table:</div>
 +—————-+—————-+—————-+—————-+—————-+
 |       1        | Bolt           |     3.00       |    Burbank     |                |
 +—————-+—————-+—————-+—————-+—————-+</p>
-<script type="text/javascript" class="init">
-var table = $('#example').DataTable({
-  "initComplete": function (settings, json) {
-    this.api().columns('.sum').every(function () {
-        var column = this;
-        var sum = column
-           .data()
-           .reduce(function (a, b) {
-               a = parseInt(a, 10);
-               if(isNaN(a)){ a = 0; }
-               b = parseInt(b, 10);
-               if(isNaN(b)){ b = 0; }
-               return a + b;
-           });
-        $(column.footer()).html('Sum: ' + sum);
-    });
-  }
-});
-</script>
-<table id="example" class="display table table-bordered" style="width:100%">
-<thead>
-<tr>
-<th>&nbsp;</th><th> #      </th><th> Description, part#, etc    </th><th> Source         </th><th> Cost      </th>
-</tr>
-</thead>
-<tbody><p>&lt;!– dbRowsParts –&gt;</p>
+  <script type="text/javascript" class="init">
+$(document).ready(function() {
+  var table = $('#example').DataTable({
+    "initComplete": function (settings, json) {
+      this.api().columns('.sum').every(function () {
+          var column = this;
+          var sum = column
+             .data()
+             .reduce(function (a, b) {
+                 a = parseInt(a, 10);
+                 if(isNaN(a)){ a = 0; }
+                 b = parseInt(b, 10);
+                 if(isNaN(b)){ b = 0; }
+                 return a + b;
+             });
+          $(column.footer()).html('Sum: ' + sum);
+      });
+    }
+  });
+  });
+  </script>
+  <table id="example" class="display table table-bordered" style="width:100%">
+  <thead>
+  <tr>
+  <th>&nbsp;</th><th> #      </th><th> Description, part#, etc    </th><th> Source         </th><th> Cost      </th>
+  </tr>
+  </thead>
+  <tbody><p>&lt;!– dbRowsParts –&gt;</p>
 <tr>
 <th>&nbsp;</th><td> 1      </td><td> Axle Nut                   </td><td> Yamabits       </td><td> 8.79      </td>
 </tr>
