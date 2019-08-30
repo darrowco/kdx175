@@ -60,6 +60,7 @@ The End for today
   $(document).ready(function() {
     var table = $('#example').DataTable({
       "paging":   false,
+      "searching":   false,
       "initComplete": function (settings, json) {
         this.api().columns('.sum').every(function () {
             var column = this;
