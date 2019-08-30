@@ -97,11 +97,6 @@ Parts, equipment, supplies, services, etc
         </tr>
     </tfoot>
     <tbody>
-
-<!-- dbRowsParts -->
-
-.. raw:: html
-
     <tr>
     <th>&nbsp;</th><td> 1      </td><td> Axle Nut                   </td><td> Yamabits       </td><td> 8.79      </td>
     </tr>
