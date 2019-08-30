@@ -59,6 +59,7 @@ The End for today
     <script type="text/javascript" class="init">
   $(document).ready(function() {
     var table = $('#example').DataTable({
+      "paging":   false,
       "initComplete": function (settings, json) {
         this.api().columns('.sum').every(function () {
             var column = this;
