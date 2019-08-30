@@ -61,25 +61,6 @@ Parts, equipment, supplies, services, etc
 .. raw:: html
 
     <script type="text/javascript" class="init">
-  $(document).ready(function() {
-    var table = $('#example').DataTable({
-      "initComplete": function (settings, json) {
-        this.api().columns('.sum').every(function () {
-            var column = this;
-            var sum = column
-               .data()
-               .reduce(function (a, b) { 
-                   a = parseInt(a, 10);
-                   if(isNaN(a)){ a = 0; }
-                   b = parseInt(b, 10);
-                   if(isNaN(b)){ b = 0; }
-                   return a + b;
-               });
-            $(column.footer()).html('Sum: ' + sum);
-        });
-      }
-    });
-    });
     </script>
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
