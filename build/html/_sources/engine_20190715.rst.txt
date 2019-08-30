@@ -98,8 +98,7 @@ Parts, equipment, supplies, services, etc
         </tr>
     </tfoot>
     <tbody>
-
-<!-- dbRowsParts -->
+    <!-- dbRowsParts -->
 
 
 .. raw:: html
