@@ -110,7 +110,7 @@ $(document).ready(function() {
                  if(isNaN(b)){ b = 0; }
                  return a + b;
              });
-          $(column.footer()).html('Sum: ' + sum);
+          $(column.footer()).html(sum);
       });
     }
   });
@@ -126,7 +126,7 @@ $(document).ready(function() {
       <tr>
           <th></th>
           <th></th>
-          <th></th>
+          <th>Sum:</th>
           <th></th>
       </tr>
   </tfoot>
