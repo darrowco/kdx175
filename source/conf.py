@@ -43,7 +43,6 @@ html_css_files = [
 
 html_js_files = [
     'https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js',
-    'https://www.jqueryscript.net/demo/Sum-Total-Row-Column-Table-jQuery-tableTotal/jquery.tableTotal.js'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
