@@ -18,8 +18,8 @@ Prep for engine removal_01
 | | by hand                                        |                                                                  |
 +--------------------------------------------------+------------------------------------------------------------------+
 
-Today's video
--------------
+Video of the first part
+-----------------------
 
 This screencast will help you get started or you can
 read our guide below
@@ -31,21 +31,19 @@ read our guide below
     <iframe width="100%" height="350" src="https://www.youtube.com/embed/JKCC4Tcx18A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
-
-
-Quick start
------------
+Removing parts
+--------------
 
 The approach relies on two core technologies: deep learning and photonic time stretch. Deep learning is a type of machine learning, an artificial intelligence technique in which algorithms are “trained” to perform tasks using large volumes of data. In deep learning, algorithms called neural networks are modeled after how the human brain works. Compared to other types of machine learning, deep learning has proven to be especially effective for recognizing and generating images, speech, music and videos.
 
-Figure
-------
+Cleaned engine on bench
+-----------------------
 
 .. figure:: ./_static/images/out.jpeg
    :scale: 50 %
    :alt: map to buried treasure
 
-   This is the caption of the figure (a simple paragraph).
+   The engine turned out to be a Yamaha
 
    The legend consists of all elements after the caption.  In this
    case, the legend consists of this paragraph and the following
