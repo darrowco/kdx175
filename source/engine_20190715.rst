@@ -83,7 +83,7 @@ The End for today
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
     <tr>
-    <th> #      </th><th align="left"> Description, part#, etc    </th><th align="left"> Source         </th><th class="sum"> Cost      </th>
+    <th> #  </th><th align="left"> Description, part#, etc    </th><th align="left"> Source         </th><th class="sum">       Cost</th><th class="sum">  Hours</th>
     </tr>
     </thead>
     <tfoot>
@@ -101,10 +101,13 @@ The End for today
 .. raw:: html
 
     <tr>
-    <td> 1      </td><td> Axle Nut                   </td><td> Yamabits       </td><td align="right"> 8.79      </td>
+    <td> 1  </td><td> The legend consists of all elements after the caption. In this case, the legend consists of this paragraph and the following table                   </td><td> Yamabits       </td><td align="right">       8.79</td><th  align="right">   1.00</th>
     </tr>
     <tr>
-    <td> 2      </td><td> Piston         </td>       <td> Yamaha Dealer       </td><td align="right"> 128.43    </td>
+    <td> 2  </td><td> Piston                     </td><td> Yamaha Dealer       </td><td align="right">     128.43</td><th  align="right">   6.25</th>
+     </tr>
+    <tr>
+    <td> 1  </td><td> My time/Labor              </td><td> Piston pin fitment  </td><td align="right">      30.00</td><th  align="right">       </th>
      </tr>
     </tbody>
     </table>
