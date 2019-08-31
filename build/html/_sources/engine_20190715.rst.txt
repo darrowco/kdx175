@@ -88,7 +88,7 @@ By the Numbers
         <tr>
             <th></th>
             <th></th>
-            <th align="right">Sum:</th>
+            <th align="right">Sums</th>
             <th align="right"></th>
             <th align="right"></th>
         </tr>

@@ -14,8 +14,8 @@ Welcome to Engine Logs
 ----
 
 .. include:: engine_20190715.rst
-  :end-line: 18
-`more ... <engine_20190715.html>`__
+  :start-line: 7
+  :end-line: 20
 
 ----
 
