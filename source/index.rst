@@ -34,7 +34,6 @@ Prep for engine removal_00
 .. include:: engine_20190715.rst
   :start-line: 7
   :end-line: 20
-Click here to see the `entire Log Entry <engine_20190715.html>`__
 
 ----
 
