@@ -51,8 +51,8 @@ Figure
    case, the legend consists of this paragraph and the following
    table:
 
-The End for today
------------------
+By the Numbers   
+--------------
 
 
 .. raw:: html
@@ -111,7 +111,7 @@ The End for today
     <td> 1  </td><td> My time/Labor to fit pins  </td><td>                                                  </td><td align="right">           </td><th  align="right">   2.00</th>
      </tr>
     <tr>
-    <td> 2  </td><td> Bore/hone block            </td><td> Valley Machine                                   </td><td align="right">     300.00</td><th  align="right">   --- </th>
+    <td> 2  </td><td> Bore/hone block            </td><td> Valley Machine                                   </td><td align="right">     300.00</td><th  align="right">   1.00</th>
      </tr>
     </tbody>
     </table>
