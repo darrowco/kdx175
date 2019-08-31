@@ -31,7 +31,7 @@ Prep for engine removal
 
 
 +--------------------------------------------------+--------------------------------------------+
-| Summary of activities - `Full details <engine_20190803.html>`__                               |
+| Summary of activities - `Full details <engine_20190715.html>`__                               |
 +==================================================+============================================+
 | * Remove all components                          | .. figure:: ./_static/images/extract.jpeg  |
 | * Degrease                                       |    :align: right                           |
