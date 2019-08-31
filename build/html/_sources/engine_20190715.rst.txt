@@ -83,7 +83,7 @@ The End for today
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
     <tr>
-    <th> #      </th><th> Description, part#, etc    </th><th> Source         </th><th class="sum"> Cost      </th>
+    <th> #      </th><th align="left"> Description, part#, etc    </th><th align="left"> Source         </th><th class="sum"> Cost      </th>
     </tr>
     </thead>
     <tfoot>
