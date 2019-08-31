@@ -1,13 +1,9 @@
-
 Prep for engine removal
 =======================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-
-
 
 +--------------------------------------------------+--------------------------------------------+
 | Summary of activities - `Full details <engine_20190715.html>`__                               |
@@ -19,21 +15,8 @@ Prep for engine removal
 | * Dry                                            |                                            |
 |                                                  |    Finding the floor jack                  |
 | | The steam cleaner is offline so do it          |                                            |
-| | by hand                                        |                                            |
-|                                                  |    Finding the floor jack                  |
+| | by hand                                        |    Finding the floor jack                  |
 +--------------------------------------------------+--------------------------------------------+
-
-
-
-
-
-
-
-
-
-
-
-
 
 Today's video
 -------------

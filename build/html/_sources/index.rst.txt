@@ -29,7 +29,8 @@ Indices and tables
 ----
 
 .. include:: engine_20190715.rst
-  :end-line: 26
+  :start-line: 7
+  :end-line: 19
 `Complete details of this log entry ... <engine_20190715.html>`__
 
 ----
