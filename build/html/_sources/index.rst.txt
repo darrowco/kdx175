@@ -32,11 +32,11 @@ Prep for engine removal_00
 ==========================
 
 Summary of activities - `Full details <engine_20190715.html>`__
+---------------------------------------------------------------
 
 .. include:: engine_20190715.rst
   :start-line: 7
   :end-line: 20
-`Complete details of this log entry ... <engine_20190715.html>`__
 
 ----
 
