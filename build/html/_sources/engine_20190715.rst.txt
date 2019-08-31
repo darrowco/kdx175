@@ -1,7 +1,7 @@
 
 Prep for engine removal
 =======================
-	
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -9,14 +9,31 @@ Prep for engine removal
 
 
 
-+==================================================+============================================+
++--------------------------------------------------+--------------------------------------------+
 | Summary of activities - `Full details <engine_20190715.html>`__                               |
 +==================================================+============================================+
-| Item 1                                           |                                            |
-| Item 2                                           |                                            |
-| Item 3                                           |                                            |
-| Item 3                                           |                                            |
+| * Remove all components                          | .. figure:: ./_static/images/extract.jpeg  |
+| * Degrease                                       |    :align: right                           |
+| * Wire wheel and/or Sanding                      |    :figwidth: 300px                        |
+| * Chemical Degrease                              |    :target: ./_static/images/extract.jpeg  |
+| * Dry                                            |                                            |
+|                                                  |    Finding the floor jack                  |
+| | The steam cleaner is offline so do it          |                                            |
+| | by hand                                        |                                            |
+|                                                  |    Finding the floor jack                  |
 +--------------------------------------------------+--------------------------------------------+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Today's video
 -------------
@@ -67,7 +84,7 @@ The End for today
             var column = this;
             var sum = column
                .data()
-               .reduce(function (a, b) { 
+               .reduce(function (a, b) {
                    a = parseFloat(a, 10);
                    if(isNaN(a)){ a = 0; }
                    b = parseFloat(b, 10);
@@ -108,6 +125,3 @@ The End for today
      </tr>
     </tbody>
     </table>
-
-
-
