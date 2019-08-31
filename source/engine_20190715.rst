@@ -6,7 +6,7 @@ Prep for engine removal_01
    :caption: Contents:
 
 +--------------------------------------------------+--------------------------------------------+
-| Summary of activities - Click here for `Full Details <engine_20190715.html>`__                |
+| Summary of activities                                                                         |
 +==================================================+============================================+
 | * Remove all components                          | .. figure:: ./_static/images/extract.jpeg  |
 | * Degrease                                       |    :align: right                           |
