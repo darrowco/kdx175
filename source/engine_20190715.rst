@@ -92,6 +92,7 @@ The End for today
             <th></th>
             <th align="right">Sum:</th>
             <th align="right"></th>
+            <th align="right"></th>
         </tr>
     </tfoot>
     <tbody>
