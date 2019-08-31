@@ -1,4 +1,4 @@
-Prep for engine removal_01 poi
+Prep for engine removal_01
 ==========================
 
 .. toctree::
