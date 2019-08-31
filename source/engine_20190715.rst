@@ -6,7 +6,7 @@ Prep for engine removal_01
    :caption: Contents:
 
 +--------------------------------------------------+------------------------------------------------------------------+
-| Aug-03-2019                                      |Click here to see the `entire Log Entry <engine_20190715.html>`__ |
+| Click here to see the `entire Log Entry <engine_20190715.html>`__                                                   |
 +==================================================+==================================================================+
 | * Remove all components                          | .. figure:: ./_static/images/extract.jpeg                        |
 | * Degrease                                       |    :align: right                                                 |
