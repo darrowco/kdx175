@@ -1,21 +1,27 @@
 :orphan:
 
-Welcome to Electrical Logs
-==========================
+Electrical Logs
+===============
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+Aug-03-2019 --- Rewire the engine
+---------------------------------
+
 .. include:: engine_20190803.rst
-  :end-line: 18
-`more ... <engine_20190803.html>`__
+  :start-line: 7
+  :end-line: 20
 
 ----
 
-.. include:: engine_20190801.rst
-  :end-line: 18
-`more ... <engine_20190801.html>`__
+Jul-15-2019 --- Cut new wires to length
+---------------------------------------
+
+.. include:: engine_20190715.rst
+  :start-line: 7
+  :end-line: 20
 
 ----
 
