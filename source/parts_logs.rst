@@ -1,7 +1,7 @@
 :orphan:
 
-Parts Log
-=========
+Parts & Labor Log
+=================
 
 .. toctree::
    :maxdepth: 2
