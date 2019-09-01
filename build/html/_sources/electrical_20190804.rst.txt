@@ -1,21 +1,21 @@
-Rewire Engine
-=============
+Prep for engine removal_01
+==========================
 
 .. contents::
    :local:
    :depth: 1
 
 +--------------------------------------------------+------------------------------------------------------------------+
-| Click here to see the `entire Log Entry <electrical_20190804.html>`__                                                   |
+| Click here to see the `entire Log Entry <engine_20190715.html>`__                                                   |
 +==================================================+==================================================================+
-| * Remove gas tank                                | .. figure:: ./_static/images/mess.jpeg                           |
-| * Drain oil tanks, remove                        |    :align: right                                                 |
-| * Block bike to stay vertical                    |    :figwidth: 300px                                              |
-| * remove the 3 main engine bolts                 |    :target: ./_static/images/mess.jpeg                           |
-| * lift                                           |                                                                  |
-|                                                  |    This is before cleaning                                       |
-| | One person can do this in a crouched position  |                                                                  |
-| | if care is used                                |                                                                  |
+| * Remove all components                          | .. figure:: ./_static/images/extract.jpeg                        |
+| * Degrease                                       |    :align: right                                                 |
+| * Wire wheel and/or Sanding                      |    :figwidth: 300px                                              |
+| * Chemical Degrease                              |    :target: ./_static/images/extract.jpeg                        |
+| * Dry                                            |                                                                  |
+|                                                  |    Finding the floor jack                                        |
+| | The steam cleaner is offline so do it          |                                                                  |
+| | by hand                                        |                                                                  |
 +--------------------------------------------------+------------------------------------------------------------------+
 
 Video of the first part
@@ -100,8 +100,16 @@ By the Numbers
 .. raw:: html
 
     <tr>
-    <td> 1  </td><td> Fuse                   t   </td><td> Fuse Store                                                 </td><td align="right">       9.49</td><th  align="right">   3.50</th>
+    <td> 1  </td><td> Axle Nut                   </td><td> <a href="https://yambits.co.uk/">Yamabits<a>               </td><td align="right">       8.79</td><th  align="right">   1.00</th>
     </tr>
+    <tr>
+    <td> 2  </td><td> Piston                     </td><td> Yamaha Dealer                                    </td><td align="right">     128.43</td><th  align="right">   6.25</th>
+     </tr>
+    <tr>
+    <td> 1  </td><td> My time/Labor to fit pins  </td><td>                                                  </td><td align="right">           </td><th  align="right">   2.00</th>
+     </tr>
+    <tr>
+    <td> 1  </td><td> Bore/hone block            </td><td> Valley Machine                                   </td><td align="right">     300.00</td><th  align="right">   1.00</th>
+     </tr>
     </tbody>
     </table>
-
