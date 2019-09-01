@@ -15,7 +15,7 @@ Welcome to KDX175's documentation!
    electrical_logs
    parts_logs
 
-Jul-15-2019 --- Prep for engine removal_00
+Jul-15-2019 --- Prep for engine removal_88
 ------------------------------------------
 
 .. include:: engine_20190715.rst
@@ -24,7 +24,7 @@ Jul-15-2019 --- Prep for engine removal_00
 
 ----
 
-Jul-15-2019 --- Prep for engine removal_00
+Jul-15-2019 --- Prep for engine removal_99
 ------------------------------------------
 
 .. include:: engine_20190715.rst
