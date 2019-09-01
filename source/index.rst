@@ -15,16 +15,12 @@ Welcome to KDX175's documentation!
    electrical_logs
    parts_logs
 
-Indices and tables
-==================
+Jul-15-2019 --- Prep for engine removal_00
+------------------------------------------
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-.. include:: engine_20190803.rst
-  :end-line: 26
-`Complete details of this log entry ... <engine_20190803.html>`__
+.. include:: engine_20190715.rst
+  :start-line: 7
+  :end-line: 20
 
 ----
 
