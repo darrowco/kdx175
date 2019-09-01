@@ -11,8 +11,7 @@ Aug-04-2019 --- Rewire the engine
 ---------------------------------
 
 .. include:: electrical_20190804.rst
-  :start-line: 7
-  :end-line: 20
+    :start-after: <!-- dbRowsParts -->
 
 ----
 
