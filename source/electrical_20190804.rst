@@ -1,5 +1,5 @@
-Rewire Engine
-=============
+Rewire Engines
+==============
 
 .. contents::
    :local:
