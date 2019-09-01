@@ -1,9 +1,9 @@
 Prep for engine removal_01
 ==========================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+.. contents::
+   :local:
+   :depth: 1
 
 +--------------------------------------------------+------------------------------------------------------------------+
 | Click here to see the `entire Log Entry <engine_20190715.html>`__                                                   |
