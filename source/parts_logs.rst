@@ -51,6 +51,8 @@ Parts Log
 
 .. include:: engine_20190715.rst
     :start-after: <!-- dbRowsParts -->
+    :end-before: <!-- dbRowsPartsEnd -->
 .. include:: electrical_20190804.rst
     :start-after: <!-- dbRowsParts -->
+    :end-before: <!-- dbRowsPartsEnd -->
 

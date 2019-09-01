@@ -89,6 +89,9 @@ By the Numbers
     <tr>
     <td> 1  </td><td> roll of #12 solid copper   </td><td> <a href="https://www.wireandcableyourway.com/bare-copper/">Wire & Cable</a></td><td align="right">      22.95</td><th  align="right">   3.00</th>
     </tr>
+
+
+.. raw:: html
+
     </tbody>
     </table>
-
