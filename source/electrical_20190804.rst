@@ -8,28 +8,15 @@ Rewire Engines
 +--------------------------------------------------+------------------------------------------------------------------+
 | Click here to see the `entire Log Entry <electrical_20190804.html>`__                                               |
 +==================================================+==================================================================+
-| * Remove gas tank                                | .. figure:: ./_static/images/mess.jpeg                           |
-| * Drain oil tanks, remove                        |    :align: right                                                 |
-| * Block bike to stay vertical                    |    :figwidth: 300px                                              |
-| * remove the 3 main engine bolts                 |    :target: ./_static/images/mess.jpeg                           |
-| * lift                                           |                                                                  |
+| * Remove wires                                   | .. figure:: ./_static/images/wiring.png                          |
+| * Install new wires                              |    :align: right                                                 |
+| * Insert fuses                                   |    :figwidth: 300px                                              |
+| * Connect battery                                |    :target: ./_static/images/mess.jpeg                           |
+| * test                                           |                                                                  |
 |                                                  |    This is before cleaning                                       |
-| | One person can do this in a crouched position  |                                                                  |
-| | if care is used                                |                                                                  |
+| | Avoid shorting wires or creating pinch points  |                                                                  |
+| |                                                |                                                                  |
 +--------------------------------------------------+------------------------------------------------------------------+
-
-Video of the first part
------------------------
-
-This screencast will help you get started or you can
-read our guide below
-
-
-.. raw:: html
-
-    <div style="text-align: center; margin-bottom: 2em;">
-    <iframe width="100%" height="350" src="https://www.youtube.com/embed/JKCC4Tcx18A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
 
 Removing parts
 --------------
