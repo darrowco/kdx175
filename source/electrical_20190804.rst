@@ -1,12 +1,12 @@
-Prep for engine removal_01
-==========================
+Rewire Engine
+=============
 
 .. contents::
    :local:
    :depth: 1
 
 +--------------------------------------------------+------------------------------------------------------------------+
-| Click here to see the `entire Log Entry <engine_20190715.html>`__                                                   |
+| Click here to see the `entire Log Entry <electrical_20190804.html>`__                                                   |
 +==================================================+==================================================================+
 | * Remove all components                          | .. figure:: ./_static/images/extract.jpeg                        |
 | * Degrease                                       |    :align: right                                                 |
