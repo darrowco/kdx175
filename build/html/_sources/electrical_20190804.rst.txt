@@ -6,7 +6,7 @@ Rewire Engines
    :depth: 1
 
 +--------------------------------------------------+------------------------------------------------------------------+
-| Click here to see the `entire Log Entry <electrical_20190804.html>`__                                                   |
+| Click here to see the `entire Log Entry <electrical_20190804.html>`__                                               |
 +==================================================+==================================================================+
 | * Remove gas tank                                | .. figure:: ./_static/images/mess.jpeg                           |
 | * Drain oil tanks, remove                        |    :align: right                                                 |
