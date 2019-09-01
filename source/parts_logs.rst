@@ -1,7 +1,7 @@
 :orphan:
 
-Welcome to Parts Log
-====================
+Parts Log
+=========
 
 .. toctree::
    :maxdepth: 2

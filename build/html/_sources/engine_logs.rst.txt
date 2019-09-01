@@ -1,7 +1,7 @@
 :orphan:
 
-Welcome to Engine Logs
-======================
+Engine Logs
+===========
 
 .. toctree::
    :maxdepth: 2
