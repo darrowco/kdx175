@@ -102,6 +102,10 @@ By the Numbers
     <tr>
     <td> 1  </td><td> no parts or tools bought   </td><td>                                                            </td><td align="right">           </td><th  align="right">       </th>
     </tr>
+    <!-- dbRowsPartsEnd -->
+
+
+.. raw:: html
+
     </tbody>
     </table>
-
