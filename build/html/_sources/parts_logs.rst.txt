@@ -56,3 +56,7 @@ Parts Log
     :start-after: <!-- dbRowsParts -->
     :end-before: <!-- dbRowsPartsEnd -->
 
+.. raw:: html
+
+    </tbody>
+    </table>
