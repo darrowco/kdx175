@@ -1,5 +1,8 @@
 :orphan:
 
+Engine Logs
+===========
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
