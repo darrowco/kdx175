@@ -1,9 +1,7 @@
 Aug-03-2019 — Remove Engine03
 =============================
 
-.. contents::
-   :local:
-   :depth: 1
+
 
 
 
@@ -26,7 +24,11 @@ Aug-03-2019 — Remove Engine03
     <tr>
     <td> 1  </td><td>
 
-    no parts or tools bought
+.. contents::
+   :local:
+   :depth: 1
+
+.. raw:: html
 
     </td>
     </tr>
