@@ -5,9 +5,15 @@ Prep for engine removal_01
    :local:
    :depth: 1
 
+.. raw:: html
+
+    <!--
+
+    Click here to see the `entire Log Entry <engine_20190715.html>`__                                                   
+
+    -->
+
 +--------------------------------------------------+------------------------------------------------------------------+
-| Click here to see the `entire Log Entry <engine_20190715.html>`__                                                   |
-+==================================================+==================================================================+
 | * Remove all components                          | .. figure:: ./_static/images/extract.jpeg                        |
 | * Degrease                                       |    :align: right                                                 |
 | * Wire wheel and/or Sanding                      |    :figwidth: 300px                                              |
