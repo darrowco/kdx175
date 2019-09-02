@@ -24,6 +24,7 @@ All Photos
         {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
         {"filename": "wiring.png", "aspectRatio": "1.4900"},
       ];
+      imageData.sort();
       var pig = new Pig(imageData, {
         urlForSize: function(filename, size) {
         return '/home/darrowco/docs/kdx175/source/_static/images/' + 'img/' + size + '/' + filename;
