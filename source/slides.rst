@@ -16,12 +16,12 @@ Slides
     <script type="text/javascript" src="https://raw.githubusercontent.com/jmodjeska/pigg/master/js/pig.js"></script>
     <script type="text/javascript">
       var imageData = [
-        {"filename": "tools.png", "aspectRatio": "1.3300"},
-        {"filename": "out.jpeg", "aspectRatio": "1.7700"},
-        {"filename": "extract.jpeg", "aspectRatio": "1.3300"},
-        {"filename": "spokes.jpeg", "aspectRatio": "1.7700"},
-        {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
-        {"filename": "wiring.png", "aspectRatio": "1.4900"},
+        {"filename": "./_static/images/tools.png", "aspectRatio": "1.3300"},
+        {"filename": "./_static/images/out.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "./_static/images/extract.jpeg", "aspectRatio": "1.3300"},
+        {"filename": "./_static/images/spokes.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "./_static/images/mess.jpeg", "aspectRatio": "1.4900"},
+        {"filename": "./_static/images/wiring.png", "aspectRatio": "1.4900"},
       ];
       var pig = new Pig(imageData, {
         urlForSize: function(filename, size) {
