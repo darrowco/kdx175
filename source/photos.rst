@@ -44,10 +44,10 @@ Photos
       imageData.sort(compare);
       var pig = new Pig(imageData, {
         urlForSize: function(filename, size) {
-        return 'http://z76-rtd.com:8000/docs/kdx175/en/latest/_static/images/images/' + 'img/' + size + '/' + filename;
+        return 'http://z76-rtd.com:8000/docs/kdx175/en/latest/_static/images/' + 'img/' + size + '/' + filename;
       },
       addAnchorTag: true,
-      anchorTargetDir: "http://z76-rtd.com:8000/docs/kdx175/en/latest/_static/images/images/",
+      anchorTargetDir: "http://z76-rtd.com:8000/docs/kdx175/en/latest/_static/images/",
       anchorClass: "swipebox"
       }).enable();
       ;( function( $ ) {
