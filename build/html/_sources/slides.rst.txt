@@ -25,14 +25,15 @@ Slides
       ];
       var pig = new Pig(imageData, {
         urlForSize: function(filename, size) {
-        return '/home/darrowco/docs/kdx175/source/_static/images/' + 'img/' + size + '/' + filename;
+        return 'http://z76-rtd.com:8000/docs/kdx175/en/latest/_static/images/images/' + 'img/' + size + '/' + filename;
       },
       addAnchorTag: true,
-      anchorTargetDir: "/home/darrowco/docs/kdx175/source/_static/images/",
+      anchorTargetDir: "http://z76-rtd.com:8000/docs/kdx175/en/latest/_static/images/images/",
       anchorClass: "swipebox"
       }).enable();
       ;( function( $ ) {
       	$( '.swipebox' ).swipebox();
       } )( jQuery );
     </script>
+
 
