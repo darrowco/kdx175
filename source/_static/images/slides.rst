@@ -5,9 +5,6 @@ Slides
    :local:
    :depth: 1
 
-
-
-
 .. raw:: html
 
     <div id="pig">
