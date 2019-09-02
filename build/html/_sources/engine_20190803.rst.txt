@@ -24,7 +24,9 @@ Aug-03-2019 — Remove Engine03
     </tfoot>
     <tbody>
     <tr>
-    <td> 1  </td><td> no parts or tools bought   </td>
+    <td> 1  </td><td>
+no parts or tools bought
+    </td>
     </tr>
     </tbody>
     </table>
