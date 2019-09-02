@@ -11,7 +11,7 @@ Aug-03-2019 --- Remove Engine
 -----------------------------
 
 .. include:: engine_20190803.rst
-  :start-line: 0
+  :start-line: 7
   :end-line: 20
 
 ----
@@ -20,7 +20,7 @@ Jul-15-2019 --- Prep for engine removal_99
 ------------------------------------------
 
 .. include:: engine_20190715.rst
-  :start-line: 0
+  :start-line: 7
   :end-line: 20
 
 ----
