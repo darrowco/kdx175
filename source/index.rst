@@ -14,7 +14,6 @@ Welcome to KDX175's documentation!
    engine_logs
    electrical_logs
    parts_logs
-   slides
    _static/images/slides
 
 Aug-03-2019 --- Remove Engine
