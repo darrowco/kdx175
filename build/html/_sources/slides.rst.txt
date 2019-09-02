@@ -13,7 +13,8 @@ Slides
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css">
     <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"></script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/jmodjeska/pigg/master/js/pig.js"></script>
+    <script type="text/javascript" src="https://i.modjeska.us/js/pig.js"></script>
+
     <script type="text/javascript">
       var imageData = [
         {"filename": "./_static/images/images/tools.png", "aspectRatio": "1.3300"},
