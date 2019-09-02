@@ -28,7 +28,7 @@ Jul-15-2019 --- Prep for engine removal
 ---------------------------------------
 
 .. include:: engine_20190715.rst
-  :start-line: 7
+  :start-line: 0
   :end-line: 20
 
 ----
