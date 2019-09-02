@@ -52,7 +52,6 @@ Cleaned engine on bench
 By the Numbers   
 --------------
 
-
 .. raw:: html
 
     <script type="text/javascript" class="init">
