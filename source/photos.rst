@@ -24,6 +24,7 @@ Photos
         {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
         {"filename": "wiring.png", "aspectRatio": "1.4900"},
       ];
+      imageData.sort();
       var pig = new Pig(imageData, {
         urlForSize: function(filename, size) {
         return 'http://z76-rtd.com:8000/docs/kdx175/en/latest/_static/images/images/' + 'img/' + size + '/' + filename;
