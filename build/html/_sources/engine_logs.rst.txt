@@ -12,10 +12,6 @@ Engine Logs
   :start-line: 1
   :end-line: 2
 
-.. include:: engine_20190803.rst
-  :start-line: 7
-  :end-line: 20
-
 ----
 
 Jul-15-2019 --- Prep for engine removal_99
