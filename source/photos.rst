@@ -16,6 +16,22 @@ Photos
     <script type="text/javascript" src="https://i.modjeska.us/js/pig.js"></script>
 
     <script type="text/javascript">
+
+
+
+    function compare(a, b) {
+      const filenameA = a.filename.toUpperCase();
+      const filenameB = b.filename.toUpperCase();
+
+      let comparison = 0;
+      if (filenameA > filenameB) {
+        comparison = 1;
+      } else if (filenameA < filenameB) {
+        comparison = -1;
+      }
+      return comparison;
+    }
+
       var imageData = [
         {"filename": "tools.png", "aspectRatio": "1.3300"},
         {"filename": "out.jpeg", "aspectRatio": "1.7700"},
@@ -24,7 +40,8 @@ Photos
         {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
         {"filename": "wiring.png", "aspectRatio": "1.4900"},
       ];
-      imageData.sort();
+
+      imageData.sort(compare);
       var pig = new Pig(imageData, {
         urlForSize: function(filename, size) {
         return 'http://z76-rtd.com:8000/docs/kdx175/en/latest/_static/images/images/' + 'img/' + size + '/' + filename;
