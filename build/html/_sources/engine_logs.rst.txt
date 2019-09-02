@@ -7,8 +7,6 @@ Engine Logs
    :maxdepth: 2
    :caption: Contents:
 
-Aug-03-2019 --- Remove Engine
------------------------------
 
 .. include:: engine_20190803.rst
   :start-line: 1
