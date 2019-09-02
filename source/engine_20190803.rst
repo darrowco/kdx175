@@ -8,12 +8,12 @@ Aug-03-2019 — Remove Engine03
 +--------------------------------------------------+------------------------------------------------------------------+
 | Click here to see the `entire Log Entry <engine_20190803.html>`__                                                   |
 +==================================================+==================================================================+
-| * Remove gas tank                                | .. figure:: ./_static/images/mess.jpeg                           |
-| * Drain oil tanks, remove                        |    :align: right                                                 |
-| * Block bike to stay vertical                    |    :figwidth: 300px                                              |
-| * remove the 3 main engine bolts                 |    :target: ./_static/images/mess.jpeg                           |
-| * lift                                           |                                                                  |
-|                                                  |    This is before cleaning                                       |
+| | Preperation to remove the engine started.      | .. figure:: ./_static/images/mess.jpeg                           |
+| | All fluids were drained, wiring disconnected   |    :align: right                                                 |
+| | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                              |
+| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/mess.jpeg                           |
+| | so it was cut.                                 |                                                                  |
+| |                                                |    This is before cleaning                                       |
 | | One person can do this in a crouched position  |                                                                  |
 | | if care is used                                |                                                                  |
 +--------------------------------------------------+------------------------------------------------------------------+
