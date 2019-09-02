@@ -5,9 +5,10 @@ Aug-03-2019 — Remove Engine03
    :local:
    :depth: 1
 
- Click here to see the `entire Log Entry <engine_20190803.html>`__                                                   
 
-+==================================================+==================================================================+
+  Click here to see the `entire Log Entry <engine_20190803.html>`__                                                   
+
++--------------------------------------------------+------------------------------------------------------------------+
 | | Finally finished exams and know have time to   | .. figure:: ./_static/images/mess.jpeg                           |
 | | get back to work on the KDX. Engine removal    |    :align: right                                                 |
 | | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                              |
