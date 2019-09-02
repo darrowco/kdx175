@@ -1,20 +1,61 @@
 Aug-03-2019 — Remove Engine03
 =============================
 
-+--------------------------------------------------+------------------------------------------------------------------+
-| ttttttt                                                                                                             |
-+--------------------------------------------------+------------------------------------------------------------------+
-|                                                  |                                                                  |
-| .. contents::                                    |                                                                  |
-|  :local                                          |                                                                  |
-|  :depth: 1                                       |                                                                  |
-|                                                  |                                                                  |
-+--------------------------------------------------+------------------------------------------------------------------|
-
 .. contents::
    :local:
    :depth: 1
 
+
+
+
+.. raw:: html
+
+    <table id="example" class="display table table-bordered" style="width:100%">
+    <thead>
+    <tr>
+    <th> left  </th><th> Right</th>
+    </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+    <td> 1  </td><td> no parts or tools bought   </td>
+    </tr>
+    </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++--------------------------------------------------+------------------------------------------------------------------+
+| Click here to see the `entire Log Entry <engine_20190803.html>`__                                                   |
++==================================================+==================================================================+
+| * Remove gas tank                                | .. figure:: ./_static/images/mess.jpeg                           |
+| * Drain oil tanks, remove                        |    :align: right                                                 |
+| * Block bike to stay vertical                    |    :figwidth: 300px                                              |
+| * remove the 3 main engine bolts                 |    :target: ./_static/images/mess.jpeg                           |
+| * lift                                           |                                                                  |
+|                                                  |    This is before cleaning                                       |
+| | One person can do this in a crouched position  |                                                                  |
+| | if care is used                                |                                                                  |
++--------------------------------------------------+------------------------------------------------------------------+
 
 Video of the first part
 -----------------------
