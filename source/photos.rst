@@ -30,14 +30,12 @@ Photos
       }
 
       var imageData = [
-
-.. include:: _static/images/index.html
-  :start-line: 33
-  :end-line: 38
-
-
-.. raw:: html
-
+        {"filename": "extract.jpeg", "aspectRatio": "1.3300"},
+        {"filename": "spokes.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "wiring.png", "aspectRatio": "1.4900"},
+        {"filename": "tools.png", "aspectRatio": "1.3300"},
+        {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
+        {"filename": "out.jpeg", "aspectRatio": "1.7700"},
       ];
       imageData.sort(compare);
       var pig = new Pig(imageData, {
