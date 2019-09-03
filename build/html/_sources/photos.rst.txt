@@ -6,7 +6,7 @@ Photos
    :depth: 1
 
 .. include:: _static/images/index.html
-  :start-line: 7
-  :end-line: 48
+  :start-line: 8
+  :end-line: 53
 
 
