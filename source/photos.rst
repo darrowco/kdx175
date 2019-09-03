@@ -7,17 +7,14 @@ Photos
 
 .. raw:: html
 
-
-
-
-
     <div id="pig">
       <img id='gsPreviewImg'>
     </div>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css">
     <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"></script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/jmodjeska/pigg/master/js/pig.js"></script>
+    <script type="text/javascript" src="https://i.modjeska.us/js/pig.js"></script>
+
     <script type="text/javascript">
 
       function compare(a, b) {
@@ -33,13 +30,14 @@ Photos
       }
 
       var imageData = [
-        {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
-        {"filename": "out.jpeg", "aspectRatio": "1.7700"},
-        {"filename": "spokes.jpeg", "aspectRatio": "1.7700"},
-        {"filename": "wiring.png", "aspectRatio": "1.4900"},
         {"filename": "tools.png", "aspectRatio": "1.3300"},
+        {"filename": "out.jpeg", "aspectRatio": "1.7700"},
         {"filename": "extract.jpeg", "aspectRatio": "1.3300"},
+        {"filename": "spokes.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
+        {"filename": "wiring.png", "aspectRatio": "1.4900"},
       ];
+
       imageData.sort(compare);
       var pig = new Pig(imageData, {
         urlForSize: function(filename, size) {
@@ -53,8 +51,5 @@ Photos
       	$( '.swipebox' ).swipebox();
       } )( jQuery );
     </script>
-
-
-
 
 
