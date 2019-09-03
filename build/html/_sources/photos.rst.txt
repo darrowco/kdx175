@@ -9,5 +9,6 @@ Photos
 .. include:: _static/images/index.html
   :start-line: 8
   :end-line: 54
-  :literal:
+
+
 
