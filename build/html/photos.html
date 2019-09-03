@@ -44,7 +44,16 @@
   <div class="section" id="photos">
 <h1>Photos<a class="headerlink" href="#photos" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><p>&lt;script type=”text/javascript”&gt;</p>
+<div><dl class="docutils">
+<dt>&lt;div id=”pig”&gt;</dt>
+<dd>&lt;img id=’gsPreviewImg’&gt;</dd>
+</dl>
+<p>&lt;/div&gt;
+&lt;link rel=”stylesheet” href=”<a class="reference external" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css">https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css</a>”&gt;
+&lt;script src=”<a class="reference external" href="https://code.jquery.com/jquery-2.0.3.min.js">https://code.jquery.com/jquery-2.0.3.min.js</a>”&gt;&lt;/script&gt;
+&lt;script src=”<a class="reference external" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js">https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js</a>”&gt;&lt;/script&gt;
+&lt;script type=”text/javascript” src=”<a class="reference external" href="https://raw.githubusercontent.com/jmodjeska/pigg/master/js/pig.js">https://raw.githubusercontent.com/jmodjeska/pigg/master/js/pig.js</a>”&gt;&lt;/script&gt;
+&lt;script type=”text/javascript”&gt;</p>
 <blockquote>
 <div><dl class="docutils">
 <dt>function compare(a, b) {</dt>
@@ -82,8 +91,13 @@ return ‘_static/images/’ + ‘img/’ + size + ‘/’ + filename;</div></bl
 addAnchorTag: true,
 anchorTargetDir: “_static/images/”,
 anchorClass: “swipebox”
-}).enable();</p>
+}).enable();
+;( function( $ ) {</p>
+<blockquote>
+<div>$( ‘.swipebox’ ).swipebox();</div></blockquote>
+<p>} )( jQuery );</p>
 </div></blockquote>
+<p>&lt;/script&gt;</p>
 </div></blockquote>
 </div>
 
