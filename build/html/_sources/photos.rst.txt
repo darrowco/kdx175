@@ -8,6 +8,6 @@ Photos
 
 .. include:: _static/images/index.html
   :start-line: 8
-  :end-line: 50
+  :end-line: 51
 
 
