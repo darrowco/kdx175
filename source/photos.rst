@@ -5,7 +5,7 @@ Photos
    :local:
    :depth: 1
 
-.. include:: engine_20190803.rst
+.. include:: _static/images/index.html
   :start-line: 8
   :end-line: 55
 

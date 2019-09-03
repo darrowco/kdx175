@@ -43,65 +43,50 @@
             
   <div class="section" id="photos">
 <h1>Photos<a class="headerlink" href="#photos" title="Permalink to this headline">¶</a></h1>
-<div class="contents local topic" id="contents">
-<ul class="simple">
-<li><a class="reference internal" href="#ideo-of-the-first-part" id="id3">ideo of the first part</a></li>
-<li><a class="reference internal" href="#removing-parts" id="id4">Removing parts</a></li>
-<li><a class="reference internal" href="#cleaned-engine-on-bench" id="id5">Cleaned engine on bench</a></li>
-</ul>
+<div id="pig">
+  <img id='gsPreviewImg'>
 </div>
-<blockquote>
-<div><p>&lt;!–</p>
-<p>Click here to see the <a class="reference external" href="engine_20190803.html">entire Log Entry</a></p>
-<p class="attribution">&mdash;&gt;</p>
-</div></blockquote>
-<table border="1" class="docutils">
-<colgroup>
-<col width="43%" />
-<col width="57%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><div class="first last line-block">
-<div class="line">Finally finished exams and know have time to</div>
-<div class="line">get back to work on the KDX. Engine removal</div>
-<div class="line">and necesarry parts such as the seat and tank</div>
-<div class="line">removed. One of the engine bolts was rusted</div>
-<div class="line">so it was cut.</div>
-<div class="line"><br /></div>
-<div class="line">One person can do this in a crouched position</div>
-<div class="line">if care is used</div>
-</div>
-</td>
-<td><div class="first last figure align-right" id="id1" style="width: 300px">
-<a class="reference external image-reference" href="./_static/images/mess.jpeg"><img alt="_images/mess.jpeg" src="_images/mess.jpeg" /></a>
-<p class="caption"><span class="caption-text">This is before cleaning</span></p>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="section" id="ideo-of-the-first-part">
-<h2><a class="toc-backref" href="#id3">ideo of the first part</a><a class="headerlink" href="#ideo-of-the-first-part" title="Permalink to this headline">¶</a></h2>
-<p>This screencast will help you get started or you can
-read our guide below</p>
-<div style="text-align: center; margin-bottom: 2em;">
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/JKCC4Tcx18A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div></div>
-<div class="section" id="removing-parts">
-<h2><a class="toc-backref" href="#id4">Removing parts</a><a class="headerlink" href="#removing-parts" title="Permalink to this headline">¶</a></h2>
-<p>The approach relies on two core technologies: deep learning and photonic time stretch. Deep learning is a type of machine learning, an artificial intelligence technique in which algorithms are “trained” to perform tasks using large volumes of data. In deep learning, algorithms called neural networks are modeled after how the human brain works. Compared to other types of machine learning, deep learning has proven to be especially effective for recognizing and generating images, speech, music and videos.</p>
-</div>
-<div class="section" id="cleaned-engine-on-bench">
-<h2><a class="toc-backref" href="#id5">Cleaned engine on bench</a><a class="headerlink" href="#cleaned-engine-on-bench" title="Permalink to this headline">¶</a></h2>
-<div class="figure" id="id2">
-<a class="reference internal image-reference" href="_images/out.jpeg"><img alt="map to buried treasure" src="_images/out.jpeg" style="width: 640.0px; height: 360.0px;" /></a>
-<p class="caption"><span class="caption-text">The engine turned out to be a Yamaha</span></p>
-<div class="legend">
-The legend consists of all elements after the caption.  In this
-case, the legend consists of this paragraph and the following</div>
-</div>
-</div>
-</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css">
+<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"></script>
+<script type="text/javascript" src="https://i.modjeska.us/js/pig.js"></script>
+
+<script type="text/javascript">
+
+  function compare(a, b) {
+    const filenameA = a.filename.toUpperCase();
+    const filenameB = b.filename.toUpperCase();
+    let comparison = 0;
+    if (filenameA > filenameB) {
+      comparison = 1;
+    } else if (filenameA < filenameB) {
+      comparison = -1;
+    }
+    return comparison;
+  }
+
+  var imageData = [
+    {"filename": "tools.png", "aspectRatio": "1.3300"},
+    {"filename": "out.jpeg", "aspectRatio": "1.7700"},
+    {"filename": "extract.jpeg", "aspectRatio": "1.3300"},
+    {"filename": "spokes.jpeg", "aspectRatio": "1.7700"},
+    {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
+    {"filename": "wiring.png", "aspectRatio": "1.4900"},
+  ];
+
+  imageData.sort(compare);
+  var pig = new Pig(imageData, {
+    urlForSize: function(filename, size) {
+    return '_static/images/' + 'img/' + size + '/' + filename;
+  },
+  addAnchorTag: true,
+  anchorTargetDir: "_static/images/",
+  anchorClass: "swipebox"
+  }).enable();
+  ;( function( $ ) {
+    $( '.swipebox' ).swipebox();
+  } )( jQuery );
+</script></div>
 
 
           </div>
