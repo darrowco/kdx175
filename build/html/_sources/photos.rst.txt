@@ -5,9 +5,7 @@ Photos
    :local:
    :depth: 1
 
-.. raw:: html
-
-  .. include:: _static/images/index.html
-    :start-line: 10
-    :end-line: 53
+.. include:: _static/images/index.html
+  :start-line: 8
+  :end-line: 53
 
