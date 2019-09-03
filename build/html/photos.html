@@ -43,51 +43,62 @@
             
   <div class="section" id="photos">
 <h1>Photos<a class="headerlink" href="#photos" title="Permalink to this headline">¶</a></h1>
-  <div id="pig">
-    <img id='gsPreviewImg'>
-  </div>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css">
-  <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"></script>
-  <script type="text/javascript" src="https://i.modjeska.us/js/pig.js"></script>
-  <script type="text/javascript">
-
-    function compare(a, b) {
-      const filenameA = a.filename.toUpperCase();
-      const filenameB = b.filename.toUpperCase();
-      let comparison = 0;
-      if (filenameA > filenameB) {
-        comparison = 1;
-      } else if (filenameA < filenameB) {
-        comparison = -1;
-      }
-      return comparison;
-    }
-
-    var imageData = [
-      {"filename": "out.jpeg", "aspectRatio": "1.7700"},
-      {"filename": "tools.png", "aspectRatio": "1.3300"},
-      {"filename": "spokes.jpeg", "aspectRatio": "1.7700"},
-      {"filename": "wiring.png", "aspectRatio": "1.4900"},
-      {"filename": "extract.jpeg", "aspectRatio": "1.3300"},
-      {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
-    ];
-    imageData.sort(compare);
-    var pig = new Pig(imageData, {
-      urlForSize: function(filename, size) {
-      return '_static/images/' + 'img/' + size + '/' + filename;
-    },
-    addAnchorTag: true,
-    anchorTargetDir: "_static/images/",
-    anchorClass: "swipebox"
-    }).enable();
-    ;( function( $ ) {
-      $( '.swipebox' ).swipebox();
-    } )( jQuery );
-  </script>
-
-
-</body><p>&lt;/html&gt;</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>&lt;div id=”pig”&gt;</dt>
+<dd>&lt;img id=’gsPreviewImg’&gt;</dd>
+</dl>
+<p>&lt;/div&gt;
+&lt;link rel=”stylesheet” href=”<a class="reference external" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css">https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css</a>”&gt;
+&lt;script src=”<a class="reference external" href="https://code.jquery.com/jquery-2.0.3.min.js">https://code.jquery.com/jquery-2.0.3.min.js</a>”&gt;&lt;/script&gt;
+&lt;script src=”<a class="reference external" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js">https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js</a>”&gt;&lt;/script&gt;
+&lt;script type=”text/javascript” src=”<a class="reference external" href="https://i.modjeska.us/js/pig.js">https://i.modjeska.us/js/pig.js</a>”&gt;&lt;/script&gt;
+&lt;script type=”text/javascript”&gt;</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>function compare(a, b) {</dt>
+<dd><p class="first">const filenameA = a.filename.toUpperCase();
+const filenameB = b.filename.toUpperCase();
+let comparison = 0;
+if (filenameA &gt; filenameB) {</p>
+<blockquote>
+<div>comparison = 1;</div></blockquote>
+<dl class="docutils">
+<dt>} else if (filenameA &lt; filenameB) {</dt>
+<dd>comparison = -1;</dd>
+</dl>
+<p class="last">}
+return comparison;</p>
+</dd>
+</dl>
+<p>}</p>
+<dl class="docutils">
+<dt>var imageData = [</dt>
+<dd>{“filename”: “spokes.jpeg”, “aspectRatio”: “1.7700”},
+{“filename”: “tools.png”, “aspectRatio”: “1.3300”},
+{“filename”: “extract.jpeg”, “aspectRatio”: “1.3300”},
+{“filename”: “wiring.png”, “aspectRatio”: “1.4900”},
+{“filename”: “out.jpeg”, “aspectRatio”: “1.7700”},
+{“filename”: “mess.jpeg”, “aspectRatio”: “1.4900”},</dd>
+</dl>
+<p>];
+imageData.sort(compare);
+var pig = new Pig(imageData, {</p>
+<blockquote>
+<div>urlForSize: function(filename, size) {
+return ‘_static/images/’ + ‘img/’ + size + ‘/’ + filename;</div></blockquote>
+<p>},
+addAnchorTag: true,
+anchorTargetDir: “_static/images/”,
+anchorClass: “swipebox”
+}).enable();
+;( function( $ ) {</p>
+<blockquote>
+<div>$( ‘.swipebox’ ).swipebox();</div></blockquote>
+<p>} )( jQuery );</p>
+</div></blockquote>
+<p>&lt;/script&gt;</p>
+</div></blockquote>
 </div>
 
 

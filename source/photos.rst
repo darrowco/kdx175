@@ -6,7 +6,6 @@ Photos
    :depth: 1
 
 .. include:: _static/images/index.html
-  :start-line: 8
-  :end-line: 56
-
+  :start-after: <!-- includeStart -->
+  :end-before: <!-- includeEnd -->
 
