@@ -6,8 +6,8 @@ Photos
    :depth: 1
 
 
-.. include:: _statis/images/index.html
-  :start-line: 7
-  :end-line: 48
+.. include:: _static/images/index.html
+  :start-line: 8
+  :end-line: 50
 
 
