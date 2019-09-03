@@ -44,9 +44,12 @@
   <div class="section" id="photos">
 <h1>Photos<a class="headerlink" href="#photos" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><blockquote>
-<div><blockquote>
-<div><p>const filenameB = b.filename.toUpperCase();
+<div><p>&lt;script type=”text/javascript”&gt;</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>function compare(a, b) {</dt>
+<dd><p class="first">const filenameA = a.filename.toUpperCase();
+const filenameB = b.filename.toUpperCase();
 let comparison = 0;
 if (filenameA &gt; filenameB) {</p>
 <blockquote>
@@ -55,9 +58,10 @@ if (filenameA &gt; filenameB) {</p>
 <dt>} else if (filenameA &lt; filenameB) {</dt>
 <dd>comparison = -1;</dd>
 </dl>
-<p>}
+<p class="last">}
 return comparison;</p>
-</div></blockquote>
+</dd>
+</dl>
 <p>}</p>
 <dl class="docutils">
 <dt>var imageData = [</dt>
@@ -78,13 +82,8 @@ return ‘_static/images/’ + ‘img/’ + size + ‘/’ + filename;</div></bl
 addAnchorTag: true,
 anchorTargetDir: “_static/images/”,
 anchorClass: “swipebox”
-}).enable();
-;( function( $ ) {</p>
-<blockquote>
-<div>$( ‘.swipebox’ ).swipebox();</div></blockquote>
-<p>} )( jQuery );</p>
+}).enable();</p>
 </div></blockquote>
-<p>&lt;/script&gt;</p>
 </div></blockquote>
 </div>
 
