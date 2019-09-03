@@ -43,61 +43,55 @@
             
   <div class="section" id="photos">
 <h1>Photos<a class="headerlink" href="#photos" title="Permalink to this headline">¶</a></h1>
-<p>&lt;!DOCTYPE html&gt;
-&lt;html&gt;</p>
-<blockquote>
-<div><dl class="docutils">
-<dt>&lt;head&gt;</dt>
-<dd>&lt;title&gt;Images&lt;/title&gt;</dd>
-</dl>
-<p>&lt;/head&gt;
-&lt;body&gt;</p>
-</div></blockquote>
-  <div id="pig">
-    <img id='gsPreviewImg'>
-  </div>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css">
-  <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"></script>
-  <script type="text/javascript" src="https://i.modjeska.us/js/pig.jpg"></script>
-  <script type="text/javascript">
+<pre class="literal-block">
+.. raw:: html
 
-    function compare(a, b) {
-      const filenameA = a.filename.toUpperCase();
-      const filenameB = b.filename.toUpperCase();
-      let comparison = 0;
-      if (filenameA > filenameB) {
-        comparison = 1;
-      } else if (filenameA < filenameB) {
-        comparison = -1;
+    &lt;div id=&quot;pig&quot;&gt;
+      &lt;img id='gsPreviewImg'&gt;
+    &lt;/div&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.min.css&quot;&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-2.0.3.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;https://i.modjeska.us/js/pig.jpg&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+
+      function compare(a, b) {
+        const filenameA = a.filename.toUpperCase();
+        const filenameB = b.filename.toUpperCase();
+        let comparison = 0;
+        if (filenameA &gt; filenameB) {
+          comparison = 1;
+        } else if (filenameA &lt; filenameB) {
+          comparison = -1;
+        }
+        return comparison;
       }
-      return comparison;
-    }
 
-    var imageData = [
-      {"filename": "extract.jpeg", "aspectRatio": "1.3300"},
-      {"filename": "spokes.jpeg", "aspectRatio": "1.7700"},
-      {"filename": "wiring.png", "aspectRatio": "1.4900"},
-      {"filename": "tools.png", "aspectRatio": "1.3300"},
-      {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
-      {"filename": "out.jpeg", "aspectRatio": "1.7700"},
-    ];
-    imageData.sort(compare);
-    var pig = new Pig(imageData, {
-      urlForSize: function(filename, size) {
-      return '_static/images/' + 'img/' + size + '/' + filename;
-    },
-    addAnchorTag: true,
-    anchorTargetDir: "_static/images/",
-    anchorClass: "swipebox"
-    }).enable();
-    ;( function( $ ) {
-      $( '.swipebox' ).swipebox();
-    } )( jQuery );
-  </script>
+      var imageData = [
+        {&quot;filename&quot;: &quot;extract.jpeg&quot;, &quot;aspectRatio&quot;: &quot;1.3300&quot;},
+        {&quot;filename&quot;: &quot;spokes.jpeg&quot;, &quot;aspectRatio&quot;: &quot;1.7700&quot;},
+        {&quot;filename&quot;: &quot;wiring.png&quot;, &quot;aspectRatio&quot;: &quot;1.4900&quot;},
+        {&quot;filename&quot;: &quot;tools.png&quot;, &quot;aspectRatio&quot;: &quot;1.3300&quot;},
+        {&quot;filename&quot;: &quot;mess.jpeg&quot;, &quot;aspectRatio&quot;: &quot;1.4900&quot;},
+        {&quot;filename&quot;: &quot;out.jpeg&quot;, &quot;aspectRatio&quot;: &quot;1.7700&quot;},
+      ];
+      imageData.sort(compare);
+      var pig = new Pig(imageData, {
+        urlForSize: function(filename, size) {
+        return '_static/images/' + 'img/' + size + '/' + filename;
+      },
+      addAnchorTag: true,
+      anchorTargetDir: &quot;_static/images/&quot;,
+      anchorClass: &quot;swipebox&quot;
+      }).enable();
+      ;( function( $ ) {
+        $( '.swipebox' ).swipebox();
+      } )( jQuery );
+    &lt;/script&gt;
 
 
-</body><p>&lt;/html&gt;</p>
+
+</pre>
 </div>
 
 
