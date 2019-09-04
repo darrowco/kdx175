@@ -1,8 +1,5 @@
-
-Aug-03-2019 — Remove Engine
-===========================
-
-.. |logId| replace:: engine_20190803
+Aug-03-2019 — Remove Engine03a
+==============================
 
 .. contents::
    :local:
@@ -12,7 +9,7 @@ Aug-03-2019 — Remove Engine
 
     <!--
 
-    Click here to see the `entire Log Entry <|logId|.html>`__                                                   
+    Click here to see the `entire Log Entry <engine_20190803.html>`__                                                   
 
     -->
 
