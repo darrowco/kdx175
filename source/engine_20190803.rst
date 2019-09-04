@@ -2,6 +2,10 @@
 Aug-03-2019 — Remove Engine03a
 ==============================
 
+.. contents::
+   :local:
+   :depth: 1
+
 .. raw:: html
 
     <!--
@@ -112,10 +116,3 @@ By the Numbers
 
     </tbody>
     </table>
-
-
-.. contents::
-   :local:
-   :depth: 1
-
-
