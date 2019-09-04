@@ -16,20 +16,24 @@ Welcome to KDX175's documentation!
    parts_logs
    photos
 
+
 .. include:: engine_20190803.rst
   :start-line: 1
   :end-line: 3
+
 
 .. include:: engine_20190803.rst
   :start-line: 12
   :end-line: 14
 
-.. include:: engine_20190803.rst
-  :start-line: 13
-  :end-line: 15
 
 .. include:: engine_20190803.rst
-  :start-line: 17
+  :start-line: 14
+  :end-line: 16
+
+
+.. include:: engine_20190803.rst
+  :start-line: 18
   :end-line: 29
 
 
