@@ -16,8 +16,9 @@ Welcome to KDX175's documentation!
    parts_logs
    photos
 
-Aug-03-2019 --- Remove Engine
------------------------------
+.. include:: engine_20190803.rst
+  :start-line: 1
+  :end-line: 2
 
 .. include:: engine_20190803.rst
   :start-line: 12
