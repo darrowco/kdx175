@@ -10,9 +10,9 @@ Aug-03-2019 — Remove Engine
 
     <!--
 
-    engine_20190803                                                   
+    .. |logId| replace:: engine_20190803
 
-    Click here to see the `entire Log Entry <engine_20190803.html>`__                                                   
+    Click here to see the `entire Log Entry <|logId|.html>`__                                                   
 
     -->
 
