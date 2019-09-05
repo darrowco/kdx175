@@ -7,8 +7,6 @@ Jul-14-2019 — Prep for engine removal
 =====================================
 
 
-<!-- dbRowsPartsEnd -->
-
 .. End - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop
 
 .. contents::
@@ -24,7 +22,7 @@ Jul-14-2019 — Prep for engine removal
     -->
 
 .. START - kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shop
-kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop.rst
+
 +--------------------------------------------------+------------------------------------------------------------------+
 | | Finally finished exams and know have time to   | .. figure:: ./_static/images/mess.jpeg                           |
 | | get back to work on the KDX. Engine removal    |    :align: right                                                 |
