@@ -17,16 +17,16 @@ Welcome to KDX175's documentation!
    photos
 
 .. include:: engine_20190803.rst
-  :start-after: .. START - remove_engine_2019080
-  :end-before: .. END - remove_engine_2019080
+  :start-after: .. START - remove_engine_2019080_title
+  :end-before: .. END - remove_engine_2019080_title
 
 .. include:: engine_20190803.rst
-  :start-line: 12
-  :end-line: 14
+  :start-after: .. START - remove_engine_2019080_log_link
+  :end-before: .. END - remove_engine_2019080_log_link
 
 .. include:: engine_20190803.rst
-  :start-line: 19
-  :end-line: 30
+  :start-after: .. START - remove_engine_2019080_teaser
+  :end-before: .. END - remove_engine_2019080_teaser
 
 ----
 
