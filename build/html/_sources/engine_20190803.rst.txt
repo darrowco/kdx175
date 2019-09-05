@@ -1,6 +1,9 @@
+.. START - remove_engine_2019080
 
 Aug-03-2019 — Remove Engine32
 =============================
+
+.. END - remove_engine_2019080
 
 .. contents::
    :local:

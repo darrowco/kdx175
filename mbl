@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+find ./ -iname "*.erase" -type f -exec sed -i 's/poipoipoi/kjhkjhkjh/gi' {} \;
+
+
+
+###cd "/home/darrowco/docs/kdx175/source/"
+###perl /home/darrowco/docs/kdx175/source/pigg.pl _static/images
