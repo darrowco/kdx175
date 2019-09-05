@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+find ./ -iname "*.py" -type f -exec sed -i 's/abc/XYZ/gi' {} \;
+
+
+
+
+perl /home/darrowco/docs/kdx175/source/pigg.pl _static/images
