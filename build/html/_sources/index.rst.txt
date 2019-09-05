@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to KDX175's documentation!
+Welcome to KDX175's documentatio!!
 ==================================
 
 .. toctree::
@@ -47,11 +47,11 @@ Jul-15-2019 --- Prep for engine removal_99
   :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop
   :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop
 
-.. include:: engine_20190803.rst
-  :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Log Link.20190714.0900.Main_Shop
-  :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Log Link.20190714.0900.Main_Shop
+.. include:: kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop.rst
+  :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Log_Link.20190714.0900.Main_Shop
+  :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Log_Link.20190714.0900.Main_Shop
 
-.. include:: kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shop.rst
+.. include:: kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop.rst
   :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shop
   :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shop
 
