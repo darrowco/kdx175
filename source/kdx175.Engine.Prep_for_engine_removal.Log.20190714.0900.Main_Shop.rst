@@ -17,7 +17,7 @@ Jul-14-2019 — Prep for engine removal
 
     <!--
     .. START - kdx175.Engine.Prep_for_engine_removal.Log_Link.20190714.0900.Main_Shop
-    Click here to see the `entire Log Entry <engine_20190714.html>`__
+    Click here to see the `entire Log Entry <kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shop.html>`__
     .. END - kdx175.Engine.Prep_for_engine_removal.Log_Link.20190714.0900.Main_Shop
     -->
 
