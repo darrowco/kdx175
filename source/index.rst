@@ -43,15 +43,15 @@ Jul-15-2019 --- Prep for engine removal_99
 
 ----
 
-.. include:: kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop.rst
+.. include:: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shop.rst
   :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop
-  :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop
+  :end-before: .. End - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop
 
-.. include:: kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop.rst
+.. include:: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shop.rst
   :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Log_Link.20190714.0900.Main_Shop
   :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Log_Link.20190714.0900.Main_Shop
 
-.. include:: kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shop.rst
+.. include:: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shop.rst
   :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shop
   :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shop
 
