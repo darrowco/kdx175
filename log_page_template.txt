@@ -22,16 +22,16 @@ zzzTitlezzz
 
 .. START - zzzTeaserTagzzz
 
-+--------------------------------------------------+------------------------------------------------------------------+
-| | Put a short description of the log here. Add   | .. figure:: ./_static/images/zzzTeaserImagezzz                   |
-| | related info such as reasons for delay, mood,  |    :align: right                                                 |
-| | blockers, etc. Try and limit this to a few     |    :figwidth: 300px                                              |
-| | sentences and/or bullet points                 |    :target: ./_static/images/mess.jpeg                           |
-| * bullet point                                   |                                                                  |
-| * bullet point                                   |    This is the image caption                                     |
-| | One person can do this in a crouched position  |                                                                  |
-| | if care is used                                |                                                                  |
-+--------------------------------------------------+------------------------------------------------------------------+
++--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+| | Finally finished exams and know have time to   | .. figure:: ./_static/images/zzzTeaserImagezzz                                                                                                       |
+| | get back to work on the KDX. Engine removal    |    :align: right                                                                                                                                     |
+| | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                                                                                                                  |
+| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/mess.jpeg                                                                                                               |
+| | so it was cut.                                 |                                                                                                                                                      |
+| |                                                |    This is before cleaning                                                                                                                           |
+| | One person can do this in a crouched position  |                                                                                                                                                      |
+| | if care is used                                |                                                                                                                                                      |
++--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. END - zzzTeaserTagzzz
 
