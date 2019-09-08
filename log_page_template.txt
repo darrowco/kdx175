@@ -110,7 +110,7 @@ By the Numbers
         </tr>
     </tfoot>
     <tbody>
-    .. START - TagPartsRows
+    <!-- START - zzzTagPartsRowszzz -->
 
 
 .. raw:: html
@@ -118,7 +118,7 @@ By the Numbers
     <tr>
     <td> 1  </td><td> no parts or tools bought   </td><td>                                                            </td><td align="right">           </td><th  align="right">       </th>
     </tr>
-    .. END - TagPartsRows
+    <!-- END - zzzTagPartsRowszzz -->
 
 
 .. raw:: html

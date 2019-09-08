@@ -111,7 +111,7 @@ By the Numbers
         </tr>
     </tfoot>
     <tbody>
-    .. START - TagPartsRows
+    <!-- START - kdx175.Engine.Prep_for_engine_removal.Parts.20190714.0900.Main_Shopq -->
 
 
 .. raw:: html
@@ -119,7 +119,7 @@ By the Numbers
     <tr>
     <td> 1  </td><td> no parts or tools bought   </td><td>                                                            </td><td align="right">           </td><th  align="right">       </th>
     </tr>
-    .. END - TagPartsRows
+    <!-- END - kdx175.Engine.Prep_for_engine_removal.Parts.20190714.0900.Main_Shopq -->
 
 
 .. raw:: html
