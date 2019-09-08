@@ -1,0 +1,176 @@
+#!/bin/bash
+
+################################################################################
+declare -a myarray
+
+printf_new() {
+ str=$1
+ num=$2
+ v=$(printf "%-${num}s" "$str")
+ echo "${v// /$str}"
+}
+
+
+# read in any new images
+cd ./source/_static/images
+imgFiles=([0-9][0-9][0-9]*)
+cd ../../..
+#echo "${imgFiles[@]}"
+
+# sort
+IFS=$'\n' imgFilesSorted=($(sort <<<"${imgFiles[*]}")); unset IFS
+#printf "%s\n" "${imgFilesSorted[@]}"
+
+
+# parse any inputs on the command line
+while :; do
+
+    case $1 in
+
+        -n|--new) # New - make a new Log Page and add to other pages
+                  #     - kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shop
+            shift
+            NEWLOGPAGE="$1"
+            printf "\nNew Log Page will be created: $NEWLOGPAGE\n"
+            ;;
+        -p|--passwd) # NOT USED - password ===> no, password ends up in history (see other method a few lines down from here)
+            shift
+            PASSWD="$1"
+            printf "\nZFS password has been entered ***\n"
+            ;;
+        -d|--disk) # NOT USED -  Disk(s) are detected
+            printf "\tAdding disk to pool : "
+            shift
+            if [ -n "$1" ]; then
+                ZFSDISKCOUNT=$((ZFSDISKCOUNT + 1 )) # Adding a drive
+                ZFSDISKLIST[$ZFSDISKCOUNT]="$(basename "$1")"
+                if [ -L "/dev/disk/by-id/${ZFSDISKLIST[$ZFSDISKCOUNT]}" ] ]; then # Has to exist in disk/by-id
+                    printf "Disk %d - %s : confirmed\n" $ZFSDISKCOUNT "${ZFSDISKLIST[$ZFSDISKCOUNT]}"
+                else
+                    printf '\nERROR: Invalid Disk By-ID Specified : %s (%s)\n' "$1" "/dev/disk/by-id/${ZFSDISKLIST[$ZFSDISKCOUNT]}" >&2
+                    exit 1
+                fi
+            fi
+            shift
+            ;;
+        --continue) # Set continue flag to skip partioning and ZFS pool creation
+            printf "\tContinue Mode Active - Assuming Mounts, Disks, Partitions & Pools Match 100\% paramaters passed\n"
+            CONTINUEMODE=$TRUE
+            shift
+            ;;
+        --)             # End of all options.
+            shift
+            break
+            ;;
+        -?*)            # Undefined options
+            printf '\nERROR: Unknown option : %s\n' "$1" >&2
+            exit 1
+            ;;
+        *)              # Default case: If no more options then break out of the loop.
+            break
+    esac
+done
+
+IFS='.' read -r -a array <<< "$NEWLOGPAGE"
+
+n=0
+for element in "${array[@]}"
+do
+    echo "$element"
+    if [ $n -eq 2 ]; then
+      logTitle=$element
+      logTitleSpaced=${logTitle//_/ }
+      echo $logTitleSpaced
+    fi
+    let "n++"
+done
+
+# create the new Log Page file, save any existing
+
+# check file existence
+if [ -f source/$NEWLOGPAGE.rst ]
+then
+    echo
+    echo The file exists: ./source/$NEWLOGPAGE.rst
+    echo Delete and try again
+    echo
+    exit 1
+fi
+
+# No existing file so load the template
+# Load the Log Page template file into array.
+readarray -t myarray < log_page_template.txt
+
+# Explicitly write template out to file
+let i=0
+while (( ${#myarray[@]} > i )); do
+    templateOut=${myarray[i++]}
+
+#    echo $templateOut
+
+    if [[ $templateOut =~ "zzzTitleTagzzz" ]]; then
+      NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Title}
+      echo "${templateOut//zzzTitleTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
+
+    elif [[ $templateOut =~ "zzzTitlezzz" ]]; then
+      echo "${templateOut//zzzTitlezzz/$logTitleSpaced}" >> ./source/$NEWLOGPAGE.rst
+      printf_new "=" ${#logTitleSpaced} >> ./source/$NEWLOGPAGE.rst
+
+    elif [[ $templateOut =~ "zzzLogLinkTagzzz" ]]; then
+      NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/LogLink}
+      echo "${templateOut//zzzLogLinkTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
+
+    elif [[ $templateOut =~ "zzzLogPageNamezzz" ]]; then
+      echo "${templateOut//zzzLogPageNamezzz/$NEWLOGPAGE}" >> ./source/$NEWLOGPAGE.rst
+
+    elif [[ $templateOut =~ "zzzTeaserTagzzz" ]]; then
+      NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Teaser}
+      echo "${templateOut//zzzTeaserTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
+
+    elif [[ $templateOut =~ "zzzTeaserImagezzz" ]]; then
+      IFS=', ' read -r -a imgFileSplit <<< "${imgFilesSorted[0]//./ }"
+      echo "${imgFileSplit[0]}"
+      echo "${imgFileSplit[1]}"
+
+      if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
+        echo "video file"
+      else
+        mv "./source/_static/images/${imgFilesSorted[0]}" "./source/_static/images/$NEWLOGPAGE.${imgFilesSorted[0]}"
+        echo "${templateOut//zzzTeaserImagezzz/$NEWLOGPAGE.${imgFilesSorted[0]}}" >> ./source/$NEWLOGPAGE.rst
+      fi
+
+    else
+      echo "$templateOut" >> ./source/$NEWLOGPAGE.rst
+    fi
+
+done
+
+
+
+
+#${imgFilesSorted[@]}
+
+
+
+
+
+# cycle through the 2nd and later images to build Log Page sections
+let i=1
+while (( ${#imgFiles[@]} > i )); do
+    echo ${imgFiles[i++]}
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

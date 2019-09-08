@@ -1,0 +1,13 @@
+project: kdx175
+Category: Engine
+Log_Title: Engine Disassembly
+Date: 20190803
+Time: 0900
+Location: Main Shop
+
+project: kdx175
+Category: Engine
+Log_Title: Engine Paining
+Date: 20190804
+Time: 1000
+Location: Paint Shop
