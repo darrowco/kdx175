@@ -56,7 +56,7 @@ The second section describes a step subsequent to the first.
 Title of the third section with an embedded image
 -------------------------------------------------
 
-.. figure:: ./_static/images/[image name]
+.. figure:: ./_static/images/zzzImagezzz
    :scale: 50 %
    :alt: map to buried treasure
 
@@ -97,7 +97,8 @@ By the Numbers
     <table id="example" class="display table table-bordered" style="width:100%">
     <thead>
     <tr>
-    <th> #  </th><th align="left"> Parts & 3rd-party Labor</th><th align="left"> Source         </th><th class="sum">       Cost</th><th class="sum">My Time</th>
+    <th> 
+    #  </th><th align="left"> Parts & 3rd-party Labor</th><th align="left"> Source         </th><th class="sum">       Cost</th><th class="sum">My Time</th>
     </tr>
     </thead>
     <tfoot>

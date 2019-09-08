@@ -144,6 +144,16 @@ while (( ${#myarray[@]} > i )); do
         mv "./source/_static/images/${imgFilesSorted[0]}" "./source/_static/images/${imgFileName}"
       fi
 
+    elif [[ $templateOut =~ "zzzImagezzz" ]]; then
+
+      if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
+        echo "future: video file option"
+
+      else
+        imgFileName=$NEWLOGPAGE.${imgFilesSorted[0]}
+        echo "${templateOut//zzzImagezzz/$imgFileName}" >> ./source/$NEWLOGPAGE.rst
+      fi
+
     elif [[ $templateOut =~ "zzzTeaserILinkzzz" ]]; then
         echo "${templateOut//zzzTeaserILinkzzz/$imgFileName}${spaceLengthVar}|" >> ./source/$NEWLOGPAGE.rst
 
