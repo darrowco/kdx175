@@ -23,10 +23,10 @@ zzzTitlezzz
 .. START - zzzTeaserTagzzz
 
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | Finally finished exams and know have time to   | .. figure:: ./_static/images/zzzTeaserImagezzz                                                                                                       |
+| | Finally finished exams and know have time to   | .. figure:: ./_static/images/zzzTeaserImagezzz
 | | get back to work on the KDX. Engine removal    |    :align: right                                                                                                                                     |
 | | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                                                                                                                  |
-| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/mess.jpeg                                                                                                               |
+| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/zzzTeaserILinkzzz
 | | so it was cut.                                 |                                                                                                                                                      |
 | |                                                |    This is before cleaning                                                                                                                           |
 | | One person can do this in a crouched position  |                                                                                                                                                      |
