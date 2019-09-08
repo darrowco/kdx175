@@ -25,14 +25,14 @@ Aug-03-2019 — Remove Engine33
 
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 | | Finally finished exams and know have time to   | .. figure:: ./_static/images/mess.jpeg                                                                                                               |
-| | get back to work on the KDX. Engine removal    |    :align: right                                                                                                                   |
-| | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                                                                                                   |
+| | get back to work on the KDX. Engine removal    |    :align: right                                                                                                                                     |
+| | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                                                                                                                  |
 | | removed. One of the engine bolts was rusted    |    :target: ./_static/images/mess.jpeg                                                                                                               |
-| | so it was cut.                                 |                                                                                                                       |
-| |                                                |    This is before cleaning                                                                                                                |
-| | One person can do this in a crouched position  |                                                                                                                       |
-| | if care is used                                |                                                                                                                       |
-+--------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| | so it was cut.                                 |                                                                                                                                                      |
+| |                                                |    This is before cleaning                                                                                                                           |
+| | One person can do this in a crouched position  |                                                                                                                                                      |
+| | if care is used                                |                                                                                                                                                      |
++--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. END - remove_engine_2019080_teaser
 
