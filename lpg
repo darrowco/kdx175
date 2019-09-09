@@ -1,7 +1,8 @@
 #!/bin/bash
 
 ################################################################################
-declare -a myarray
+declare -a logPageTemplateArray
+declare -a engineLogsTemplateArray
 
 printf_new() {
  str=$1
@@ -9,6 +10,117 @@ printf_new() {
  v=$(printf "%-${num}s" "$str")
  echo "${v// /$str}"
 }
+
+
+
+# read in Log file names
+cd ./source
+logFiles=(*Log*rst)
+cd ..
+
+# sort array of Log file names
+IFS=$'\n' logFilesSorted=($(sort <<<"${logFiles[*]}")); unset IFS
+#printf "%s\n" "${logFilesSorted[@]}"
+
+# zero out the file
+mv ./source/engine_logsq.rst ./source/engine_logsq.rst.bak
+
+# Load the Engine Logs template file into array.
+readarray -t engineLogsTemplateArray < engine_logs_template.txt
+
+
+echo ${engineLogsTemplateArray[0]}
+echo ${engineLogsTemplateArray[1]}
+echo ${engineLogsTemplateArray[2]}
+
+
+# Explicitly write template out to the Engine Logs file
+let i=0
+while (( i < 9 )); do
+    templateOut=${engineLogsTemplateArray[i++]}
+    echo "$templateOut" >> ./source/engine_logsq.rst
+done
+
+# extract info for this Log file from the file name
+# for each Log file name
+nn=0
+for logFileName in "${logFilesSorted[@]}"
+do
+  echo
+  IFS=', ' read -r -a logFileSplit <<< "${logFileName//./ }"
+  n=0
+
+  # for each part of the Log file name
+  for element in "${logFileSplit[@]}"
+  do
+    #echo "$element"
+    if [ $n -eq 1 ]; then
+      logCategory=$element
+      #echo logCategory = $logCategory
+    fi
+    if [ $n -eq 2 ]; then
+      logTitle=$element
+      logTitleSpaced=${logTitle//_/ }
+      #echo logTitleSpaced = $logTitleSpaced
+    fi
+    if [ $n -eq 4 ]; then
+      logDate=$element
+      logDateLong=$(date -d $logDate +"%d-%b-%Y")
+      #echo logDateLong=$logDateLong
+    fi
+
+    let "n++"
+  done
+
+  # append info for each Logs section starting with Engine then adding others
+  # append new Log file info to the appropriate Logs file (e.g. Engine Logs)
+  logTitleAll="$logDateLong --- $logTitleSpaced"
+  echo "$logTitleAll" >> ./source/engine_logsq.rst
+  printf_new "-" ${#logTitleAll} >> ./source/engine_logsq.rst
+  echo >> ./source/engine_logsq.rst
+
+  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
+  echo "  :start-line: 11" >> ./source/engine_logsq.rst
+  echo "  :end-line: 13" >> ./source/engine_logsq.rst
+  echo >> ./source/engine_logsq.rst
+  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
+  echo "  :start-line: 15" >> ./source/engine_logsq.rst
+  echo "  :end-line: 26" >> ./source/engine_logsq.rst
+  echo >> ./source/engine_logsq.rst
+  echo "----" >> ./source/engine_logsq.rst
+  echo >> ./source/engine_logsq.rst
+  echo >> ./source/engine_logsq.rst
+  echo "footer" >> ./source/engine_logsq.rst
+exit 1
+
+
+
+
+  #echo $logFileName
+done
+
+#exit 1
+
+
+echo
+echo "${logFileSplit[0]}"
+echo "${logFileSplit[1]}"
+echo "${logFileSplit[2]}"
+
+
+echo Log Files
+echo "${logFiles[@]}"
+echo
+echo Sorted
+printf "%s\n" "${logFilesSorted[@]}"
+
+
+exit 1
+
+
+
+
+
 
 
 # read in any new images
@@ -85,7 +197,8 @@ do
     let "n++"
 done
 
-# create the new Log Page file, save any existing
+#######################################################################################
+# create the new Log Page file if it does not already exist (delete to update)
 
 # check file existence
 if [ -f source/$NEWLOGPAGE.rst ]
@@ -99,14 +212,14 @@ fi
 
 # No existing file so load the template
 # Load the Log Page template file into array.
-readarray -t myarray < log_page_template.txt
+readarray -t logPageTemplateArray < log_page_template.txt
 
 # Explicitly write template out to file
 let i=0
-while (( ${#myarray[@]} > i )); do
-    templateOut=${myarray[i++]}
+while (( ${#logPageTemplateArray[@]} > i )); do
+    templateOut=${logPageTemplateArray[i++]}
 
-#    echo $templateOut
+    #echo $templateOut
 
     if [[ $templateOut =~ "zzzTitleTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Title}
@@ -145,13 +258,11 @@ while (( ${#myarray[@]} > i )); do
       fi
 
     elif [[ $templateOut =~ "zzzImagezzz" ]]; then
-
       if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
         echo "future: video file option"
-
       else
         imgFileName=$NEWLOGPAGE.${imgFilesSorted[0]}
-        echo "${templateOut//zzzImagezzz/$imgFileName}" >> ./source/$NEWLOGPAGE.rst
+        echo "${templateOut//zzzImagezzz/$imgFileName}" >> ./source/$NEWLOGPAGE.rstif it does not already exist (delete to update)
       fi
 
     elif [[ $templateOut =~ "zzzTeaserILinkzzz" ]]; then
@@ -164,17 +275,24 @@ while (( ${#myarray[@]} > i )); do
     else
       echo "$templateOut" >> ./source/$NEWLOGPAGE.rst
     fi
-
 done
+
+#######################################################################################
+# overwrite the Engine Logs Page file so that any new Logs are included
+
+# read in Log file names
+cd ./source
+logFiles=(.+\.Log\.*rst^)
+cd ..
+#echo "${logFiles[@]}"
+
+
+###kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.rst
 
 
 
 
 #${imgFilesSorted[@]}
-
-
-
-
 
 # cycle through the 2nd and later images to build Log Page sections
 let i=1
