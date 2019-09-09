@@ -91,23 +91,23 @@ echo >> ./source/engine_logsq.rst
 echo >> ./source/engine_logsq.rst
 
 
-exit 1
+###exit 1
 
 
 
 
-  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
-  echo "  :start-line: 11" >> ./source/engine_logsq.rst
-  echo "  :end-line: 13" >> ./source/engine_logsq.rst
-  echo >> ./source/engine_logsq.rst
-  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
-  echo "  :start-line: 15" >> ./source/engine_logsq.rst
-  echo "  :end-line: 26" >> ./source/engine_logsq.rst
-  echo >> ./source/engine_logsq.rst
-  echo "----" >> ./source/engine_logsq.rst
-  echo >> ./source/engine_logsq.rst
-  echo >> ./source/engine_logsq.rst
-  echo "footer" >> ./source/engine_logsq.rst
+###  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
+###  echo "  :start-line: 11" >> ./source/engine_logsq.rst
+###  echo "  :end-line: 13" >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
+###  echo "  :start-line: 15" >> ./source/engine_logsq.rst
+###  echo "  :end-line: 26" >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo "----" >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo "footer" >> ./source/engine_logsq.rst
 
 
 
@@ -119,20 +119,20 @@ done
 #exit 1
 
 
-echo
-echo "${logFileSplit[0]}"
-echo "${logFileSplit[1]}"
-echo "${logFileSplit[2]}"
+###echo
+###echo "${logFileSplit[0]}"
+###echo "${logFileSplit[1]}"
+###echo "${logFileSplit[2]}"
 
 
-echo Log Files
-echo "${logFiles[@]}"
-echo
-echo Sorted
-printf "%s\n" "${logFilesSorted[@]}"
+###echo Log Files
+###echo "${logFiles[@]}"
+###echo
+###echo Sorted
+###printf "%s\n" "${logFilesSorted[@]}"
 
 
-exit 1
+###exit 1
 
 
 
@@ -279,7 +279,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
         echo "future: video file option"
       else
         imgFileName=$NEWLOGPAGE.${imgFilesSorted[0]}
-        echo "${templateOut//zzzImagezzz/$imgFileName}" >> ./source/$NEWLOGPAGE.rstif it does not already exist (delete to update)
+        echo "${templateOut//zzzImagezzz/$imgFileName}" >> ./source/$NEWLOGPAGE.rst
       fi
 
     elif [[ $templateOut =~ "zzzTeaserILinkzzz" ]]; then
@@ -293,6 +293,9 @@ while (( ${#logPageTemplateArray[@]} > i )); do
       echo "$templateOut" >> ./source/$NEWLOGPAGE.rst
     fi
 done
+
+
+
 
 #######################################################################################
 # overwrite the Engine Logs Page file so that any new Logs are included
