@@ -81,9 +81,10 @@ do
 
 echo
 
+  LOGFILENAMEUPDATED=${logFileName//Log/Title}
   echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
-  echo "  :start-after: .. START - ${logFileName}" >> ./source/engine_logsq.rst
-  echo "  :end-before: .. END - ${logFileName}" >> ./source/engine_logsq.rst
+  echo "  :start-after: .. START - ${LOGFILENAMEUPDATED}" >> ./source/engine_logsq.rst
+  echo "  :end-before: .. END - ${LOGFILENAMEUPDATED}" >> ./source/engine_logsq.rst
 
 echo >> ./source/engine_logsq.rst
 echo >> ./source/engine_logsq.rst
