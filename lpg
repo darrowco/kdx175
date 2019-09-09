@@ -91,7 +91,7 @@ echo >> ./source/engine_logsq.rst
 echo >> ./source/engine_logsq.rst
 
 
-
+exit 1
 
 
 
@@ -108,7 +108,7 @@ echo >> ./source/engine_logsq.rst
   echo >> ./source/engine_logsq.rst
   echo >> ./source/engine_logsq.rst
   echo "footer" >> ./source/engine_logsq.rst
-exit 1
+
 
 
 
