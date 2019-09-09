@@ -11,8 +11,8 @@ Engine Logs
 ---------------------------------------
 
 .. include:: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.rst
-  :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shopq.rst
-  :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shopq.rst
+  :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shopq
+  :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shopq
 
 
 .. include:: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.rst
