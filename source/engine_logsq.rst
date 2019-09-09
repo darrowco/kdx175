@@ -11,6 +11,11 @@ Engine Logs
 ---------------------------------------
 
 .. include:: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.rst
+  :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.rst
+  :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.rst
+
+
+.. include:: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.rst
   :start-line: 11
   :end-line: 13
 
