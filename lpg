@@ -11,135 +11,6 @@ printf_new() {
  echo "${v// /$str}"
 }
 
-
-
-# read in Log file names
-cd ./source
-logFiles=(*Log*rst)
-cd ..
-
-# sort array of Log file names
-IFS=$'\n' logFilesSorted=($(sort <<<"${logFiles[*]}")); unset IFS
-#printf "%s\n" "${logFilesSorted[@]}"
-
-# zero out the file
-mv ./source/engine_logsq.rst ./source/engine_logsq.rst.bak
-
-# Load the Engine Logs template file into array.
-readarray -t engineLogsTemplateArray < engine_logs_template.txt
-
-
-echo ${engineLogsTemplateArray[0]}
-echo ${engineLogsTemplateArray[1]}
-echo ${engineLogsTemplateArray[2]}
-
-
-# Explicitly write template out to the Engine Logs file
-let i=0
-while (( i < 9 )); do
-    templateOut=${engineLogsTemplateArray[i++]}
-    echo "$templateOut" >> ./source/engine_logsq.rst
-done
-
-# extract info for this Log file from the file name
-# for each Log file name
-nn=0
-for logFileName in "${logFilesSorted[@]}"
-do
-  echo
-  IFS=', ' read -r -a logFileSplit <<< "${logFileName//./ }"
-  n=0
-
-  # for each part of the Log file name
-  for element in "${logFileSplit[@]}"
-  do
-    #echo "$element"
-    if [ $n -eq 1 ]; then
-      logCategory=$element
-      #echo logCategory = $logCategory
-    fi
-    if [ $n -eq 2 ]; then
-      logTitle=$element
-      logTitleSpaced=${logTitle//_/ }
-      #echo logTitleSpaced = $logTitleSpaced
-    fi
-    if [ $n -eq 4 ]; then
-      logDate=$element
-      logDateLong=$(date -d $logDate +"%d-%b-%Y")
-      #echo logDateLong=$logDateLong
-    fi
-
-    let "n++"
-  done
-
-  # append info for each Logs section starting with Engine then adding others
-  # append new Log file info to the appropriate Logs file (e.g. Engine Logs)
-  logTitleAll="$logDateLong --- $logTitleSpaced"
-  echo "$logTitleAll" >> ./source/engine_logsq.rst
-  printf_new "-" ${#logTitleAll} >> ./source/engine_logsq.rst
-  echo >> ./source/engine_logsq.rst
-
-echo
-
-  LOGFILENAMEUPDATED=${logFileName//Log/Title}
-  LOGFILENAMEUPDATED=${LOGFILENAMEUPDATED//.rst/}
-  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
-  echo "  :start-after: .. START - ${LOGFILENAMEUPDATED}" >> ./source/engine_logsq.rst
-  echo "  :end-before: .. END - ${LOGFILENAMEUPDATED}" >> ./source/engine_logsq.rst
-
-echo >> ./source/engine_logsq.rst
-echo >> ./source/engine_logsq.rst
-
-
-###exit 1
-
-
-
-
-###  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
-###  echo "  :start-line: 11" >> ./source/engine_logsq.rst
-###  echo "  :end-line: 13" >> ./source/engine_logsq.rst
-###  echo >> ./source/engine_logsq.rst
-###  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
-###  echo "  :start-line: 15" >> ./source/engine_logsq.rst
-###  echo "  :end-line: 26" >> ./source/engine_logsq.rst
-###  echo >> ./source/engine_logsq.rst
-###  echo "----" >> ./source/engine_logsq.rst
-###  echo >> ./source/engine_logsq.rst
-###  echo >> ./source/engine_logsq.rst
-###  echo "footer" >> ./source/engine_logsq.rst
-
-
-
-
-
-  #echo $logFileName
-done
-
-#exit 1
-
-
-###echo
-###echo "${logFileSplit[0]}"
-###echo "${logFileSplit[1]}"
-###echo "${logFileSplit[2]}"
-
-
-###echo Log Files
-###echo "${logFiles[@]}"
-###echo
-###echo Sorted
-###printf "%s\n" "${logFilesSorted[@]}"
-
-
-###exit 1
-
-
-
-
-
-
-
 # read in any new images
 cd ./source/_static/images
 imgFiles=([0-9][0-9][0-9]*)
@@ -162,46 +33,15 @@ while :; do
             NEWLOGPAGE="$1"
             printf "\nNew Log Page will be created: $NEWLOGPAGE\n"
             ;;
-        -p|--passwd) # NOT USED - password ===> no, password ends up in history (see other method a few lines down from here)
-            shift
-            PASSWD="$1"
-            printf "\nZFS password has been entered ***\n"
-            ;;
-        -d|--disk) # NOT USED -  Disk(s) are detected
-            printf "\tAdding disk to pool : "
-            shift
-            if [ -n "$1" ]; then
-                ZFSDISKCOUNT=$((ZFSDISKCOUNT + 1 )) # Adding a drive
-                ZFSDISKLIST[$ZFSDISKCOUNT]="$(basename "$1")"
-                if [ -L "/dev/disk/by-id/${ZFSDISKLIST[$ZFSDISKCOUNT]}" ] ]; then # Has to exist in disk/by-id
-                    printf "Disk %d - %s : confirmed\n" $ZFSDISKCOUNT "${ZFSDISKLIST[$ZFSDISKCOUNT]}"
-                else
-                    printf '\nERROR: Invalid Disk By-ID Specified : %s (%s)\n' "$1" "/dev/disk/by-id/${ZFSDISKLIST[$ZFSDISKCOUNT]}" >&2
-                    exit 1
-                fi
-            fi
-            shift
-            ;;
-        --continue) # Set continue flag to skip partioning and ZFS pool creation
-            printf "\tContinue Mode Active - Assuming Mounts, Disks, Partitions & Pools Match 100\% paramaters passed\n"
-            CONTINUEMODE=$TRUE
-            shift
-            ;;
-        --)             # End of all options.
-            shift
-            break
-            ;;
-        -?*)            # Undefined options
-            printf '\nERROR: Unknown option : %s\n' "$1" >&2
-            exit 1
-            ;;
-        *)              # Default case: If no more options then break out of the loop.
+        *)        # Default case: If no more options then break out of the loop.
             break
     esac
 done
 
+# break input on each "." and read into array
 IFS='.' read -r -a array <<< "$NEWLOGPAGE"
 
+# remove any underscores
 n=0
 for element in "${array[@]}"
 do
@@ -215,8 +55,8 @@ do
 done
 
 #######################################################################################
-# create the new Log Page file if it does not already exist (delete to update)
-
+# create the new Log Page file if it does not already exist
+#  if it exists, delete manually and then re-run this script
 # check file existence
 if [ -f source/$NEWLOGPAGE.rst ]
 then
@@ -236,54 +76,80 @@ let i=0
 while (( ${#logPageTemplateArray[@]} > i )); do
     templateOut=${logPageTemplateArray[i++]}
 
-    #echo $templateOut
-
+    # replace marker with Title Tags (Sphinx include markers)
     if [[ $templateOut =~ "zzzTitleTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Title}
       echo "${templateOut//zzzTitleTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
 
+    # replace marker with Title
     elif [[ $templateOut =~ "zzzTitlezzz" ]]; then
       echo "${templateOut//zzzTitlezzz/$logTitleSpaced}" >> ./source/$NEWLOGPAGE.rst
       printf_new "=" ${#logTitleSpaced} >> ./source/$NEWLOGPAGE.rst
 
+    # replace marker with Log Link Tags (Sphinx include markers)
     elif [[ $templateOut =~ "zzzLogLinkTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/LogLink}
       echo "${templateOut//zzzLogLinkTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
 
+    # replace marker with Log Page name
     elif [[ $templateOut =~ "zzzLogPageNamezzz" ]]; then
       echo "${templateOut//zzzLogPageNamezzz/$NEWLOGPAGE}" >> ./source/$NEWLOGPAGE.rst
 
+    # replace marker with Teaser Test Tags (Sphinx include markers)
     elif [[ $templateOut =~ "zzzTeaserTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Teaser}
       echo "${templateOut//zzzTeaserTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
 
+    # build the teaser table with image
+    # replace marker with Teaser image or video
     elif [[ $templateOut =~ "zzzTeaserImagezzz" ]]; then
-      IFS=', ' read -r -a imgFileSplit <<< "${imgFilesSorted[0]//./ }"
-      echo "${imgFileSplit[0]}"
-      echo "${imgFileSplit[1]}"
 
+      # evaluate file extension to determine if image or video metadata file
+      IFS=', ' read -r -a imgFileSplit <<< "${imgFilesSorted[0]//./ }"
+
+      # if a video metadata file
       if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
         echo "future: video file option"
 
+      # else if an image file
       else
+        # generate a new name for the image file
+        # assume that the new files are name sequentially e.g. 000_*, 001_*, etc
+        # new_image_file_name = new_log_page_name.image_file_name
         imgFileName=$NEWLOGPAGE.${imgFilesSorted[0]}
+
+        # get the length of the new image name
         imgFileNameLength=${#imgFileName}
+
+        # calculate the number of spaces needed to add to the name in order to make a legal table row
         spaceLength=$((120-${imgFileNameLength}))
         spaceLengthVar=$(printf ' %.0s' {$(seq 1 $spaceLength)})
+
+        # print the new table ros to the new log file
         echo "${templateOut//zzzTeaserImagezzz/$imgFileName}${spaceLengthVar}|" >> ./source/$NEWLOGPAGE.rst
+
+        # rename the image from the original upload name to the new name
         mv "./source/_static/images/${imgFilesSorted[0]}" "./source/_static/images/${imgFileName}"
       fi
 
+    # replace marker with link to full-sized teaser image
+    elif [[ $templateOut =~ "zzzTeaserILinkzzz" ]]; then
+        echo "${templateOut//zzzTeaserILinkzzz/$imgFileName}${spaceLengthVar}|" >> ./source/$NEWLOGPAGE.rst
+
+    # replace marker with an image or video
     elif [[ $templateOut =~ "zzzImagezzz" ]]; then
+
+      # if a video metadata file
       if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
         echo "future: video file option"
+
+      # else if an image file
       else
+
+        # 
         imgFileName=$NEWLOGPAGE.${imgFilesSorted[0]}
         echo "${templateOut//zzzImagezzz/$imgFileName}" >> ./source/$NEWLOGPAGE.rst
       fi
-
-    elif [[ $templateOut =~ "zzzTeaserILinkzzz" ]]; then
-        echo "${templateOut//zzzTeaserILinkzzz/$imgFileName}${spaceLengthVar}|" >> ./source/$NEWLOGPAGE.rst
 
     elif [[ $templateOut =~ "zzzTagPartsRowszzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Parts}
@@ -312,6 +178,10 @@ cd ..
 
 
 
+
+### do not run any of this stuff
+exit 1
+
 #${imgFilesSorted[@]}
 
 # cycle through the 2nd and later images to build Log Page sections
@@ -319,6 +189,125 @@ let i=1
 while (( ${#imgFiles[@]} > i )); do
     echo ${imgFiles[i++]}
 done
+
+
+
+
+
+
+
+
+# read in Log file names
+cd ./source
+logFiles=(*logsq*rst)
+cd ..
+
+# sort array of Log file names
+IFS=$'\n' logFilesSorted=($(sort <<<"${logFiles[*]}")); unset IFS
+printf "%s\n" "${logFilesSorted[@]}"
+exit 1
+# zero out the file
+mv ./source/engine_logsq.rst ./source/engine_logsq.rst.bak
+
+# Load the Engine Logs template file into array.
+readarray -t engineLogsTemplateArray < engine_logs_template.txt
+
+###echo ${engineLogsTemplateArray[0]}
+###echo ${engineLogsTemplateArray[1]}
+###echo ${engineLogsTemplateArray[2]}
+
+# Explicitly write the first 9 lines of the template out to the Engine Logs file
+let i=0
+while (( i < 9 )); do
+    templateOut=${engineLogsTemplateArray[i++]}
+    echo "$templateOut" >> ./source/engine_logsq.rst
+done
+
+# extract info for this Log file from the file name
+#  for each Log file name
+nn=0
+for logFileName in "${logFilesSorted[@]}"
+do
+  echo
+  IFS=', ' read -r -a logFileSplit <<< "${logFileName//./ }"
+  n=0
+
+  # for each part of the Log file name currently being processed
+  #  break the name into the parts: category, title, etc...
+  for element in "${logFileSplit[@]}"
+  do
+    echo "$element"
+    if [ $n -eq 1 ]; then
+      logCategory=$element
+      echo logCategory = $logCategory
+    fi
+    if [ $n -eq 2 ]; then
+      logTitle=$element
+      logTitleSpaced=${logTitle//_/ }
+      echo logTitleSpaced = $logTitleSpaced
+    fi
+    if [ $n -eq 4 ]; then
+      logDate=$element
+      logDateLong=$(date -d $logDate +"%d-%b-%Y")
+      echo logDateLong=$logDateLong
+    fi
+
+    let "n++"
+  done
+
+  # append info for each Logs section starting with Engine then adding others
+  # append new Log file info to the appropriate Logs file (e.g. Engine Logs)
+  logTitleComplete="$logDateLong --- $logTitleSpaced"
+  echo "$logTitleComplete" >> ./source/engine_logsq.rst
+  printf_new "-" ${#logTitleComplete} >> ./source/engine_logsq.rst
+  echo >> ./source/engine_logsq.rst
+
+  LOGFILENAMEUPDATED=${logFileName//Log/Title}
+  LOGFILENAMEUPDATED=${LOGFILENAMEUPDATED//.rst/}
+  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
+  echo "  :start-after: .. START - ${LOGFILENAMEUPDATED}" >> ./source/engine_logsq.rst
+  echo "  :end-before: .. END - ${LOGFILENAMEUPDATED}" >> ./source/engine_logsq.rst
+
+  echo >> ./source/engine_logsq.rst
+  echo >> ./source/engine_logsq.rst
+
+###  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
+###  echo "  :start-line: 11" >> ./source/engine_logsq.rst
+###  echo "  :end-line: 13" >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
+###  echo "  :start-line: 15" >> ./source/engine_logsq.rst
+###  echo "  :end-line: 26" >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo "----" >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo "footer" >> ./source/engine_logsq.rst
+
+  #echo $logFileName
+done
+
+###exit 1
+
+
+###echo
+###echo "${logFileSplit[0]}"
+###echo "${logFileSplit[1]}"
+###echo "${logFileSplit[2]}"
+
+
+###echo Log Files
+###echo "${logFiles[@]}"
+###echo
+###echo Sorted
+###printf "%s\n" "${logFilesSorted[@]}"
+
+
+###exit 1
+
+
+
+
 
 
 
