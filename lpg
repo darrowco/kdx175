@@ -17,7 +17,7 @@ imgFiles=([0-9][0-9][0-9]*)
 cd ../../..
 #echo "${imgFiles[@]}"
 
-# sort
+# sort the new images
 IFS=$'\n' imgFilesSorted=($(sort <<<"${imgFiles[*]}")); unset IFS
 #printf "%s\n" "${imgFilesSorted[@]}"
 
@@ -41,7 +41,7 @@ done
 # break input on each "." and read into array
 IFS='.' read -r -a array <<< "$NEWLOGPAGE"
 
-# remove any underscores
+# remove any underscores from the title
 n=0
 for element in "${array[@]}"
 do
@@ -71,10 +71,10 @@ fi
 # Load the Log Page template file into array.
 readarray -t logPageTemplateArray < log_page_template.txt
 
-# Explicitly write template out to file
+# Explicitly write the Log Page template out to file substitutung values
 let i=0
 while (( ${#logPageTemplateArray[@]} > i )); do
-    templateOut=${logPageTemplateArray[i++]}
+    templateOut=${logPageTemplateArray[i]}
 
     # replace marker with Title Tags (Sphinx include markers)
     if [[ $templateOut =~ "zzzTitleTagzzz" ]]; then
@@ -109,7 +109,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
 
       # if a video metadata file
       if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
-        echo "future: video file option"
+        echo "future: video file option"kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.000           
 
       # else if an image file
       else
@@ -158,6 +158,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
     else
       echo "$templateOut" >> ./source/$NEWLOGPAGE.rst
     fi
+  let "i++"
 done
 
 

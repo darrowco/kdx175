@@ -36,8 +36,8 @@ Prep for engine removal
 
 .. END - kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shopq
 
-Title of the first section
---------------------------
+Title of an example section with an online video
+------------------------------------------------
 
 This is how to embed a video that is hosted on youtube.
 This is on a new line.
@@ -49,15 +49,23 @@ This is on a new line.
     <iframe width="100%" height="350" src="https://www.youtube.com/embed/JKCC4Tcx18A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
-Title of the second section
----------------------------
+Title of an example section with an online image
+------------------------------------------------
 
-The second section describes a step subsequent to the first.
+How to embed an image that is hosted on online.
+This is on a new line.
 
-Title of the third section with an embedded image
--------------------------------------------------
 
-.. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.000.jpeg
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://secure.zeald.com/site/bearingses/images/items/NR_BALL_BEARING.jpg?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+Title of an example section with a local image
+----------------------------------------------
+
+.. figure:: ./_static/images/spokes.jpeg
    :scale: 50 %
    :alt: map to buried treasure
 
