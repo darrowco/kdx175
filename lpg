@@ -152,7 +152,10 @@ while (( ${#logPageTemplateArray[@]} > i )); do
             echo "$k"
             echo "$sectionImage"
 
-
+            # shrink large images to a max of 1024
+            # todo: add check so that resize is applied only to large images
+            #   https://stackoverflow.com/questions/38254297/bash-script-find-all-images-and-mogrify-images#38254569
+            mogrify -path ./source/_static/images/ -resize "1024x1024" -quality 70 "./source/_static/images/${sectionImage}"
 
             # if a video metadata file
             if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
