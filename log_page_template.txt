@@ -35,8 +35,11 @@ zzzTitlezzz
 
 .. END - zzzTeaserTagzzz
 
-Title of an example section with an online video
-------------------------------------------------
+.. START - zzzImageSectionzzz
+.. END - zzzImageSectionzzz
+
+Example section: TITLE goes here
+--------------------------------
 
 This is how to embed a video that is hosted on youtube.
 This is on a new line.
@@ -78,7 +81,6 @@ Title of an example section with a local image
    case, the legend consists of this paragraph and the following
    table.
 
-   .. START - zzzImageSectionzzz
 
 By the Numbers
 --------------

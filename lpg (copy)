@@ -152,43 +152,45 @@ while (( ${#logPageTemplateArray[@]} > i )); do
             echo "$k"
             echo "$sectionImage"
 
+            # new_image_file_name = new_log_page_name.image_file_name
+            imgFileName=$NEWLOGPAGE.${sectionImage}
+            
+            # print the new section to the new log file
+            echo "" >> ./source/$NEWLOGPAGE.rst
+            echo "Title of an example section with a local image" >> ./source/$NEWLOGPAGE.rst
+            echo "----------------------------------------------" >> ./source/$NEWLOGPAGE.rst
+            echo "">> ./source/$NEWLOGPAGE.rst
+            echo ".. figure:: ./_static/images/${imgFileName}" >> ./source/$NEWLOGPAGE.rst
+            echo "   :scale: 50 %" >> ./source/$NEWLOGPAGE.rst
+            echo "   :alt: map to buried treasure" >> ./source/$NEWLOGPAGE.rst
+            echo "" >> ./source/$NEWLOGPAGE.rst
+            echo "Caption for the image" >> ./source/$NEWLOGPAGE.rst
+            echo "" >> ./source/$NEWLOGPAGE.rst
+            echo "   The legend consists of all elements after the caption.  In this" >> ./source/$NEWLOGPAGE.rst
+            echo "   case, the legend consists of this paragraph and the following" >> ./source/$NEWLOGPAGE.rst
+            echo "   table." >> ./source/$NEWLOGPAGE.rst
 
+            # rename the image from the original upload name to the new name
+            mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
 
-            # if a video metadata file
-            if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
-              echo "future: video file option"
+echo $imgFileName
 
-            # else if an image file
-            else
-              # new_image_file_name = new_log_page_name.image_file_name
-              imgFileName=$NEWLOGPAGE.${sectionImage}
-              
-              # print the new section to the new log file
-              echo "" >> ./source/$NEWLOGPAGE.rst
-              echo "Title of an example section with a local image" >> ./source/$NEWLOGPAGE.rst
-              echo "----------------------------------------------" >> ./source/$NEWLOGPAGE.rst
-              echo "" >> ./source/$NEWLOGPAGE.rst
-              echo ".. figure:: ./_static/images/${imgFileName}" >> ./source/$NEWLOGPAGE.rst
-              echo "   :scale: 50 %" >> ./source/$NEWLOGPAGE.rst
-              echo "   :alt: map to buried treasure" >> ./source/$NEWLOGPAGE.rst
-              echo "" >> ./source/$NEWLOGPAGE.rst
-              echo "Caption for the image" >> ./source/$NEWLOGPAGE.rst
-              echo "" >> ./source/$NEWLOGPAGE.rst
-              echo "   The legend consists of all elements after the caption.  In this" >> ./source/$NEWLOGPAGE.rst
-              echo "   case, the legend consists of this paragraph and the following" >> ./source/$NEWLOGPAGE.rst
-              echo "   table." >> ./source/$NEWLOGPAGE.rst
-
-              # rename the image from the original upload name to the new name
-              mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
-
-              echo $imgFileName
-            fi
           fi
           let "k++"
         done
 
 
+      # if a video metadata file
+      if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
+        echo "future: video file option"
 
+      # else if an image file
+      else
+
+        # 
+        imgFileName=$NEWLOGPAGE.${imgFilesSorted[0]}
+        echo "${templateOut//zzzImagezzz/$imgFileName}" >> ./source/$NEWLOGPAGE.rst
+      fi
 
 
 
