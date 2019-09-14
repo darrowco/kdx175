@@ -55,17 +55,19 @@ How to embed an image that is hosted on online.
 This is on a new line.
 
 
-.. raw:: html
+.. figure:: https://secure.zeald.com/site/bearingses/images/items/NR_BALL_BEARING.jpg
+   :alt: one ball bearing required
 
-    <div style="text-align: center; margin-bottom: 2em;">
-    <iframe width="100%" height="350" src="https://secure.zeald.com/site/bearingses/images/items/NR_BALL_BEARING.jpg?rel=0" frameborder="0" allowfullscreen></iframe>
-    <a href="https://secure.zeald.com/site/bearingses/images/items/NR_BALL_BEARING.jpg" style="position:absolute; top:0; left:0; display:inline-block; height:350px; z-index:5;"></a>
-    </div>
+   Caption for the image
+
+   The legend consists of all elements after the caption.  In this
+   case, the legend consists of this paragraph and the following
+   table.
 
 Title of an example section with a local image
 ----------------------------------------------
 
-.. figure:: https://secure.zeald.com/site/bearingses/images/items/NR_BALL_BEARING.jpg
+.. figure:: ./_static/images/spokes.jpeg
    :scale: 50 %
    :alt: map to buried treasure
 
