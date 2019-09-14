@@ -57,6 +57,7 @@ This is on a new line.
 
 
 .. figure:: https://secure.zeald.com/site/bearingses/images/items/NR_BALL_BEARING.jpg
+   :target: https://secure.zeald.com/site/bearingses/images/items/NR_BALL_BEARING.jpg
    :alt: one ball bearing required
 
    Caption for the image
