@@ -15,9 +15,9 @@ zzzTitlezzz
 .. raw:: html
 
     <!--
-    .. START zzzLogLinkTagzzz
+    .. START - zzzLogLinkTagzzz
     Click here to see the `entire Log Entry <zzzLogPageNamezzz.html>`__
-    .. END zzzLogLinkTagzzz
+    .. END - zzzLogLinkTagzzz
     -->
 
 .. START - zzzTeaserTagzzz
