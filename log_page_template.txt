@@ -78,6 +78,8 @@ Title of an example section with a local image
    case, the legend consists of this paragraph and the following
    table.
 
+   .. START - zzzImageSectionzzz
+
 By the Numbers
 --------------
 

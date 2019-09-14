@@ -115,6 +115,9 @@ while (( ${#logPageTemplateArray[@]} > i )); do
       else
         # generate a new name for the image file
         # assume that the new files are name sequentially e.g. 000_*, 001_*, etc
+        # todo: build name from date/time/OEM_name and/or metadata from thje pic ie 201909140901_IMG9327
+        #       this will allow sort by date in the image viewer
+
         # new_image_file_name = new_log_page_name.image_file_name
         imgFileName=$NEWLOGPAGE.${imgFilesSorted[0]}
 
@@ -125,7 +128,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
         spaceLength=$((120-${imgFileNameLength}))
         spaceLengthVar=$(printf ' %.0s' {$(seq 1 $spaceLength)})
 
-        # print the new table ros to the new log file
+        # print the new table row to the new log file
         echo "${templateOut//zzzTeaserImagezzz/$imgFileName}${spaceLengthVar}|" >> ./source/$NEWLOGPAGE.rst
 
         # rename the image from the original upload name to the new name
@@ -134,10 +137,60 @@ while (( ${#logPageTemplateArray[@]} > i )); do
 
     # replace marker with link to full-sized teaser image
     elif [[ $templateOut =~ "zzzTeaserILinkzzz" ]]; then
-        echo "${templateOut//zzzTeaserILinkzzz/$imgFileName}${spaceLengthVar}|" >> ./source/$NEWLOGPAGE.rst
+      echo "${templateOut//zzzTeaserILinkzzz/$imgFileName}${spaceLengthVar}|" >> ./source/$NEWLOGPAGE.rst
+
+
+
 
     # replace marker with an image or video
-    elif [[ $templateOut =~ "zzzImagezzz" ]]; then
+    elif [[ $templateOut =~ "zzzImageSectionzzz" ]]; then
+      k=0
+
+      for sectionImage in "${imgFilesSorted[@]}"
+        do
+          if [[ $k -gt 0 ]]; then
+            echo "$k"
+            echo "$sectionImage"
+
+            # new_image_file_name = new_log_page_name.image_file_name
+            imgFileName=$NEWLOGPAGE.${sectionImage}
+            
+            # print the new section to the new log file
+            echo "">> ./source/$NEWLOGPAGE.rst
+            echo "Title of an example section with a local image" >> ./source/$NEWLOGPAGE.rst
+            echo "----------------------------------------------" >> ./source/$NEWLOGPAGE.rst
+            echo "">> ./source/$NEWLOGPAGE.rst
+            echo ".. figure:: ./_static/images/${imgFileName}" >> ./source/$NEWLOGPAGE.rst
+            echo "   :scale: 50 %" >> ./source/$NEWLOGPAGE.rst
+            echo "   :alt: map to buried treasure" >> ./source/$NEWLOGPAGE.rst
+            echo "" >> ./source/$NEWLOGPAGE.rst
+            echo "Caption for the image" >> ./source/$NEWLOGPAGE.rst
+            echo "" >> ./source/$NEWLOGPAGE.rst
+            echo "   The legend consists of all elements after the caption.  In this" >> ./source/$NEWLOGPAGE.rst
+            echo "   case, the legend consists of this paragraph and the following" >> ./source/$NEWLOGPAGE.rst
+            echo "   table." >> ./source/$NEWLOGPAGE.rst
+
+            # rename the image from the original upload name to the new name
+            mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
+
+
+
+
+echo $imgFileName
+
+
+          fi
+          let "k++"
+        done
+
+
+
+
+
+
+
+
+
 
       # if a video metadata file
       if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
@@ -150,6 +203,10 @@ while (( ${#logPageTemplateArray[@]} > i )); do
         imgFileName=$NEWLOGPAGE.${imgFilesSorted[0]}
         echo "${templateOut//zzzImagezzz/$imgFileName}" >> ./source/$NEWLOGPAGE.rst
       fi
+
+
+
+
 
     elif [[ $templateOut =~ "zzzTagPartsRowszzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Parts}
