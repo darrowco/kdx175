@@ -35,8 +35,7 @@ zzzTitlezzz
 
 .. END - zzzTeaserTagzzz
 
-.. START - zzzImageSectionzzz
-.. END - zzzImageSectionzzz
+.. START-END - zzzImageSectionzzz
 
 Example section: TITLE goes here
 --------------------------------

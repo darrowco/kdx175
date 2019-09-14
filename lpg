@@ -170,7 +170,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
               echo "" >> ./source/$NEWLOGPAGE.rst
               echo ".. figure:: ./_static/images/${imgFileName}" >> ./source/$NEWLOGPAGE.rst
               echo "   :scale: 50%" >> ./source/$NEWLOGPAGE.rst
-              echo "   :WIDTH: 100%" >> ./source/$NEWLOGPAGE.rst
+              echo "   :WIDTH: 50%" >> ./source/$NEWLOGPAGE.rst
               echo "   :alt: map to buried treasure" >> ./source/$NEWLOGPAGE.rst
               echo "" >> ./source/$NEWLOGPAGE.rst
               echo "Caption for the image" >> ./source/$NEWLOGPAGE.rst
