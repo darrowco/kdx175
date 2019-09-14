@@ -65,7 +65,7 @@ This is on a new line.
 Title of an example section with a local image
 ----------------------------------------------
 
-.. figure:: ./_static/images/spokes.jpeg
+.. figure:: https://secure.zeald.com/site/bearingses/images/items/NR_BALL_BEARING.jpg
    :scale: 50 %
    :alt: map to buried treasure
 
