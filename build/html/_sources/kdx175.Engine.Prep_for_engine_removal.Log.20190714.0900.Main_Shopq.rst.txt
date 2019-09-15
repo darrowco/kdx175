@@ -79,8 +79,9 @@ Caption for the image
 Example section: TITLE goes here
 --------------------------------
 
-This is how to embed a video that is hosted on youtube.
-This is on a new line.
+THIS EXAMPLE SECTION HAS A VIDEO
+It demonstrates how to embed a video that is hosted on youtube.
+This example section may be editied and used or removed.
 
 
 .. raw:: html
@@ -89,25 +90,30 @@ This is on a new line.
     <iframe width="100%" height="350" src="https://www.youtube.com/embed/JKCC4Tcx18A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
-Title of an example section with an online image
-------------------------------------------------
+Example section: TITLE goes here
+--------------------------------
 
-How to embed an image that is hosted on online.
-This is on a new line.
+THIS EXAMPLE SECTION DEMONSTRATES AN ONLINE IMAGE
+It shows how to embed an image that is on a different site.
+This example section may be editied and used or removed.
 
 
 .. figure:: https://secure.zeald.com/site/bearingses/images/items/NR_BALL_BEARING.jpg
    :target: https://secure.zeald.com/site/bearingses/images/items/NR_BALL_BEARING.jpg
    :alt: one ball bearing required
 
-   Caption for the image
+   Caption for the image goes here
 
-   The legend consists of all elements after the caption.  In this
-   case, the legend consists of this paragraph and the following
-   table.
+   This is the legend which consists of all elements after the caption.  In this
+   case, the legend consists of this paragraph.
 
-Title of an example section with a local image
-----------------------------------------------
+Example section: TITLE goes here
+--------------------------------
+
+THIS EXAMPLE SECTION DEMONSTRATES USING A LOCAL IMAGE
+It shows how to embed an image that you upload.
+This example section may be editied and used or removed.
+
 
 .. figure:: ./_static/images/spokes.jpeg
    :scale: 50 %
@@ -115,13 +121,13 @@ Title of an example section with a local image
 
    Caption for the image
 
-   The legend consists of all elements after the caption.  In this
-   case, the legend consists of this paragraph and the following
-   table.
+   This is the legend which consists of all elements after the caption.  In this
+   case, the legend consists of this paragraph.
 
 
-By the Numbers
---------------
+Project Numbers
+---------------
+
 
 .. raw:: html
 
