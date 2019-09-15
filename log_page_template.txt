@@ -28,7 +28,7 @@ zzzTitlezzz
 | | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                                                                                                                  |
 | | removed. One of the engine bolts was rusted    |    :target: ./_static/images/zzzTeaserILinkzzz
 | | so it was cut.                                 |                                                                                                                                                      |
-| |                                                |    This is before cleaning                                                                                                                           |
+| |                                                |    Your uploaded image "000" is displayed here                                                                                                       |
 | | One person can do this in a crouched position  |                                                                                                                                                      |
 | | if care is used                                |                                                                                                                                                      |
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -37,9 +37,10 @@ zzzTitlezzz
 
 .. START-END - zzzImageSectionzzz
 
-Video Section Example (replace this line with the Section Title)
-----------------------------------------------------------------
+Video Section Example
+---------------------
 
+Replace "Video Section Example" with your own Section Title.
 This demonstrates how to embed a video that is hosted on youtube.
 This example section may be editied and used or removed.
 
@@ -50,9 +51,10 @@ This example section may be editied and used or removed.
     <iframe width="100%" height="350" src="https://www.youtube.com/embed/JKCC4Tcx18A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
-Online Image Section Example (replace this line with the Section Title)
------------------------------------------------------------------------
+Online Image Section Example
+----------------------------
 
+Replace "Online Image Section Example" with your own Section Title.
 This shows how to embed an image that is on a different site.
 This example section may be editied and used or removed.
 
@@ -66,9 +68,10 @@ This example section may be editied and used or removed.
    This is the legend which consists of all elements after the caption.  In this
    case, the legend consists of this paragraph.
 
-Uploaded Image Section Example (replace this line with the Section Title)
--------------------------------------------------------------------------
+Uploaded Image Section Example
+------------------------------
 
+Replace "Uploaded Image Section Example" with your own Section Title.
 This shows how to embed an image that you upload.
 This example section may be editied and used or removed.
 
