@@ -206,7 +206,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
               # extract oem image file name to use for temporary title
               # break image name read from file system on each "---" and read into array
               IFS='^' read -a arrayTitle <<< "$imgFileNameRtd"; unset IFS
-              titleFor="Title for ${arrayTitle[1]}"
+              titleFor="Section for your image ${arrayTitle[1]}"
               echo ${titleFor} >> ./source/$NEWLOGPAGE.rst
               printf_new "-" ${#titleFor} >> ./source/$NEWLOGPAGE.rst
               echo "" >> ./source/$NEWLOGPAGE.rst
