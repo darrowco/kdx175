@@ -208,7 +208,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
               echo ${titleFor} >> ./source/$NEWLOGPAGE.rst
               printf_new "-" ${#titleFor} >> ./source/$NEWLOGPAGE.rst
               echo "" >> ./source/$NEWLOGPAGE.rst
-              echo ".. figure:: ./_static/images/${imgFileName}" >> ./source/$NEWLOGPAGE.rst
+              echo ".. figure:: ./_static/images/${imgFileNameRtd}" >> ./source/$NEWLOGPAGE.rst
               echo "   :scale: 50%" >> ./source/$NEWLOGPAGE.rst
               echo "   :alt: ${sectionImage}" >> ./source/$NEWLOGPAGE.rst
               echo "" >> ./source/$NEWLOGPAGE.rst
@@ -220,7 +220,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
               # rename the image from the original upload name to the new name
               #mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
 
-              echo $imgFileName
+              echo $imgFileNameRtd
             fi
           fi
           let "k++"
