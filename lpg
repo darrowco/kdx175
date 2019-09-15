@@ -11,17 +11,6 @@ printf_new() {
  echo "${v// /$str}"
 }
 
-# read in any new images
-cd ./source/_static/images
-imgFiles=([0-9][0-9][0-9]*)
-cd ../../..
-#echo "${imgFiles[@]}"
-
-# sort the new images
-IFS=$'\n' imgFilesSorted=($(sort <<<"${imgFiles[*]}")); unset IFS
-#printf "%s\n" "${imgFilesSorted[@]}"
-
-
 # parse any inputs on the command line
 while :; do
 
@@ -54,9 +43,51 @@ do
     let "n++"
 done
 
+# read in any new images
+cd ./source/_static/images
+imgFiles=([0-9][0-9][0-9]*)
+cd ../../..
+#echo "${imgFiles[@]}"
+
+# sort the new images
+IFS=$'\n' imgFilesSorted=($(sort <<<"${imgFiles[*]}")); unset IFS
+#printf "%s\n" "${imgFilesSorted[@]}"
+
+      for sectionImage in "${imgFilesSorted[@]}"
+        do
+            # if a video metadata file
+            if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
+              echo "future: video file option"
+
+            # else if an image file
+            else
+              # shrink large images to a max of 1024
+              # todo: add check so that resize is applied only to large images
+              #   https://stackoverflow.com/questions/38254297/bash-script-find-all-images-and-mogrify-images#38254569
+              mogrify -path ./source/_static/images/ -resize "1024x1024" -quality 70 "./source/_static/images/${sectionImage}"
+
+              # new_image_file_name = new_log_page_name.image_file_name
+              imgFileName=$NEWLOGPAGE.${sectionImage}
+
+              # rename the image from the original upload name to the new name
+              mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
+            fi
+        done
+
+# read in any renamed images
+cd ./source/_static/images
+imgFilesRenamed=(${NEWLOGPAGE}*)
+cd ../../..
+
+# sort the renamed images
+IFS=$'\n' imgFilesRenamedSorted=($(sort <<<"${imgFilesRenamed[*]}")); unset IFS
+#printf "%s\n" "${imgFilesRenamedSorted[@]}"
+
 #######################################################################################
 # create the new Log Page file if it does not already exist
 #  if it exists, delete manually and then re-run this script
+# todo: add in menu choice (from zfs install)
+
 # check file existence
 if [ -f source/$NEWLOGPAGE.rst ]
 then
@@ -105,7 +136,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
     elif [[ $templateOut =~ "zzzTeaserImagezzz" ]]; then
 
       # evaluate file extension to determine if image or video metadata file
-      IFS=', ' read -r -a imgFileSplit <<< "${imgFilesSorted[0]//./ }"
+      IFS=', ' read -r -a imgFileSplit <<< "${imgFilesRenamedSorted[0]//./ }"
 
       # if a video metadata file
       if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
@@ -119,7 +150,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
         #       this will allow sort by date in the image viewer
 
         # new_image_file_name = new_log_page_name.image_file_name
-        imgFileName=$NEWLOGPAGE.${imgFilesSorted[0]}
+        imgFileName=${imgFilesRenamedSorted[0]}
 
         # get the length of the new image name
         imgFileNameLength=${#imgFileName}
@@ -132,21 +163,18 @@ while (( ${#logPageTemplateArray[@]} > i )); do
         echo "${templateOut//zzzTeaserImagezzz/$imgFileName}${spaceLengthVar}|" >> ./source/$NEWLOGPAGE.rst
 
         # rename the image from the original upload name to the new name
-        mv "./source/_static/images/${imgFilesSorted[0]}" "./source/_static/images/${imgFileName}"
+        #mv "./source/_static/images/${imgFilesSorted[0]}" "./source/_static/images/${imgFileName}"
       fi
 
     # replace marker with link to full-sized teaser image
     elif [[ $templateOut =~ "zzzTeaserILinkzzz" ]]; then
       echo "${templateOut//zzzTeaserILinkzzz/$imgFileName}${spaceLengthVar}|" >> ./source/$NEWLOGPAGE.rst
 
-
-
-
     # replace marker with a new section with an image or video
     elif [[ $templateOut =~ "zzzImageSectionzzz" ]]; then
       k=0
 
-      for sectionImage in "${imgFilesSorted[@]}"
+      for sectionImage in "${imgFilesRenamedSorted[@]}"
         do
           if [[ $k -gt 0 ]]; then
             echo "$k"
@@ -155,7 +183,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
             # shrink large images to a max of 1024
             # todo: add check so that resize is applied only to large images
             #   https://stackoverflow.com/questions/38254297/bash-script-find-all-images-and-mogrify-images#38254569
-            mogrify -path ./source/_static/images/ -resize "1024x1024" -quality 70 "./source/_static/images/${sectionImage}"
+            ###mogrify -path ./source/_static/images/ -resize "1024x1024" -quality 70 "./source/_static/images/${sectionImage}"
 
             # if a video metadata file
             if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
@@ -164,12 +192,13 @@ while (( ${#logPageTemplateArray[@]} > i )); do
             # else if an image file
             else
               # new_image_file_name = new_log_page_name.image_file_name
-              imgFileName=$NEWLOGPAGE.${sectionImage}
+              imgFileName=${sectionImage}
               
               # print the new section to the new log file
               echo "" >> ./source/$NEWLOGPAGE.rst
-              echo "Title for ${sectionImage}" >> ./source/$NEWLOGPAGE.rst
-              echo "----------------------------------------------" >> ./source/$NEWLOGPAGE.rst
+              titleFor="Title for ${imgFilesSorted[$k]}"
+              echo ${titleFor} >> ./source/$NEWLOGPAGE.rst
+              printf_new "-" ${#titleFor} >> ./source/$NEWLOGPAGE.rst
               echo "" >> ./source/$NEWLOGPAGE.rst
               echo ".. figure:: ./_static/images/${imgFileName}" >> ./source/$NEWLOGPAGE.rst
               echo "   :scale: 50%" >> ./source/$NEWLOGPAGE.rst
@@ -181,7 +210,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
               echo "   case, the legend consists of this paragraph." >> ./source/$NEWLOGPAGE.rst
               
               # rename the image from the original upload name to the new name
-              mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
+              #mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
 
               echo $imgFileName
             fi
