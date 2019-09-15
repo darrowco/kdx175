@@ -24,10 +24,10 @@ Prep for engine removal
 .. START - kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shopq
 
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | Finally finished exams and know have time to   | .. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq---201909140907_000.jpeg                              |
+| | Finally finished exams and know have time to   | .. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_000.jpeg                                |
 | | get back to work on the KDX. Engine removal    |    :align: right                                                                                                                                     |
 | | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                                                                                                                  |
-| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq---201909140907_000.jpeg                              |
+| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_000.jpeg                                |
 | | so it was cut.                                 |                                                                                                                                                      |
 | |                                                |    This is before cleaning                                                                                                                           |
 | | One person can do this in a crouched position  |                                                                                                                                                      |
@@ -37,36 +37,36 @@ Prep for engine removal
 .. END - kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shopq
 
 
-Title for
-----------
+Title for 201909140907_001.jpeg
+-------------------------------
 
-.. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq---201909140907_001.jpeg
+.. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_001.jpeg
    :scale: 50%
-   :alt: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq---201909140907_001.jpeg
+   :alt: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_001.jpeg
 
 Caption for the image goes here
 
    The legend consists of all elements after the caption.  In this
    case, the legend consists of this paragraph.
 
-Title for
-----------
+Title for 201909140907_002.jpeg
+-------------------------------
 
-.. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq---201909140907_002.jpeg
+.. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_002.jpeg
    :scale: 50%
-   :alt: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq---201909140907_002.jpeg
+   :alt: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_002.jpeg
 
 Caption for the image goes here
 
    The legend consists of all elements after the caption.  In this
    case, the legend consists of this paragraph.
 
-Title for
-----------
+Title for 201909140907_003.png
+------------------------------
 
-.. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq---201909140907_003.png
+.. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_003.png
    :scale: 50%
-   :alt: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq---201909140907_003.png
+   :alt: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_003.png
 
 Caption for the image goes here
 
