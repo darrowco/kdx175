@@ -37,44 +37,41 @@ Prep for engine removal
 .. END - kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shopq
 
 
-Title of an example section with a local image
+Title for 201909140907_001.jpeg
 ----------------------------------------------
 
 .. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.201909140907_001.jpeg
    :scale: 50%
-   :alt: map to buried treasure
+   :alt: 201909140907_001.jpeg
 
-Caption for the image
+Caption for the image goes here
 
    The legend consists of all elements after the caption.  In this
-   case, the legend consists of this paragraph and the following
-   table.
+   case, the legend consists of this paragraph.
 
-Title of an example section with a local image
+Title for 201909140907_002.jpeg
 ----------------------------------------------
 
 .. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.201909140907_002.jpeg
    :scale: 50%
-   :alt: map to buried treasure
+   :alt: 201909140907_002.jpeg
 
-Caption for the image
+Caption for the image goes here
 
    The legend consists of all elements after the caption.  In this
-   case, the legend consists of this paragraph and the following
-   table.
+   case, the legend consists of this paragraph.
 
-Title of an example section with a local image
+Title for 201909140907_003.png
 ----------------------------------------------
 
 .. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.201909140907_003.png
    :scale: 50%
-   :alt: map to buried treasure
+   :alt: 201909140907_003.png
 
-Caption for the image
+Caption for the image goes here
 
    The legend consists of all elements after the caption.  In this
-   case, the legend consists of this paragraph and the following
-   table.
+   case, the legend consists of this paragraph.
 
 Example section: TITLE goes here
 --------------------------------

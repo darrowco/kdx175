@@ -168,19 +168,18 @@ while (( ${#logPageTemplateArray[@]} > i )); do
               
               # print the new section to the new log file
               echo "" >> ./source/$NEWLOGPAGE.rst
-              echo "Title of an example section with a local image" >> ./source/$NEWLOGPAGE.rst
+              echo "Title for ${sectionImage}" >> ./source/$NEWLOGPAGE.rst
               echo "----------------------------------------------" >> ./source/$NEWLOGPAGE.rst
               echo "" >> ./source/$NEWLOGPAGE.rst
               echo ".. figure:: ./_static/images/${imgFileName}" >> ./source/$NEWLOGPAGE.rst
               echo "   :scale: 50%" >> ./source/$NEWLOGPAGE.rst
-              echo "   :alt: map to buried treasure" >> ./source/$NEWLOGPAGE.rst
+              echo "   :alt: ${sectionImage}" >> ./source/$NEWLOGPAGE.rst
               echo "" >> ./source/$NEWLOGPAGE.rst
-              echo "Caption for the image" >> ./source/$NEWLOGPAGE.rst
+              echo "Caption for the image goes here" >> ./source/$NEWLOGPAGE.rst
               echo "" >> ./source/$NEWLOGPAGE.rst
               echo "   The legend consists of all elements after the caption.  In this" >> ./source/$NEWLOGPAGE.rst
-              echo "   case, the legend consists of this paragraph and the following" >> ./source/$NEWLOGPAGE.rst
-              echo "   table." >> ./source/$NEWLOGPAGE.rst
-
+              echo "   case, the legend consists of this paragraph." >> ./source/$NEWLOGPAGE.rst
+              
               # rename the image from the original upload name to the new name
               mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
 
