@@ -122,8 +122,8 @@ This example section may be editied and used or removed.
    case, the legend consists of this paragraph.
 
 
-By the Numbers
---------------
+Project Numbers
+---------------
 
 
 .. raw:: html
