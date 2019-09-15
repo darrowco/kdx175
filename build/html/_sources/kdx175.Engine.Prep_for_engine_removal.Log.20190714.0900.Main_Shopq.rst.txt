@@ -40,6 +40,18 @@ Prep for engine removal
 Title for
 ----------
 
+.. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.201909140907_000.png
+   :scale: 50%
+   :alt: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.201909140907_000.png
+
+Caption for the image goes here
+
+   The legend consists of all elements after the caption.  In this
+   case, the legend consists of this paragraph.
+
+Title for
+----------
+
 .. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.201909140907_001.jpeg
    :scale: 50%
    :alt: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.201909140907_001.jpeg
@@ -55,6 +67,18 @@ Title for
 .. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.201909140907_002.jpeg
    :scale: 50%
    :alt: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.201909140907_002.jpeg
+
+Caption for the image goes here
+
+   The legend consists of all elements after the caption.  In this
+   case, the legend consists of this paragraph.
+
+Title for
+----------
+
+.. figure:: ./_static/images/kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.201909140907_003.jpeg
+   :scale: 50%
+   :alt: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.201909140907_003.jpeg
 
 Caption for the image goes here
 
