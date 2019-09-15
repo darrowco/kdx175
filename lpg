@@ -59,10 +59,10 @@ IFS=$'\n' imgFilesSorted=($(sort <<<"${imgFiles[*]}")); unset IFS
       for sectionImage in "${imgFilesSorted[@]}"
         do
             # if a video metadata file
-            if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
-              echo "future: video file option"
-
-            # else if an image file
+            if [[ ${imgFileSplit[1]} =~ /txt^sectionImage/ ]]; then
+              echo "future: video file optionsectionImage"
+sectionImage
+            # else if an image filesectionImage
             else
               # shrink large images to a max of 1024
               # todo: add check so that resize is applied only to large images
@@ -70,7 +70,7 @@ IFS=$'\n' imgFilesSorted=($(sort <<<"${imgFiles[*]}")); unset IFS
               mogrify -path ./source/_static/images/ -resize "1024x1024" -quality 70 "./source/_static/images/${sectionImage}"
 
               # new_image_file_name = new_log_page_name.image_file_name
-              imgFileName=$NEWLOGPAGE.${sectionImage}
+              imgFileName=$NEWLOGPAGE---${sectionImage}
 
               # rename the image from the original upload name to the new name
               mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
@@ -198,11 +198,13 @@ while (( ${#logPageTemplateArray[@]} > i )); do
             # else if an image file
             else
               # new_image_file_name = new_log_page_name.image_file_name
-              imgFileName=${sectionImage}
-              
+              imgFileNameRtd=${sectionImage}
+              # extract oem image file name to use for temporary title
+              # break image name read from file system on each "---" and read into array
+              IFS='---' read -r -a arrayTitle <<< "$NEWLOGPAGE"
               # print the new section to the new log file
               echo "" >> ./source/$NEWLOGPAGE.rst
-              titleFor="Title for ${imgFilesSorted[$k]}"
+              titleFor="Title for ${arrayTitle[1]}"
               echo ${titleFor} >> ./source/$NEWLOGPAGE.rst
               printf_new "-" ${#titleFor} >> ./source/$NEWLOGPAGE.rst
               echo "" >> ./source/$NEWLOGPAGE.rst
