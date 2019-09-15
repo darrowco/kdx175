@@ -3,6 +3,7 @@
 ################################################################################
 declare -a logPageTemplateArray
 declare -a engineLogsTemplateArray
+declare -a imgFiles
 
 printf_new() {
  str=$1
@@ -47,7 +48,9 @@ done
 cd ./source/_static/images
 imgFiles=([0-9][0-9][0-9]*)
 cd ../../..
-#echo "${imgFiles[@]}"
+
+# check for any new images
+if ! [[ ${imgFiles[0]} == "[0-9][0-9][0-9]*" ]]; then
 
 # sort the new images
 IFS=$'\n' imgFilesSorted=($(sort <<<"${imgFiles[*]}")); unset IFS
@@ -73,6 +76,9 @@ IFS=$'\n' imgFilesSorted=($(sort <<<"${imgFiles[*]}")); unset IFS
               mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
             fi
         done
+
+fi
+
 
 # read in any renamed images
 cd ./source/_static/images
