@@ -1,0 +1,23 @@
+
+cd ~/docs/kdx175/source
+
+  darrowco@z76:~/docs/kdx175/source$
+
+
+perl /home/darrowco/docs/kdx175/source/pigg.pl _static/images
+
+
+cd ~/docs/kdx175
+
+  darrowco@z76:~/docs/kdx175$ 
+
+
+./lpg -n kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq
+
+make html
+
+git add .
+
+git commit -m "commit message"
+
+git push --all
