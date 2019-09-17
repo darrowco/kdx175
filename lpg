@@ -113,6 +113,9 @@ IFS=$'\n' imgFilesRenamedSorted=($(sort <<<"${imgFilesRenamed[*]}")); unset IFS
 # Load the Log Page template file into array.
 readarray -t logPageTemplateArray < log_page_template.txt
 
+# overwrite the existing Log file and insert the first line of the template
+echo "$templateOut" > ./source/$NEWLOGPAGE.rst
+
 # Explicitly write the Log Page template out to file substitutung values
 let i=0
 while (( ${#logPageTemplateArray[@]} > i )); do
@@ -121,7 +124,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
     # replace marker with Title Tags (Sphinx include markers)
     if [[ $templateOut =~ "zzzTitleTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Title}
-      echo "${templateOut//zzzTitleTagzzz/$NEWLOGPAGEUPDATED}" > ./source/$NEWLOGPAGE.rst
+      echo "${templateOut//zzzTitleTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
 
     # replace marker with Title
     elif [[ $templateOut =~ "zzzTitlezzz" ]]; then
