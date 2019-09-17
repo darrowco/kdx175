@@ -21,3 +21,169 @@ git add .
 git commit -m "commit message"
 
 git push --all
+
+==============================================
+
+# read in Log file names
+# sort array of Log file names
+# fill array with the categories
+# remove duplicates from the array
+# for each category in de-duped array
+# Explicitly write the first 9 lines of the template out to the current Category Logs file
+# for each Log File name already read in, act on those in the current category
+#   it matches so add an entry to the Category Log file
+
+
+
+
+
+===========================================
+
+
+### do not run any of this stuff
+exit 1
+
+#${imgFilesSorted[@]}
+
+# cycle through the 2nd and later images to build Log Page sections
+let i=1
+while (( ${#imgFiles[@]} > i )); do
+    echo ${imgFiles[i++]}
+done
+
+
+
+
+
+
+
+
+# read in Log file names
+cd ./source
+logFiles=(*logsq*rst)
+cd ..
+
+# sort array of L# sort array of Log file names
+IFS=$'\n' logFilesSorted=($(sort <<<"${logFiles[*]}")); unset IFS
+printf "%s\n" "${logFilesSorted[@]}"og file names
+IFS=$'\n' logFilesSorted=($(sort <<<"${logFiles[*]}")); unset IFS
+printf "%s\n" "${logFilesSorted[@]}"
+exit 1
+# zero out the file
+mv ./source/engine_logsq.rst ./source/engine_logsq.rst.bak
+
+# Load the Engine Logs template file into array.
+readarray -t engineLogsTemplateArray < engine_logs_template.txt
+
+###echo ${engineLogsTemplateArray[0]}
+###echo ${engineLogsTemplateArray[1]}
+###echo ${engineLogsTemplateArray[2]}
+
+# Explicitly write the first 9 lines of the template out to the Engine Logs file
+let i=0
+while (( i < 9 )); do
+    templateOut=${engineLogsTemplateArray[i++]}
+    echo "$templateOut" >> ./source/engine_logsq.rst
+done
+
+# extract info for this Log file from the file name
+#  for each Log file name
+nn=0
+for logFileName in "${logFilesSorted[@]}"
+do
+  echo
+  IFS=', ' read -r -a logFileSplit <<< "${logFileName//./ }"
+  n=0
+
+  # for each part of the Log file name currently being processed
+  #  break the name into the parts: category, title, etc...
+  for element in "${logFileSplit[@]}"
+  do
+    echo "$element"
+    if [ $n -eq 1 ]; then
+      logCategory=$element
+      echo logCategory = $logCategory
+    fi
+    if [ $n -eq 2 ]; then
+      logTitle=$element
+      logTitleSpaced=${logTitle//_/ }
+      echo logTitleSpaced = $logTitleSpaced
+    fi
+    if [ $n -eq 4 ]; then
+      logDate=$element
+      logDateLong=$(date -d $logDate +"%d-%b-%Y")
+      echo logDateLong=$logDateLong
+    fi
+
+    let "n++"
+  done
+
+  # append info for each Logs section starting with Engine then adding others
+  # append new Log file info to the appropriate Logs file (e.g. Engine Logs)
+  logTitleComplete="$logDateLong --- $logTitleSpaced"
+  echo "$logTitleComplete" >> ./source/engine_logsq.rst
+  printf_new "-" ${#logTitleComplete} >> ./source/engine_logsq.rst
+  echo >> ./source/engine_logsq.rst
+
+  LOGFILENAMEUPDATED=${logFileName//Log/Title}
+  LOGFILENAMEUPDATED=${LOGFILENAMEUPDATED//.rst/}
+  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
+  echo "  :start-after: .. START - ${LOGFILENAMEUPDATED}" >> ./source/engine_logsq.rst
+  echo "  :end-before: .. END - ${LOGFILENAMEUPDATED}" >> ./source/engine_logsq.rst
+
+  echo >> ./source/engine_logsq.rst
+  echo >> ./source/engine_logsq.rst
+
+###  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
+###  echo "  :start-line: 11" >> ./source/engine_logsq.rst
+###  echo "  :end-line: 13" >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo ".. include:: ${logFileName}" >> ./source/engine_logsq.rst
+###  echo "  :start-line: 15" >> ./source/engine_logsq.rst
+###  echo "  :end-line: 26" >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo "----" >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo >> ./source/engine_logsq.rst
+###  echo "footer" >> ./source/engine_logsq.rst
+
+  #echo $logFileName
+done
+
+###exit 1
+
+
+###echo
+###echo "${logFileSplit[0]}"
+###echo "${logFileSplit[1]}"
+###echo "${logFileSplit[2]}"
+
+
+###echo Log Files
+###echo "${logFiles[@]}"
+###echo
+###echo Sorted
+###printf "%s\n" "${logFilesSorted[@]}"
+
+
+###exit 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
