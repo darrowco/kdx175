@@ -7,9 +7,6 @@ Engine Logsq
    :maxdepth: 2
    :caption: Contents:
 
-Aug-03-2019 --- Remove Engine
------------------------------
-
 .. include:: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.rst
   :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shopq
   :end-before: .. End - kdx175.Engine.Prep_for_engine_removal.Title.20190714.0900.Main_Shopq
