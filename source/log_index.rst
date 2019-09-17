@@ -9,7 +9,7 @@ Welcome to KDX175's Index
 .. toctree::
    :maxdepth: 1
    :hidden:
-   :caption: Logs:
+   :caption: qLogs:
 
    kdx175.Electrical.Prep_for_engine_removal.Log.20190714.0900.Main_Shop1q
    electrical_logs
