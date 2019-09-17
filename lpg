@@ -1,9 +1,12 @@
 #!/bin/bash
 
-################################################################################
+#######################################################################################
+# read input string, check for new/old images and build log pages
+
 declare -a logPageTemplateArray
 declare -a engineLogsTemplateArray
 declare -a imgFiles
+declare -a imgCatagories
 
 printf_new() {
  str=$1
@@ -14,7 +17,6 @@ printf_new() {
 
 # parse any inputs on the command line
 while :; do
-
     case $1 in
 
         -n|--new) # New - make a new Log Page and add to other pages
@@ -94,15 +96,16 @@ IFS=$'\n' imgFilesRenamedSorted=($(sort <<<"${imgFilesRenamed[*]}")); unset IFS
 #  if it exists, delete manually and then re-run this script
 # todo: add in menu choice (from zfs install)
 
-# check file existence
-if [ -f source/$NEWLOGPAGE.rst ]
-then
-    echo
-    echo The file exists: ./source/$NEWLOGPAGE.rst
-    echo Delete and try again
-    echo
-    exit 1
-fi
+### disable during development
+#### check file existence
+###if [ -f source/$NEWLOGPAGE.rst ]
+###then
+###    echo
+###    echo The file exists: ./source/$NEWLOGPAGE.rst
+###    echo Delete and try again
+###    echo
+###    exit 1
+###fi
 
 # No existing file so load the template
 # Load the Log Page template file into array.
@@ -227,14 +230,6 @@ while (( ${#logPageTemplateArray[@]} > i )); do
           fi
           let "k++"
         done
-
-
-
-
-
-
-
-
     elif [[ $templateOut =~ "zzzTagPartsRowszzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Parts}
       echo "${templateOut//zzzTagPartsRowszzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
@@ -246,16 +241,44 @@ while (( ${#logPageTemplateArray[@]} > i )); do
 done
 
 
-
-
 #######################################################################################
 # overwrite the Engine Logs Page file so that any new Logs are included
 
 # read in Log file names
 cd ./source
-logFiles=(.+\.Log\.*rst^)
+logFiles=(*\.Log\.*q.rst)
 cd ..
 #echo "${logFiles[@]}"
+
+# sort array of Log file names
+IFS=$'\n' logFilesSorted=($(sort <<<"${logFiles[*]}")); unset IFS
+#printf "%s\n" "${logFilesSorted[@]}"
+
+# fill array with the categories
+n=0
+for element in "${logFilesSorted[@]}"
+  do
+    # break input on each "."
+    IFS='.' read -r -a arrayLogs <<< "$element"
+
+    # read each category and insert into new array element
+    imgCatagories[$n]=${arrayLogs[1]}
+    let "n++"
+  done
+
+# remove duplicates from the array
+readarray -td '' imgCatagoriesDeduped < <(
+  printf '%s\0' "${imgCatagories[@]}" | LC_ALL=C sort -zu)
+
+
+echo ${imgCatagoriesDeduped[@]}
+
+
+
+exit 1
+
+
+
 
 
 ###kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.rst
@@ -287,7 +310,9 @@ cd ./source
 logFiles=(*logsq*rst)
 cd ..
 
-# sort array of Log file names
+# sort array of L# sort array of Log file names
+IFS=$'\n' logFilesSorted=($(sort <<<"${logFiles[*]}")); unset IFS
+printf "%s\n" "${logFilesSorted[@]}"og file names
 IFS=$'\n' logFilesSorted=($(sort <<<"${logFiles[*]}")); unset IFS
 printf "%s\n" "${logFilesSorted[@]}"
 exit 1
