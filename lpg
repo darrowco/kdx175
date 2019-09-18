@@ -345,7 +345,7 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
 
 echo currentLogFileName=${currentLogFileName}
 echo currentLogFileNameUpdated=${currentLogFileNameUpdated}
-#exit 1
+exit 1
 
       fi
 
