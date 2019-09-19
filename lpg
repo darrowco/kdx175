@@ -30,6 +30,9 @@ while :; do
     esac
 done
 
+echo $NEWLOGPAGE
+exit 1
+
 # break input on each "." and read into array
 IFS='.' read -r -a array <<< "$NEWLOGPAGE"
 
