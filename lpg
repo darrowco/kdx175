@@ -330,7 +330,7 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
         echo >> ./source/${currentCategory}_logsqt.rst
 
         # set name for include, start, stop
-        currentLogFileNameUpdated=${currentLogFileName//Log/Teaser}
+        currentLogFileNameUpdated=${currentLogFileName//Log/Log_Link}
         currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
 
         # insert include, start, end into the currentLogCategory Logs file
