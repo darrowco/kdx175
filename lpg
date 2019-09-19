@@ -329,16 +329,21 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
         printf_new "-" ${#currentLogTitleComplete} >> ./source/${currentCategory}_logsqt.rst
         echo >> ./source/${currentCategory}_logsqt.rst
 
-        # set name for include, start, stop
+        # insert include, start, end into the currentLogCategory Logs file for: Log Link
         currentLogFileNameUpdated=${currentLogFileName//Log/Log_Link}
         currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
-
-        # insert include, start, end into the currentLogCategory Logs file
         echo ".. include:: ${currentLogFileName}" >> ./source/${currentCategory}_logsqt.rst
         echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logsqt.rst
         echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logsqt.rst
+        echo >> ./source/${currentCategory}_logsqt.rst
+        echo >> ./source/${currentCategory}_logsqt.rst
 
-        # space for next entry
+        # insert include, start, end into the currentLogCategory Logs file for: Teaser
+        currentLogFileNameUpdated=${currentLogFileName//Log/Teaser}
+        currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
+        echo ".. include:: ${currentLogFileName}" >> ./source/${currentCategory}_logsqt.rst
+        echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logsqt.rst
+        echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logsqt.rst
         echo >> ./source/${currentCategory}_logsqt.rst
         echo >> ./source/${currentCategory}_logsqt.rst
 
