@@ -340,8 +340,8 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
       echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logsqt.rst
 
       # space for next entry
-      echo >> ./source/engine_logsq.rst
-      echo >> ./source/engine_logsq.rst
+      echo >> ./source/${currentCategory}_logsqt.rst
+      echo >> ./source/${currentCategory}_logsqt.rst
 
 echo currentLogFileName=${currentLogFileName}
 echo currentLogFileNameUpdated=${currentLogFileNameUpdated}

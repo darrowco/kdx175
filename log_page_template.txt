@@ -7,7 +7,7 @@
 zzzTitlezzz
 
 
-.. End - zzzTitleTagzzz
+.. END - zzzTitleTagzzz
 
 .. contents::
    :local:

@@ -2,14 +2,14 @@
 :orphan:
 
 
-.. START - kdx175.engine_removal.Title.20190714.0900.Main_Shopq
+.. START - kdx175.Engine.Install.Title.20190714.0900.Main_Shopq
 
 
-Log
-===
+Install
+=======
 
 
-.. End - kdx175.engine_removal.Title.20190714.0900.Main_Shopq
+.. End - kdx175.Engine.Install.Title.20190714.0900.Main_Shopq
 
 .. contents::
    :local:
@@ -18,62 +18,26 @@ Log
 .. raw:: html
 
     <!--
-    .. START - kdx175.engine_removal.Log_Link.20190714.0900.Main_Shopq
-    Click here to see the `entire Log Entry <kdx175.engine_removal.Log.20190714.0900.Main_Shopq.html>`__
-    .. END - kdx175.engine_removal.Log_Link.20190714.0900.Main_Shopq
+    .. START - kdx175.Engine.Install.Log_Link.20190714.0900.Main_Shopq
+    Click here to see the `entire Log Entry <kdx175.Engine.Install.Log.20190714.0900.Main_Shopq.html>`__
+    .. END - kdx175.Engine.Install.Log_Link.20190714.0900.Main_Shopq
     -->
 
-.. START - kdx175.engine_removal.Teaser.20190714.0900.Main_Shopq
+.. START - kdx175.Engine.Install.Teaser.20190714.0900.Main_Shopq
 
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | Finally finished exams and know have time to   | .. figure:: ./_static/images/kdx175.engine_removal.Log.20190714.0900.Main_Shopq^201909140907_000.jpeg                                                |
+| | Finally finished exams and know have time to   | .. figure:: ./_static/images/kdx175.Engine.Install.Log.20190714.0900.Main_Shopq*                                                                     |
 | | get back to work on the KDX. Engine removal    |    :align: right                                                                                                                                     |
 | | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                                                                                                                  |
-| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/kdx175.engine_removal.Log.20190714.0900.Main_Shopq^201909140907_000.jpeg                                                |
+| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/kdx175.Engine.Install.Log.20190714.0900.Main_Shopq*                                                                     |
 | | so it was cut.                                 |                                                                                                                                                      |
 | |                                                |    Your uploaded image "000" is displayed here                                                                                                       |
 | | One person can do this in a crouched position  |                                                                                                                                                      |
 | | if care is used                                |                                                                                                                                                      |
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. END - kdx175.engine_removal.Teaser.20190714.0900.Main_Shopq
+.. END - kdx175.Engine.Install.Teaser.20190714.0900.Main_Shopq
 
-
-Section for your image 201909140907_001.jpeg
---------------------------------------------
-
-.. figure:: ./_static/images/kdx175.engine_removal.Log.20190714.0900.Main_Shopq^201909140907_001.jpeg
-   :scale: 50%
-   :alt: kdx175.engine_removal.Log.20190714.0900.Main_Shopq^201909140907_001.jpeg
-
-Caption for the image goes here
-
-   The legend consists of all elements after the caption.  In this
-   case, the legend consists of this paragraph.
-
-Section for your image 201909140907_002.jpeg
---------------------------------------------
-
-.. figure:: ./_static/images/kdx175.engine_removal.Log.20190714.0900.Main_Shopq^201909140907_002.jpeg
-   :scale: 50%
-   :alt: kdx175.engine_removal.Log.20190714.0900.Main_Shopq^201909140907_002.jpeg
-
-Caption for the image goes here
-
-   The legend consists of all elements after the caption.  In this
-   case, the legend consists of this paragraph.
-
-Section for your image 201909140907_003.png
--------------------------------------------
-
-.. figure:: ./_static/images/kdx175.engine_removal.Log.20190714.0900.Main_Shopq^201909140907_003.png
-   :scale: 50%
-   :alt: kdx175.engine_removal.Log.20190714.0900.Main_Shopq^201909140907_003.png
-
-Caption for the image goes here
-
-   The legend consists of all elements after the caption.  In this
-   case, the legend consists of this paragraph.
 
 Video Section Example
 ---------------------
@@ -170,7 +134,7 @@ Project Numbers
         </tr>
     </tfoot>
     <tbody>
-    <!-- START - kdx175.engine_removal.Parts.20190714.0900.Main_Shopq -->
+    <!-- START - kdx175.Engine.Install.Parts.20190714.0900.Main_Shopq -->
 
 
 .. raw:: html
@@ -178,7 +142,7 @@ Project Numbers
     <tr>
     <td> 1  </td><td> no parts or tools bought   </td><td>                                                            </td><td align="right">           </td><th  align="right">       </th>
     </tr>
-    <!-- END - kdx175.engine_removal.Parts.20190714.0900.Main_Shopq -->
+    <!-- END - kdx175.Engine.Install.Parts.20190714.0900.Main_Shopq -->
 
 
 .. raw:: html
