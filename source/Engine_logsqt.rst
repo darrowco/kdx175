@@ -7,29 +7,3 @@ Engine Logs
    :maxdepth: 2
    :caption: Contents:
 
-15-Jul-2019 --- Engine removal
-------------------------------
-
-.. include:: kdx175.Engine.Engine_removal.Log.20190715.0900.Main_Shopq.rst
-  :start-after: .. START - kdx175.Engine.Engine_removal.Log_Link.20190715.0900.Main_Shopq
-  :end-before: .. END - kdx175.Engine.Engine_removal.Log_Link.20190715.0900.Main_Shopq
-
-
-.. include:: kdx175.Engine.Engine_removal.Log.20190715.0900.Main_Shopq.rst
-  :start-after: .. START - kdx175.Engine.Engine_removal.Teaser.20190715.0900.Main_Shopq
-  :end-before: .. END - kdx175.Engine.Engine_removal.Teaser.20190715.0900.Main_Shopq
-
-
-14-Jul-2019 --- Prep for engine removal
----------------------------------------
-
-.. include:: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.rst
-  :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Log_Link.20190714.0900.Main_Shopq
-  :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Log_Link.20190714.0900.Main_Shopq
-
-
-.. include:: kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.rst
-  :start-after: .. START - kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shopq
-  :end-before: .. END - kdx175.Engine.Prep_for_engine_removal.Teaser.20190714.0900.Main_Shopq
-
-

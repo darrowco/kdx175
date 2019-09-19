@@ -25,7 +25,7 @@ while :; do
             NEWLOGPAGE="$1"
             printf "\nNew Log Page will be created: $NEWLOGPAGE\n"
             ;;
-        *)        # Default case: If no more options then break out of the loop.
+        *)  # Default case: If no more options then break out of the loop.
             break
     esac
 done
@@ -296,6 +296,9 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
     echo "$templateOut" >> ./source/${currentCategory}_logsqt.rst
   done
 
+  echo ${logFilesSorted[@]}
+  exit 1
+  
   # for each Log File name already read in, act on those in the current category
   n=0
   for currentLogFileName in "${logFilesSorted[@]}"
