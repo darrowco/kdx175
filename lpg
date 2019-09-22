@@ -23,7 +23,7 @@ while :; do
                   #     - kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shop
             shift
             NEWLOGPAGE="$1"
-            printf "\nNew Log Page will be created: $NEWLOGPAGE\n"
+            printf "\nNew Log Page will be created: $NEWLOGPAGE\n\n"
             ;;
         *)  # Default case: If no more options then break out of the loop.
             break
@@ -37,50 +37,54 @@ IFS='.' read -r -a array <<< "$NEWLOGPAGE"
 n=0
 for element in "${array[@]}"
 do
-    echo "$element"
-    if [ $n -eq 2 ]; then
+    #echo "$element"
+    if [ $n -eq 4 ]; then
       logTitle=$element
       logTitleSpaced=${logTitle//_/ }
-      echo $logTitleSpaced
+      #echo $logTitleSpaced
     fi
     let "n++"
 done
 
 # read in any new images
 cd ./source/_static/images
-imgFiles=([0-9][0-9][0-9]*)
+imgFiles=([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9].*)
 cd ../../..
 
 # check for any new images
-if ! [[ ${imgFiles[0]} == "[0-9][0-9][0-9]*" ]]; then
+# if the first image is a new image then proceed to process all new images
+# so, if the first element literally contains "[0-9]...", there are no new images
+if ! [[ ${imgFiles[0]} == "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9].*" ]]; then
 
-# sort the new images
-IFS=$'\n' imgFilesSorted=($(sort <<<"${imgFiles[*]}")); unset IFS
-#printf "%s\n" "${imgFilesSorted[@]}"
+  # sort the new images
+  IFS=$'\n' imgFilesSorted=($(sort <<<"${imgFiles[*]}")); unset IFS
+  #printf "%s\n" "${imgFilesSorted[@]}"
 
-      for sectionImage in "${imgFilesSorted[@]}"
-        do
-            # if a video metadata file
-            if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
-              echo "future: video file optionsectionImage"
+  for sectionImage in "${imgFilesSorted[@]}"
+  do
+    # if a video metadata file
+    if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
+      echo "future: video file optionsectionImage"
 
-            # else if an image filesectionImage
-            else
-              # shrink large images to a max of 1024
-              # todo: add check so that resize is applied only to large images
-              #   https://stackoverflow.com/questions/38254297/bash-script-find-all-images-and-mogrify-images#38254569
-              mogrify -path ./source/_static/images/ -resize "1024x1024" -quality 70 "./source/_static/images/${sectionImage}"
+    # else if an image filesectionImage
+    else
+      # shrink large images to a max of 1024
+      # todo: add check so that resize is applied only to large images
+      #   https://stackoverflow.com/questions/38254297/bash-script-find-all-images-and-mogrify-images#38254569
+      mogrify -path ./source/_static/images/ -resize "1024x1024" -quality 70 "./source/_static/images/${sectionImage}"
 
-              # new_image_file_name = new_log_page_name.image_file_name
-              imgFileName=$NEWLOGPAGE^${sectionImage}
+      # new_image_file_name = new_log_page_name.image_file_name
+      imgFileName=$NEWLOGPAGE^${sectionImage}
 
-              # rename the image from the original upload name to the new name
-              mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
-            fi
-        done
+      # rename the image from the original upload name to the new name
+      mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
+    fi
+  done
+else
+  echo "No New Images"
+  echo
 
 fi
-
 
 # read in any renamed images
 cd ./source/_static/images
@@ -100,28 +104,26 @@ IFS=$'\n' imgFilesRenamedSorted=($(sort <<<"${imgFilesRenamed[*]}")); unset IFS
 #### check file existence
 ###if [ -f source/$NEWLOGPAGE.rst ]
 ###then
-###    echo
+###    echoasdasd
 ###    echo The file exists: ./source/$NEWLOGPAGE.rst
 ###    echo Delete and try again
 ###    echo
 ###    exit 1
 ###fi
 
-
-
-# No existing file so load the template
+# No existing file so load the Log File template
 # Load the Log Page template file into array.
 readarray -t logPageTemplateArray < log_page_template.txt
 
-# overwrite the existing Log file and insert the first line of the template
-echo "$templateOut" > ./source/$NEWLOGPAGE.rst
+# save the current Log file (if it exists)
+mv ./source/$NEWLOGPAGE.rst ./source/$NEWLOGPAGE.rst.bak
 
-# Explicitly write the Log Page template out to file substitutung values
+# cycle through the Log Page template and write out to file substitutung values
 let i=0
 while (( ${#logPageTemplateArray[@]} > i )); do
     templateOut=${logPageTemplateArray[i]}
 
-    # replace marker with Title Tags (Sphinx include markers)
+    # replace marker with Title Tags (these are Sphinx include markers)
     if [[ $templateOut =~ "zzzTitleTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Title}
       echo "${templateOut//zzzTitleTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
@@ -131,7 +133,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
       echo "${templateOut//zzzTitlezzz/$logTitleSpaced}" >> ./source/$NEWLOGPAGE.rst
       printf_new "=" ${#logTitleSpaced} >> ./source/$NEWLOGPAGE.rst
 
-    # replace marker with Log Link Tags (Sphinx include markers)
+    # replace marker with Log Link Tags (these are Sphinx include markers)
     elif [[ $templateOut =~ "zzzLogLinkTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Log_Link}
       echo "${templateOut//zzzLogLinkTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
@@ -140,7 +142,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
     elif [[ $templateOut =~ "zzzLogPageNamezzz" ]]; then
       echo "${templateOut//zzzLogPageNamezzz/$NEWLOGPAGE}" >> ./source/$NEWLOGPAGE.rst
 
-    # replace marker with Teaser Test Tags (Sphinx include markers)
+    # replace marker with Teaser Test Tags (these are Sphinx include markers)
     elif [[ $templateOut =~ "zzzTeaserTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Teaser}
       echo "${templateOut//zzzTeaserTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
@@ -149,12 +151,15 @@ while (( ${#logPageTemplateArray[@]} > i )); do
     # replace marker with Teaser image or video
     elif [[ $templateOut =~ "zzzTeaserImagezzz" ]]; then
 
-      # evaluate file extension to determine if image or video metadata file
-      IFS=', ' read -r -a imgFileSplit <<< "${imgFilesRenamedSorted[0]//./ }"
+      # evaluate the file extension to determine if image or video metadata file
+      # note that image 000 is always used for the teaser table
+      IFS='.' read -r -a imgFileSplit <<< "${imgFilesRenamedSorted[0]}"
+      # why was this here??
+      #IFS=', ' read -r -a imgFileSplit <<< "${imgFilesRenamedSorted[0]//./ }"
 
       # if a video metadata file
-      if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
-        echo "future: video file option"kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq.000           
+      if [[ ${imgFileSplit[7]} =~ /txt^/ ]]; then
+        echo "future: video file option"
 
       # else if an image file
       else
@@ -176,6 +181,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
         # print the new table row to the new log file
         echo "${templateOut//zzzTeaserImagezzz/$imgFileName}${spaceLengthVar}|" >> ./source/$NEWLOGPAGE.rst
 
+        # todo - remove the next 2 lines
         # rename the image from the original upload name to the new name
         #mv "./source/_static/images/${imgFilesSorted[0]}" "./source/_static/images/${imgFileName}"
       fi
@@ -200,7 +206,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
             ###mogrify -path ./source/_static/images/ -resize "1024x1024" -quality 70 "./source/_static/images/${sectionImage}"
 
             # if a video metadata file
-            if [[ ${imgFileSplit[1]} =~ /txt^/ ]]; then
+            if [[ ${imgFileSplit[7]} =~ /txt^/ ]]; then
               echo "future: video file option"
 
             # else if an image file
@@ -212,7 +218,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
               echo "" >> ./source/$NEWLOGPAGE.rst
 
               # extract oem image file name to use for temporary title
-              # break image name read from file system on each "---" and read into array
+              # break image name read from file system on each "^" and read into array
               IFS='^' read -a arrayTitle <<< "$imgFileNameRtd"; unset IFS
               titleFor="Section for your image ${arrayTitle[1]}"
               echo ${titleFor} >> ./source/$NEWLOGPAGE.rst
@@ -270,15 +276,14 @@ for element in "${logFilesSorted[@]}"
     IFS='.' read -r -a arrayLogs <<< "$element"
 
     # read each category and insert into new array element
-    imgCatagories[$n]=${arrayLogs[1]}
+    imgCatagories[$n]=${arrayLogs[3]}
     let "n++"
   done
 
 # remove duplicates from the array
 readarray -td '' imgCatagoriesDeduped < <(
   printf '%s\0' "${imgCatagories[@]}" | LC_ALL=C sort -zu)
-
-###echo ${imgCatagoriesDeduped[@]}
+#echo ${imgCatagoriesDeduped[@]}
 
 # for each category in de-duped array
 n=0
@@ -295,9 +300,7 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
     templateOut=${engineLogsTemplateArray[i++]}
     echo "$templateOut" >> ./source/${currentCategory}_logsqt.rst
   done
-
-  echo ${logFilesSorted[@]}
-  exit 1
+  #echo ${logFilesSorted[@]}
   
   # for each Log File name already read in, act on those in the current category
   n=0
@@ -307,13 +310,13 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
       IFS='.' read -r -a currentLogFileNameParts <<< "$currentLogFileName"
 
       # read each category and insert into new array currentCategory
-      currentLogCategory=${currentLogFileNameParts[1]}
-      currentLogTitleUnSpaced=${currentLogFileNameParts[2]}
+      currentLogCategory=${currentLogFileNameParts[3]}
+      currentLogTitleUnSpaced=${currentLogFileNameParts[4]}
 
       # remove any underscores from the title
       currentLogTitleSpaced=${currentLogTitleUnSpaced//_/ }
-      echo $currentLogTitleSpaced
-      currentLogDate=${currentLogFileNameParts[4]}
+      #echo $currentLogTitleSpaced
+      currentLogDate=${currentLogFileNameParts[0]}
       currentLogDateLong=$(date -d $currentLogDate +"%d-%b-%Y")
 
       # verify during testing
@@ -359,9 +362,8 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
         echo >> ./source/${currentCategory}_logsqt.rst
         echo >> ./source/${currentCategory}_logsqt.rst
 
-echo currentLogFileName=${currentLogFileName}
-echo currentLogFileNameUpdated=${currentLogFileNameUpdated}
-#exit 1
+        #echo currentLogFileName=${currentLogFileName}
+        #echo currentLogFileNameUpdated=${currentLogFileNameUpdated}
 
       fi
 
