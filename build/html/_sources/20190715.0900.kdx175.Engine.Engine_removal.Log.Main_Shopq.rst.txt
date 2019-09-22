@@ -25,7 +25,7 @@ Engine removal
 .. START - 20190715.0900.kdx175.Engine.Engine_removal.Teaser.Main_Shopq
 
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | Finally finished exams and know have time to   | .. figure:: ./_static/images/20190715.0900.kdx175.Engine.Engine_removal.Log.Main_Shopq^201909140907_000.jpeg                                         |
+| | Completed exams and know have time to          | .. figure:: ./_static/images/20190715.0900.kdx175.Engine.Engine_removal.Log.Main_Shopq^201909140907_000.jpeg                                         |
 | | get back to work on the KDX. Engine removal    |    :align: right                                                                                                                                     |
 | | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                                                                                                                  |
 | | removed. One of the engine bolts was rusted    |    :target: ./_static/images/20190715.0900.kdx175.Engine.Engine_removal.Log.Main_Shopq^201909140907_000.jpeg                                         |
