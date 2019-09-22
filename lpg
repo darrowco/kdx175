@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #######################################################################################
-# read input string, check for new/old images and build log pages
+# read input string, check for new/old images and build log pages test
 
 declare -a logPageTemplateArray
 declare -a engineLogsTemplateArray
