@@ -104,7 +104,7 @@ IFS=$'\n' imgFilesRenamedSorted=($(sort <<<"${imgFilesRenamed[*]}")); unset IFS
 #### check file existence
 ###if [ -f source/$NEWLOGPAGE.rst ]
 ###then
-###    echo
+###    echoasdasd
 ###    echo The file exists: ./source/$NEWLOGPAGE.rst
 ###    echo Delete and try again
 ###    echo
