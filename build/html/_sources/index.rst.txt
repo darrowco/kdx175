@@ -12,6 +12,7 @@ Welcome to KDX175's documentatio!!
    :caption: Logs:
 
    engine_logs
+   Engine_logsqt
    electrical_logs
    parts_logs
    photos
