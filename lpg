@@ -8,6 +8,7 @@ declare -a engineLogsTemplateArray
 declare -a imgFiles
 declare -a imgCatagories
 
+# function that prints a specified number of specified characters
 printf_new() {
  str=$1
  num=$2
@@ -15,7 +16,7 @@ printf_new() {
  echo "${v// /$str}"
 }
 
-# parse any inputs on the command line
+# parse any inputs on the command line (filename containing metadata)
 while :; do
     case $1 in
 
@@ -46,14 +47,14 @@ do
     let "n++"
 done
 
-# read in any new images
+# read in the names of any new images based on naming convention, e.e. 20190922_000_IMG987.jpeg
 cd ./source/_static/images
 imgFiles=([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9].*)
 cd ../../..
 
-# check for any new images
-# if the first image is a new image then proceed to process all new images
-# so, if the first element literally contains "[0-9]...", there are no new images
+# check to see if any new images were actually found
+# if the first aray element contains the match string, then no new images were found
+# conversely, if the first array element does not contain the match string, a new image was found
 if ! [[ ${imgFiles[0]} == "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9].*" ]]; then
 
   # sort the new images
@@ -86,15 +87,16 @@ else
 
 fi
 
-# read in any renamed images
+# all new images have now been renamed - read in the names of all of the images (new and old)
 cd ./source/_static/images
 imgFilesRenamed=(${NEWLOGPAGE}*)
 cd ../../..
 
-# sort the renamed images
+# sort the images (new and old)
 IFS=$'\n' imgFilesRenamedSorted=($(sort <<<"${imgFilesRenamed[*]}")); unset IFS
 #printf "%s\n" "${imgFilesRenamedSorted[@]}"
 
+### disabled during development
 #######################################################################################
 # create the new Log Page file if it does not already exist
 #  if it exists, delete manually and then re-run this script
@@ -116,9 +118,9 @@ IFS=$'\n' imgFilesRenamedSorted=($(sort <<<"${imgFilesRenamed[*]}")); unset IFS
 readarray -t logPageTemplateArray < log_page_template.txt
 
 # save the current Log file (if it exists)
-mv ./source/$NEWLOGPAGE.rst ./source/$NEWLOGPAGE.rst.bak
+[ -f ./source/$NEWLOGPAGE.rst ] && mv ./source/$NEWLOGPAGE.rst ./source/$NEWLOGPAGE.rst.bak
 
-# cycle through the Log Page template and write out to file substitutung values
+# cycle through the Log Page template and write out to the Log file substitutung values
 let i=0
 while (( ${#logPageTemplateArray[@]} > i )); do
     templateOut=${logPageTemplateArray[i]}
@@ -292,7 +294,7 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
   #echo ${currentCategory}
 
   # save the current Category Logs file (if it exists)
-  mv ./source/${currentCategory}_logsqt.rst ./source/${currentCategory}_logsqt.rst.bak
+  [ -f ./source/${currentCategory}_logsqt.rst ] && mv ./source/${currentCategory}_logsqt.rst ./source/${currentCategory}_logsqt.rst.bak
 
   # Explicitly write the first 9 lines of the template out to the Category Logs file
   let i=0
@@ -324,9 +326,9 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
       #echo currentLogTitleSpaced=$currentLogTitleSpaced
       #echo currentLogDateLong=$currentLogDateLong
 
-      # it matches so add an entry to the Category Log file
+      # if the current log category matches the log category extracted from the title of the current file
       if [[ ${currentLogCategory} == ${currentCategory} ]]; then
-        # append info for each Logs section starting with Engine then adding others
+        # append info for each Logs section starting e.g. Engine category
         # append new Log file info to the currentLogCategory Logs file (e.g. Engine Logs)
         currentLogTitleComplete="$currentLogDateLong --- $currentLogTitleSpaced"
         echo "$currentLogTitleComplete" >> ./source/${currentCategory}_logsqt.rst
@@ -335,6 +337,7 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
         printf_new "-" ${#currentLogTitleComplete} >> ./source/${currentCategory}_logsqt.rst
         echo >> ./source/${currentCategory}_logsqt.rst
 
+        # old method of determing title
         ## insert include, start, end into the currentLogCategory Logs file for: Title
         #currentLogFileNameUpdated=${currentLogFileName//Log/Title}
         #currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
