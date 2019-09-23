@@ -292,7 +292,7 @@ readarray -td '' imgCatagoriesDeduped < <(
 n=0
 for currentCategory in "${imgCatagoriesDeduped[@]}"
   do
-  #echo ${currentCategory}
+  echo ${currentCategory}
 
   # save the current Category Logs file (if it exists)
   [ -f ./source/${currentCategory}_logsqt.rst ] && mv ./source/${currentCategory}_logsqt.rst ./source/${currentCategory}_logsqt.rst.bak
@@ -416,7 +416,7 @@ currentProject=${arrayLogs[2]}
   # save the current Category Logs file (if it exists)
   [ -f ./source/indexqt.rst ] && mv ./source/indexqt.rst ./source/indexqt.rst.bak
 
-  # Explicitly write the first 13 lines of the template out to the index file
+  # Explicitly write the first 5 lines of the template out to the index file
   let i=0
   while (( i < 5 )); do
     templateOut=${indexTemplateArray[i++]}
@@ -439,6 +439,17 @@ echo "   :maxdepth: 1" >> ./source/indexqt.rst
 echo "   :hidden:" >> ./source/indexqt.rst
 echo "   :caption: Logs:" >> ./source/indexqt.rst
 echo "" >> ./source/indexqt.rst
+
+
+
+
+for currentCategory in "${imgCatagoriesDeduped[@]}"
+  do
+  echo zxcvzxcvzxcv ${currentCategory}
+  done
+
+
+
 
 # list the teaser for each Log file, ordered by date
 #echo ${logFilesSorted[@]}
