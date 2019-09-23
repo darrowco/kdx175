@@ -292,7 +292,7 @@ readarray -td '' imgCatagoriesDeduped < <(
 n=0
 for currentCategory in "${imgCatagoriesDeduped[@]}"
   do
-  echo ${currentCategory}
+  #echo ${currentCategory}
 
   # save the current Category Logs file (if it exists)
   [ -f ./source/${currentCategory}_logsqt.rst ] && mv ./source/${currentCategory}_logsqt.rst ./source/${currentCategory}_logsqt.rst.bak
@@ -440,16 +440,15 @@ echo "   :hidden:" >> ./source/indexqt.rst
 echo "   :caption: Logs:" >> ./source/indexqt.rst
 echo "" >> ./source/indexqt.rst
 
-
-
-
+# insert Category Logs into the TOC section on the index page
 for currentCategory in "${imgCatagoriesDeduped[@]}"
   do
-  echo zxcvzxcvzxcv ${currentCategory}
+  echo ${currentCategory}_logs >> ./source/indexqt.rst
   done
 
-
-
+echo "parts_logs" >> ./source/indexqt.rst
+echo "photos" >> ./source/indexqt.rst
+echo "" >> ./source/indexqt.rst
 
 # list the teaser for each Log file, ordered by date
 #echo ${logFilesSorted[@]}
