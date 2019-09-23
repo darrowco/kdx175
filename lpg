@@ -51,7 +51,7 @@ done
 cd ./source/_static/images
 imgFiles=([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9].*)
 cd ../../..
-printf "%s\n" "${imgFiles[@]}"
+#printf "%s\n" "${imgFiles[@]}"
 
 # check to see if any new images were actually found
 # if the first aray element contains the match string, then no new images were found
@@ -255,8 +255,8 @@ while (( ${#logPageTemplateArray[@]} > i )); do
 done
 
 
-#######################################################################################
-# overwrite the Engine Logs Page file so that any new Logs are included
+#############################################################################################################
+# overwrite each category Logs Page file if that category has a new log (this way, any new Logs are included)
 
 # Load the Engine Logs template file into array.
 readarray -t engineLogsTemplateArray < engine_logs_template.txt
@@ -374,3 +374,116 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
       let "n++"
     done
   done
+
+
+#############################################################################################################
+# overwrite the index page to include category listings and teasers for the log files, sorted by date
+
+# Load the index template file into array.
+readarray -t indexTemplateArray < index_template.txt
+
+# read in Log file names
+cd ./source
+logFiles=(*\.Log\.*q.rst)
+cd ..
+#echo "${logFiles[@]}"
+
+# sort array of Log file names
+IFS=$'\n' logFilesSorted=($(sort <<<"${logFiles[*]}")); unset IFS
+#printf "%s\n" "${logFilesSorted[@]}"
+
+# fill a new array with the categories
+n=0
+for element in "${logFilesSorted[@]}"
+  do
+    # break input on each "."
+    IFS='.' read -r -a arrayLogs <<< "$element"
+
+    # read each category and insert into new array element
+    imgCatagories[$n]=${arrayLogs[3]}
+    let "n++"
+  done
+
+# remove duplicates from the array
+readarray -td '' imgCatagoriesDeduped < <(
+  printf '%s\0' "${imgCatagories[@]}" | LC_ALL=C sort -zu)
+#echo ${imgCatagoriesDeduped[@]}
+
+# capture project name from any of the rows
+currentProject=${arrayLogs[2]}
+
+# there is only one index file so write constants before looping
+  # save the current Category Logs file (if it exists)
+  [ -f ./source/indexqt.rst ] && mv ./source/indexqt.rst ./source/indexqt.rst.bak
+
+  # Explicitly write the first 13 lines of the template out to the index file
+  let i=0
+  while (( i < 5 )); do
+    templateOut=${indexTemplateArray[i++]}
+    echo "$templateOut" >> ./source/indexqt.rst
+  done
+  #echo ${logFilesSorted[@]}
+
+  # build title and insert into index page
+  currentIndexTitleComplete="Project: $currentProject"
+  echo "$currentIndexTitleComplete" >> ./source/indexqt.rst
+
+  # draw a line of "=" under title
+  printf_new "=" ${#currentIndexTitleComplete} >> ./source/indexqt.rst
+  echo >> ./source/indexqt.rst
+
+# insert toc into index page
+echo "" >> ./source/indexqt.rst
+echo ".. toctree::" >> ./source/indexqt.rst
+echo "   :maxdepth: 1" >> ./source/indexqt.rst
+echo "   :hidden:" >> ./source/indexqt.rst
+echo "   :caption: Logs:" >> ./source/indexqt.rst
+echo "" >> ./source/indexqt.rst
+
+# list the teaser for each Log file, ordered by date
+#echo ${logFilesSorted[@]}
+
+# cycle through each Log file
+n=0
+for currentLogFileName in "${logFilesSorted[@]}"
+  do
+    # break input on each "."
+    IFS='.' read -r -a arrayLogs <<< "$currentLogFileName"
+
+    # read each category and insert into new array currentLogFileName
+    imgCatagories[$n]=${arrayLogs[3]}
+
+    #echo $currentLogFileName
+    #echo ${imgCatagories[@]}
+
+    # extract the Title from the current Log file and insert it into the index file
+    echo ".. include:: ${currentLogFileName}" >> ./source/indexqt.rst
+    currentLogFileNameUpdated=${currentLogFileName//Log/Title}
+    currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
+    echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/indexqt.rst
+    echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/indexqt.rst
+    echo "" >> ./source/indexqt.rst
+
+    # extract the Log_Link from the current Log file and insert it into the index file
+    echo ".. include:: ${currentLogFileName}" >> ./source/indexqt.rst
+    currentLogFileNameUpdated=${currentLogFileName//Log/Log_Link}
+    currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
+    echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/indexqt.rst
+    echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/indexqt.rst
+    echo "" >> ./source/indexqt.rst
+
+    # extract the Teaser from the current Log file and insert it into the index file
+    echo ".. include:: ${currentLogFileName}" >> ./source/indexqt.rst
+    currentLogFileNameUpdated=${currentLogFileName//Log/Teaser}
+    currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
+    echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/indexqt.rst
+    echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/indexqt.rst
+    echo "" >> ./source/indexqt.rst
+
+    echo "----" >> ./source/indexqt.rst
+    echo "" >> ./source/indexqt.rst
+
+    let "n++"
+  done
+
+echo "footer" >> ./source/indexqt.rst

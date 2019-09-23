@@ -1,14 +1,14 @@
 :orphan:
 
 
-.. START - 20190922.0900.kdx175.Engine.Engine_rebuild.Title.Main_Shopq
+.. START - 20190914.0907.kdx175.Body.Engine_painting.Title.Main_Shopq
 
 
-Engine rebuild
-==============
+Engine painting
+===============
 
 
-.. END - 20190922.0900.kdx175.Engine.Engine_rebuild.Title.Main_Shopq
+.. END - 20190914.0907.kdx175.Body.Engine_painting.Title.Main_Shopq
 
 .. contents::
    :local:
@@ -17,26 +17,62 @@ Engine rebuild
 .. raw:: html
 
     <!--
-    .. START - 20190922.0900.kdx175.Engine.Engine_rebuild.Log_Link.Main_Shopq
-    Click here to see the `entire Log Entry <20190922.0900.kdx175.Engine.Engine_rebuild.Log.Main_Shopq.html>`__
-    .. END - 20190922.0900.kdx175.Engine.Engine_rebuild.Log_Link.Main_Shopq
+    .. START - 20190914.0907.kdx175.Body.Engine_painting.Log_Link.Main_Shopq
+    Click here to see the `entire Log Entry <20190914.0907.kdx175.Body.Engine_painting.Log.Main_Shopq.html>`__
+    .. END - 20190914.0907.kdx175.Body.Engine_painting.Log_Link.Main_Shopq
     -->
 
-.. START - 20190922.0900.kdx175.Engine.Engine_rebuild.Teaser.Main_Shopq
+.. START - 20190914.0907.kdx175.Body.Engine_painting.Teaser.Main_Shopq
 
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | Completed exams and know have time to          | .. figure:: ./_static/images/20190922.0900.kdx175.Engine.Engine_rebuild.Log.Main_Shopq^201909221522_000.jpeg                                         |
+| | Completed exams and know have time to          | .. figure:: ./_static/images/20190914.0907.kdx175.Body.Engine_painting.Log.Main_Shopq^201909140907_000.jpeg                                          |
 | | get back to work on the KDX. Engine removal    |    :align: right                                                                                                                                     |
 | | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                                                                                                                  |
-| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/20190922.0900.kdx175.Engine.Engine_rebuild.Log.Main_Shopq^201909221522_000.jpeg                                         |
+| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/20190914.0907.kdx175.Body.Engine_painting.Log.Main_Shopq^201909140907_000.jpeg                                          |
 | | so it was cut.                                 |                                                                                                                                                      |
 | |                                                |    Your uploaded image "000" is displayed here                                                                                                       |
 | | One person can do this in a crouched position  |                                                                                                                                                      |
 | | if care is used                                |                                                                                                                                                      |
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. END - 20190922.0900.kdx175.Engine.Engine_rebuild.Teaser.Main_Shopq
+.. END - 20190914.0907.kdx175.Body.Engine_painting.Teaser.Main_Shopq
 
+
+Section for your image 201909140907_001.jpeg
+--------------------------------------------
+
+.. figure:: ./_static/images/20190914.0907.kdx175.Body.Engine_painting.Log.Main_Shopq^201909140907_001.jpeg
+   :scale: 50%
+   :alt: 20190914.0907.kdx175.Body.Engine_painting.Log.Main_Shopq^201909140907_001.jpeg
+
+Caption for the image goes here
+
+   The legend consists of all elements after the caption.  In this
+   case, the legend consists of this paragraph.
+
+Section for your image 201909140907_002.jpeg
+--------------------------------------------
+
+.. figure:: ./_static/images/20190914.0907.kdx175.Body.Engine_painting.Log.Main_Shopq^201909140907_002.jpeg
+   :scale: 50%
+   :alt: 20190914.0907.kdx175.Body.Engine_painting.Log.Main_Shopq^201909140907_002.jpeg
+
+Caption for the image goes here
+
+   The legend consists of all elements after the caption.  In this
+   case, the legend consists of this paragraph.
+
+Section for your image 201909140907_003.png
+-------------------------------------------
+
+.. figure:: ./_static/images/20190914.0907.kdx175.Body.Engine_painting.Log.Main_Shopq^201909140907_003.png
+   :scale: 50%
+   :alt: 20190914.0907.kdx175.Body.Engine_painting.Log.Main_Shopq^201909140907_003.png
+
+Caption for the image goes here
+
+   The legend consists of all elements after the caption.  In this
+   case, the legend consists of this paragraph.
 
 Video Section Example
 ---------------------
@@ -133,7 +169,7 @@ Project Numbers
         </tr>
     </tfoot>
     <tbody>
-    <!-- START - 20190922.0900.kdx175.Engine.Engine_rebuild.Parts.Main_Shopq -->
+    <!-- START - 20190914.0907.kdx175.Body.Engine_painting.Parts.Main_Shopq -->
 
 
 .. raw:: html
@@ -141,7 +177,7 @@ Project Numbers
     <tr>
     <td> 1  </td><td> no parts or tools bought   </td><td>                                                            </td><td align="right">           </td><th  align="right">       </th>
     </tr>
-    <!-- END - 20190922.0900.kdx175.Engine.Engine_rebuild.Parts.Main_Shopq -->
+    <!-- END - 20190914.0907.kdx175.Body.Engine_painting.Parts.Main_Shopq -->
 
 
 .. raw:: html
