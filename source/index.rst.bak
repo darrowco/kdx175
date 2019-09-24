@@ -3,46 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to KDX175's documentatio!!a
-===================================
+Project: kdx175
+===============
+
 
 .. toctree::
    :maxdepth: 1
    :hidden:
    :caption: Logs:
 
-   engine_logs
-   Engine_logsqt
-   electrical_logs
-   parts_logs
-   photos
-
-.. include:: engine_20190803.rst
-  :start-after: .. START - remove_engine_2019080_title
-  :end-before: .. END - remove_engine_2019080_title
-
-.. include:: engine_20190803.rst
-  :start-after: .. START - remove_engine_2019080_log_link
-  :end-before: .. END - remove_engine_2019080_log_link
-
-.. include:: engine_20190803.rst
-  :start-after: .. START - remove_engine_2019080_teaser
-  :end-before: .. END - remove_engine_2019080_teaser
-
-----
-
-Jul-15-2019 --- Prep for engine removal_99
-------------------------------------------
-
-.. include:: engine_20190715.rst
-  :start-line: 11
-  :end-line: 13
-
-.. include:: engine_20190715.rst
-  :start-line: 15
-  :end-line: 26
-
-----
+Engine_logs
+parts_logs
+photos
 
 .. include:: 20190715.0900.kdx175.Engine.Engine_removal.Log.Main_Shopq.rst
   :start-after: .. START - 20190715.0900.kdx175.Engine.Engine_removal.Title.Main_Shopq
@@ -56,6 +28,6 @@ Jul-15-2019 --- Prep for engine removal_99
   :start-after: .. START - 20190715.0900.kdx175.Engine.Engine_removal.Teaser.Main_Shopq
   :end-before: .. END - 20190715.0900.kdx175.Engine.Engine_removal.Teaser.Main_Shopq
 
+----
+
 footer
-
-
