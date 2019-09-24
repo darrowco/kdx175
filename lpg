@@ -153,7 +153,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
 
       # print out Category with link to the appropriate Category page
       echo "" >> ./source/$NEWLOGPAGE.rst
-      echo "Category: "
+      echo "Category: " >> ./source/$NEWLOGPAGE.rst
 
     # replace marker with Log Link Tags (these are Sphinx include markers)
     elif [[ $templateOut =~ "zzzLogLinkTagzzz" ]]; then
