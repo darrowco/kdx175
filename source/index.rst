@@ -11,7 +11,6 @@ Project: kdx175
    :hidden:
    :caption: Logs:
 
-   Engine_logs
    Frame_logs
    parts_logs
    photos
@@ -27,34 +26,6 @@ Project: kdx175
 .. include:: 20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.rst
   :start-after: .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Teaser.Main_Shop
   :end-before: .. END - 20190815.0807.kdx175.Frame.Tire_mounting.Teaser.Main_Shop
-
-----
-
-.. include:: 20190914.0907.kdx175.Engine.Engine_removal.Log.Main_Shop.rst
-  :start-after: .. START - 20190914.0907.kdx175.Engine.Engine_removal.Title.Main_Shop
-  :end-before: .. END - 20190914.0907.kdx175.Engine.Engine_removal.Title.Main_Shop
-
-.. include:: 20190914.0907.kdx175.Engine.Engine_removal.Log.Main_Shop.rst
-  :start-after: .. START - 20190914.0907.kdx175.Engine.Engine_removal.Log_Link.Main_Shop
-  :end-before: .. END - 20190914.0907.kdx175.Engine.Engine_removal.Log_Link.Main_Shop
-
-.. include:: 20190914.0907.kdx175.Engine.Engine_removal.Log.Main_Shop.rst
-  :start-after: .. START - 20190914.0907.kdx175.Engine.Engine_removal.Teaser.Main_Shop
-  :end-before: .. END - 20190914.0907.kdx175.Engine.Engine_removal.Teaser.Main_Shop
-
-----
-
-.. include:: 20190915.0807.kdx175.Engine.Engine_painting.Log.Main_Shop.rst
-  :start-after: .. START - 20190915.0807.kdx175.Engine.Engine_painting.Title.Main_Shop
-  :end-before: .. END - 20190915.0807.kdx175.Engine.Engine_painting.Title.Main_Shop
-
-.. include:: 20190915.0807.kdx175.Engine.Engine_painting.Log.Main_Shop.rst
-  :start-after: .. START - 20190915.0807.kdx175.Engine.Engine_painting.Log_Link.Main_Shop
-  :end-before: .. END - 20190915.0807.kdx175.Engine.Engine_painting.Log_Link.Main_Shop
-
-.. include:: 20190915.0807.kdx175.Engine.Engine_painting.Log.Main_Shop.rst
-  :start-after: .. START - 20190915.0807.kdx175.Engine.Engine_painting.Teaser.Main_Shop
-  :end-before: .. END - 20190915.0807.kdx175.Engine.Engine_painting.Teaser.Main_Shop
 
 ----
 
