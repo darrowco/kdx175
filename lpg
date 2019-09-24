@@ -62,6 +62,7 @@ if ! [[ ${imgFiles[0]} == "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-
   IFS=$'\n' imgFilesSorted=($(sort <<<"${imgFiles[*]}")); unset IFS
   #printf "%s\n" "${imgFilesSorted[@]}"
 
+  ifcnt=0
   for sectionImage in "${imgFilesSorted[@]}"
   do
     # if a video metadata file
@@ -83,9 +84,12 @@ if ! [[ ${imgFiles[0]} == "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-
     fi
   done
 else
-  echo "No New Images"
-  echo
+  # use the stock photo (ooo.jpeg) if no photos were uploaded
+  imgFileName="$NEWLOGPAGE^000.jpeg"
+  mv "./source/_static/000.jpeg" "./source/_static/images/${imgFileName}"
 
+  echo "No New Images - using stock photo"
+  echo
 fi
 
 # all new images have now been renamed - read in the names of all of the images (new and old)
