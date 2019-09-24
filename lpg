@@ -80,7 +80,8 @@ if ! [[ ${imgFiles[0]} == "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-
       imgFileName=$NEWLOGPAGE^${sectionImage}
 
       # rename the image from the original upload name to the new name
-      mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
+      [ -f "./source/_static/images/${sectionImage}" ] && mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
+      # old, remove mv "./source/_static/images/${sectionImage}" "./source/_static/images/${imgFileName}"
     fi
   done
 else
