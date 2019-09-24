@@ -39,7 +39,9 @@ n=0
 for element in "${array[@]}"
 do
     #echo "$element"
-    if [ $n -eq 4 ]; then
+    if [ $n -eq 0 ]; then
+      currentLogDate=$element
+    elif [ $n -eq 4 ]; then
       logTitle=$element
       logTitleSpaced=${logTitle//_/ }
       #echo $logTitleSpaced
@@ -139,8 +141,11 @@ while (( ${#logPageTemplateArray[@]} > i )); do
 
     # replace marker with Title
     elif [[ $templateOut =~ "zzzTitlezzz" ]]; then
-      echo "${templateOut//zzzTitlezzz/$logTitleSpaced}" >> ./source/$NEWLOGPAGE.rst
-      printf_new "=" ${#logTitleSpaced} >> ./source/$NEWLOGPAGE.rst
+      # set date
+      currentLogDateLong=$(date -d $currentLogDate +"%d-%b-%Y")
+      currentLogTitleComplete="$currentLogDateLong --- $logTitleSpaced"
+      echo "${templateOut//zzzTitlezzz/$currentLogTitleComplete}" >> ./source/$NEWLOGPAGE.rst
+      printf_new "=" ${#currentLogTitleComplete} >> ./source/$NEWLOGPAGE.rst
 
     # replace marker with Log Link Tags (these are Sphinx include markers)
     elif [[ $templateOut =~ "zzzLogLinkTagzzz" ]]; then
@@ -335,6 +340,8 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
       # remove any underscores from the title
       currentLogTitleSpaced=${currentLogTitleUnSpaced//_/ }
       #echo $currentLogTitleSpaced
+      
+      # set date
       currentLogDate=${currentLogFileNameParts[0]}
       currentLogDateLong=$(date -d $currentLogDate +"%d-%b-%Y")
 
