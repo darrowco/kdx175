@@ -34,13 +34,15 @@ done
 # break input on each "." and read into array
 IFS='.' read -r -a array <<< "$NEWLOGPAGE"
 
-# remove any underscores from the title
+# extract vars and remove any underscores from the title
 n=0
 for element in "${array[@]}"
 do
     #echo "$element"
     if [ $n -eq 0 ]; then
       currentLogDate=$element
+    elif [ $n -eq 3 ]; then
+      currentLogCategory=$element
     elif [ $n -eq 4 ]; then
       logTitle=$element
       logTitleSpaced=${logTitle//_/ }
@@ -145,15 +147,15 @@ while (( ${#logPageTemplateArray[@]} > i )); do
       currentLogDateLong=$(date -d $currentLogDate +"%d-%b-%Y")
       currentLogTitleComplete="$currentLogDateLong --- $logTitleSpaced"
 
-      # sub in current category
+      # sub in the Title with leading Date
       echo "${templateOut//zzzTitlezzz/$currentLogTitleComplete}" >> ./source/$NEWLOGPAGE.rst
 
-      # underline current category with "="
+      # underline Title with leading Date with "="
       printf_new "=" ${#currentLogTitleComplete} >> ./source/$NEWLOGPAGE.rst
 
       # print out Category with link to the appropriate Category page
       echo "" >> ./source/$NEWLOGPAGE.rst
-      echo "Category: " >> ./source/$NEWLOGPAGE.rst
+      echo "Category: ${currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
 
     # replace marker with Log Link Tags (these are Sphinx include markers)
     elif [[ $templateOut =~ "zzzLogLinkTagzzz" ]]; then
