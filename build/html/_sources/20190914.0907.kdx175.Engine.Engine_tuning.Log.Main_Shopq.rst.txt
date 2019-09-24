@@ -25,10 +25,10 @@ Engine tuning
 .. START - 20190914.0907.kdx175.Engine.Engine_tuning.Teaser.Main_Shopq
 
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | Completed exams and know have time to          | .. figure:: ./_static/images/20190914.0907.kdx175.Engine.Engine_tuning.Log.Main_Shopq*                                                               |
+| | Completed exams and know have time to          | .. figure:: ./_static/images/20190914.0907.kdx175.Engine.Engine_tuning.Log.Main_Shopq^000.jpeg                                                       |
 | | get back to work on the KDX. Engine removal    |    :align: right                                                                                                                                     |
 | | and necesarry parts such as the seat and tank  |    :figwidth: 300px                                                                                                                                  |
-| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/20190914.0907.kdx175.Engine.Engine_tuning.Log.Main_Shopq*                                                               |
+| | removed. One of the engine bolts was rusted    |    :target: ./_static/images/20190914.0907.kdx175.Engine.Engine_tuning.Log.Main_Shopq^000.jpeg                                                       |
 | | so it was cut.                                 |                                                                                                                                                      |
 | |                                                |    Your uploaded image "000" is displayed here                                                                                                       |
 | | One person can do this in a crouched position  |                                                                                                                                                      |

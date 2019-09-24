@@ -86,7 +86,8 @@ if ! [[ ${imgFiles[0]} == "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-
 else
   # use the stock photo (ooo.jpeg) if no photos were uploaded
   imgFileName="$NEWLOGPAGE^000.jpeg"
-  mv "./source/_static/000.jpeg" "./source/_static/images/${imgFileName}"
+  #echo "imgFileName = ${imgFileName}"
+  cp "./source/_static/images/000.jpeg" "./source/_static/images/${imgFileName}"
 
   echo "No New Images - using stock photo"
   echo
