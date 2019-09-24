@@ -436,8 +436,7 @@ currentProject=${arrayLogs[2]}
 
   # draw a line of "=" under title
   printf_new "=" ${#currentIndexTitleComplete} >> ./source/index.rst
-  echo >> ./source/index.rst
-
+  
 # insert toc into index page
 echo "" >> ./source/index.rst
 echo ".. toctree::" >> ./source/index.rst
@@ -449,11 +448,11 @@ echo "" >> ./source/index.rst
 # insert Category Logs into the TOC section on the index page
 for currentCategory in "${imgCatagoriesDeduped[@]}"
   do
-  echo ${currentCategory}_logs >> ./source/index.rst
+  echo "   ${currentCategory}_logs" >> ./source/index.rst
   done
 
-echo "parts_logs" >> ./source/index.rst
-echo "photos" >> ./source/index.rst
+echo "   parts_logs" >> ./source/index.rst
+echo "   photos" >> ./source/index.rst
 echo "" >> ./source/index.rst
 
 # list the teaser for each Log file, ordered by date

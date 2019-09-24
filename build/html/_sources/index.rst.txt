@@ -6,15 +6,14 @@
 Project: kdx175
 ===============
 
-
 .. toctree::
    :maxdepth: 1
    :hidden:
    :caption: Logs:
 
-Engine_logs
-parts_logs
-photos
+   Engine_logs
+   parts_logs
+   photos
 
 .. include:: 20190715.0900.kdx175.Engine.Engine_removal.Log.Main_Shopq.rst
   :start-after: .. START - 20190715.0900.kdx175.Engine.Engine_removal.Title.Main_Shopq
