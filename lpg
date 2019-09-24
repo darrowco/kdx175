@@ -301,13 +301,13 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
   #echo ${currentCategory}
 
   # save the current Category Logs file (if it exists)
-  [ -f ./source/${currentCategory}_logsqt.rst ] && mv ./source/${currentCategory}_logsqt.rst ./source/${currentCategory}_logsqt.rst.bak
+  [ -f ./source/${currentCategory}_logs.rst ] && mv ./source/${currentCategory}_logs.rst ./source/${currentCategory}_logs.rst.bak
 
   # Explicitly write the first 9 lines of the template out to the Category Logs file
   let i=0
   while (( i < 9 )); do
     templateOut=${engineLogsTemplateArray[i++]}
-    echo "$templateOut" >> ./source/${currentCategory}_logsqt.rst
+    echo "$templateOut" >> ./source/${currentCategory}_logs.rst
   done
   #echo ${logFilesSorted[@]}
   
@@ -338,39 +338,39 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
         # append info for each Logs section starting e.g. Engine category
         # append new Log file info to the currentLogCategory Logs file (e.g. Engine Logs)
         currentLogTitleComplete="$currentLogDateLong --- $currentLogTitleSpaced"
-        echo "$currentLogTitleComplete" >> ./source/${currentCategory}_logsqt.rst
+        echo "$currentLogTitleComplete" >> ./source/${currentCategory}_logs.rst
 
         # draw line under title
-        printf_new "-" ${#currentLogTitleComplete} >> ./source/${currentCategory}_logsqt.rst
-        echo >> ./source/${currentCategory}_logsqt.rst
+        printf_new "-" ${#currentLogTitleComplete} >> ./source/${currentCategory}_logs.rst
+        echo >> ./source/${currentCategory}_logs.rst
 
         # old method of determing title
         ## insert include, start, end into the currentLogCategory Logs file for: Title
         #currentLogFileNameUpdated=${currentLogFileName//Log/Title}
         #currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
-        #echo ".. include:: ${currentLogFileName}" >> ./source/${currentCategory}_logsqt.rst
-        #echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logsqt.rst
-        #echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logsqt.rst
-        #echo >> ./source/${currentCategory}_logsqt.rst
-        #echo >> ./source/${currentCategory}_logsqt.rst
+        #echo ".. include:: ${currentLogFileName}" >> ./source/${currentCategory}_logs.rst
+        #echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logs.rst
+        #echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logs.rst
+        #echo >> ./source/${currentCategory}_logs.rst
+        #echo >> ./source/${currentCategory}_logs.rst
 
         # insert include, start, end into the currentLogCategory Logs file for: Log Link
         currentLogFileNameUpdated=${currentLogFileName//Log/Log_Link}
         currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
-        echo ".. include:: ${currentLogFileName}" >> ./source/${currentCategory}_logsqt.rst
-        echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logsqt.rst
-        echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logsqt.rst
-        echo >> ./source/${currentCategory}_logsqt.rst
-        echo >> ./source/${currentCategory}_logsqt.rst
+        echo ".. include:: ${currentLogFileName}" >> ./source/${currentCategory}_logs.rst
+        echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logs.rst
+        echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logs.rst
+        echo >> ./source/${currentCategory}_logs.rst
+        echo >> ./source/${currentCategory}_logs.rst
 
         # insert include, start, end into the currentLogCategory Logs file for: Teaser
         currentLogFileNameUpdated=${currentLogFileName//Log/Teaser}
         currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
-        echo ".. include:: ${currentLogFileName}" >> ./source/${currentCategory}_logsqt.rst
-        echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logsqt.rst
-        echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logsqt.rst
-        echo >> ./source/${currentCategory}_logsqt.rst
-        echo >> ./source/${currentCategory}_logsqt.rst
+        echo ".. include:: ${currentLogFileName}" >> ./source/${currentCategory}_logs.rst
+        echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logs.rst
+        echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logs.rst
+        echo >> ./source/${currentCategory}_logs.rst
+        echo >> ./source/${currentCategory}_logs.rst
 
         #echo currentLogFileName=${currentLogFileName}
         #echo currentLogFileNameUpdated=${currentLogFileNameUpdated}
