@@ -1,7 +1,7 @@
 :orphan:
 
-zzzTitlezzz
-===========
+zzzCategoryzzz
+==============
 
 .. toctree::
    :maxdepth: 2

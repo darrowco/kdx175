@@ -307,7 +307,17 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
   let i=0
   while (( i < 9 )); do
     templateOut=${categoryLogsTemplateArray[i++]}
-    echo "$templateOut" >> ./source/${currentCategory}_logs.rst
+
+    # replace marker with Title
+    if [[ $templateOut =~ "zzzCategoryzzz" ]]; then
+      # sub in current category
+      echo "${templateOut//zzzCategoryzzz/$Category}" >> ./source/$NEWLOGPAGE.rst
+
+      # underline current category with "="
+      printf_new "=" ${#Category} >> ./source/$NEWLOGPAGE.rst
+    else
+      echo "$templateOut" >> ./source/${currentCategory}_logs.rst
+    fi
   done
   #echo ${logFilesSorted[@]}
   
