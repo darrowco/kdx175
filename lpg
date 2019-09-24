@@ -4,7 +4,7 @@
 # read input string, check for new/old images and build log pages test
 
 declare -a logPageTemplateArray
-declare -a engineLogsTemplateArray
+declare -a categoryLogsTemplateArray
 declare -a imgFiles
 declare -a imgCatagories
 
@@ -264,12 +264,12 @@ done
 #############################################################################################################
 # overwrite each category Logs Page file if that category has a new log (this way, any new Logs are included)
 
-# Load the Engine Logs template file into array.
-readarray -t engineLogsTemplateArray < engine_logs_template.txt
+# Load the Category Logs template file into array.
+readarray -t categoryLogsTemplateArray < category_logs_template.txt
 
 # read in Log file names
 cd ./source
-logFiles=(*\.Log\.*q.rst)
+logFiles=(*\.Log\.*.rst)
 cd ..
 #echo "${logFiles[@]}"
 
@@ -306,7 +306,7 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
   # Explicitly write the first 9 lines of the template out to the Category Logs file
   let i=0
   while (( i < 9 )); do
-    templateOut=${engineLogsTemplateArray[i++]}
+    templateOut=${categoryLogsTemplateArray[i++]}
     echo "$templateOut" >> ./source/${currentCategory}_logs.rst
   done
   #echo ${logFilesSorted[@]}
@@ -390,7 +390,7 @@ readarray -t indexTemplateArray < index_template.txt
 
 # read in Log file names
 cd ./source
-logFiles=(*\.Log\.*q.rst)
+logFiles=(*\.Log\.*.rst)
 cd ..
 #echo "${logFiles[@]}"
 
