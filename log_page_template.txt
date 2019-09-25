@@ -21,7 +21,7 @@ zzzTitlezzz
     .. END - zzzLogLinkTagzzz
     -->
 
-    Category: zzzCategoryzzz
+    Category: zzzCategory1zzz
 
 .. START - zzzTeaserTagzzz
 
