@@ -162,10 +162,10 @@ while (( ${#logPageTemplateArray[@]} > i )); do
       echo "${templateOut//zzzcategoryNamezzz/$currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
 
     # replace marker with Category and link to Category
-    elif [[ $templateOut =~ "zzzCategory1zzz" ]]; then
+    elif [[ $templateOut =~ "zzzcategoryLabelzzz" ]]; then
 
       # sub in the Category with link to the appropriate Category page
-      echo "${templateOut//zzzCategory1zzz/$currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
+      echo "${templateOut//zzzcategoryLabelzzz/$currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
 
 
 
@@ -332,6 +332,8 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
   do
   #echo ${currentCategory}
 
+  # prepend with label and place at top of page
+  currentCategoryLabel="Category: ${currentCategory}"
   # save the current Category Logs file (if it exists)
   [ -f ./source/${currentCategory}_logs.rst ] && mv ./source/${currentCategory}_logs.rst ./source/${currentCategory}_logs.rst.bak
 
@@ -343,10 +345,10 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
     # replace marker with Title
     if [[ $templateOut =~ "zzzCategoryzzz" ]]; then
       # sub in current category
-      echo "${templateOut//zzzCategoryzzz/$currentCategory}" >> ./source/${currentCategory}_logs.rst
+      echo "${templateOut//zzzCategoryzzz/$currentCategoryLabel}" >> ./source/${currentCategory}_logs.rst
 
       # underline current category with "="
-      printf_new "=" ${#currentCategory} >> ./source/${currentCategory}_logs.rst
+      printf_new "=" ${#currentCategoryLabel} >> ./source/${currentCategory}_logs.rst
     else
       echo "$templateOut" >> ./source/${currentCategory}_logs.rst
     fi

@@ -1,7 +1,7 @@
 :orphan:
 
-Frame
-=====
+Category: Frame
+===============
 ==============
 
 .. toctree::
