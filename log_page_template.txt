@@ -6,6 +6,7 @@
 
 zzzTitlezzz
 
+Category: `Category <zzzCategory1zzz_logs.html>`__
 
 .. END - zzzTitleTagzzz
 
@@ -20,8 +21,6 @@ zzzTitlezzz
     Click here to see the `entire Log Entry <zzzLogPageNamezzz.html>`__
     .. END - zzzLogLinkTagzzz
     -->
-
-    Category: `Category <zzzCategory1zzz_logs.html>`__
 
 .. START - zzzTeaserTagzzz
 
