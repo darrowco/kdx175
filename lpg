@@ -157,7 +157,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
 
     # replace marker with Category and link to Category
     elif [[ $templateOut =~ "zzzCategory1zzz" ]]; then
-      currentCategoryLink="\`${currentLogCategory} Logs: <${currentLogCategory}_logs.html>\`__"
+      currentCategoryLink="\`"${currentLogCategory}" Logs: <"${currentLogCategory}"_logs.html>""\`""__"
 
 #echo "11111 ${currentCategoryLink}"
 #exit 1
