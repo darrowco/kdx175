@@ -21,7 +21,7 @@ zzzTitlezzz
     .. END - zzzLogLinkTagzzz
     -->
 
-    Category: zzzCategory1zzz
+    Category: `entire Log Entry <zzzCategory1zzz_logs.html>`__
 
 .. START - zzzTeaserTagzzz
 
