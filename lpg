@@ -141,7 +141,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Title}
       echo "${templateOut//zzzTitleTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
 
-    # replace marker with Title and link to Category
+    # replace marker with Title
     elif [[ $templateOut =~ "zzzTitlezzz" ]]; then
       # set date
       currentLogDateLong=$(date -d $currentLogDate +"%d-%b-%Y")
@@ -153,9 +153,21 @@ while (( ${#logPageTemplateArray[@]} > i )); do
       # underline Title with leading Date with "="
       printf_new "=" ${#currentLogTitleComplete} >> ./source/$NEWLOGPAGE.rst
 
-      # print out Category with link to the appropriate Category page
-      echo "" >> ./source/$NEWLOGPAGE.rst
-      echo "Category: `${currentLogCategory}" Logs <${currentLogCategory}"_logs.html>`__" >> ./source/$NEWLOGPAGE.rst
+
+
+    # replace marker with Category and link to Category
+    elif [[ $templateOut =~ "zzzCategoryzzz" ]]; then
+      currentCategoryLink="`${currentLogCategory} Logs: <${currentLogCategory}_logs.html>`__"
+
+      # sub in the Category with link to the appropriate Category page
+      echo "${templateOut//zzzCategoryzzz/$currentCategoryLink}" >> ./source/$NEWLOGPAGE.rst
+
+
+
+
+
+
+
 
     # replace marker with Log Link Tags (these are Sphinx include markers)
     elif [[ $templateOut =~ "zzzLogLinkTagzzz" ]]; then
