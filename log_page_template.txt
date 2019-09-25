@@ -6,7 +6,7 @@
 
 zzzTitlezzz
 
-Category: `Category <zzzCategory1zzz_logs.html>`__
+Category: `zzzCategory1zzz <zzzCategory1zzz_logs.html>`__
 
 .. END - zzzTitleTagzzz
 

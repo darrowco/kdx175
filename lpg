@@ -155,14 +155,14 @@ while (( ${#logPageTemplateArray[@]} > i )); do
 
 
 
+    # replace marker with Category Name
+    elif [[ $templateOut =~ "zzzcategoryNamezzz" ]]; then
+
+      # sub in the Category with link to the appropriate Category page
+      echo "${templateOut//zzzcategoryNamezzz/$currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
+
     # replace marker with Category and link to Category
     elif [[ $templateOut =~ "zzzCategory1zzz" ]]; then
-#      currentCategoryLink="\`"${currentLogCategory}" Logs: <"${currentLogCategory}"_logs.html>""\`""__"
-
-#echo "11111 ${currentCategoryLink}"
-#exit 1
-
-#currentCategoryLink="`${currentLogCategory} Logs: <${currentLogCategory}_logs.html>`__"
 
       # sub in the Category with link to the appropriate Category page
       echo "${templateOut//zzzCategory1zzz/$currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
