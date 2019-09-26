@@ -165,6 +165,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
     elif [[ $templateOut =~ "zzzcategoryLabelzzz" ]]; then
 
       # sub in the Category with link to the appropriate Category page
+      echo "${templateOut//zClick/xClick}"
       echo "${templateOut//zzzcategoryLabelzzz/$currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
 
 
