@@ -6,7 +6,7 @@
 
 zzzTitlezzz
 
-More detail: `the entire Category: zzzcategoryLabelzzz <zzzcategoryLabelzzz_logs.html>`__ or `the entire Log Entry <zzzLogPageNamezzz.html>`__
+More detail: `see the entire Category: zzzcategoryLabelzzz <zzzcategoryLabelzzz_logs.html>`__ or `see the entire Log Entry <zzzLogPageNamezzz.html>`__
 
 .. END - zzzTitleTagzzz
 
