@@ -6,7 +6,6 @@
 
 zzzTitlezzz
 
-More detail: `see this entire Log Entry <zzzLogPageNamezzz.html>`__ or `see all Logs in this Category: zzzcategoryLabelzzz <zzzcategoryLabelzzz_logs.html>`__
 
 .. END - zzzTitleTagzzz
 
@@ -16,6 +15,11 @@ More detail: `see this entire Log Entry <zzzLogPageNamezzz.html>`__ or `see all 
 
 .. raw:: html
 
+    <!--
+    .. START - zzzLogLinkTagCatzzz
+    More detail: `see this entire Log Entry <zzzLogPageNamezzz.html>`__ or `see all Logs in this Category: zzzcategoryLabelzzz <zzzcategoryLabelzzz_logs.html>`__
+    .. END - zzzLogLinkTagCatzzz
+    -->
     <!--
     .. START - zzzLogLinkTagzzz
     Click here to see the `entire Log Entry <zzzLogPageNamezzz.html>`__
