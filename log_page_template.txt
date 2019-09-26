@@ -6,7 +6,7 @@
 
 zzzTitlezzz
 
-Click here to see the `entire Category: zzzcategoryLabelzzz <zzzcategoryLabelzzz_logs.html>`__
+zClick here to see the `entire Category: zzzcategoryLabelzzz <zzzcategoryLabelzzz_logs.html>`__
 
 .. END - zzzTitleTagzzz
 
