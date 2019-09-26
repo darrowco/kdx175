@@ -155,34 +155,30 @@ while (( ${#logPageTemplateArray[@]} > i )); do
 
 
 
-    # replace marker with Category Name
-    elif [[ $templateOut =~ "zzzcategoryNamezzz" ]]; then
+    # replace marker with Log Link Tags (these are Sphinx include markers)
+    # e.g. .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
+    elif [[ $templateOut =~ "zzzCatOnlyLinkTagzzz" ]]; then
+      NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Cat_Only_Link}
+      echo "${templateOut//zzzCatOnlyLinkTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
 
-      # sub in the Category with link to the appropriate Category page
-      echo "${templateOut//zzzcategoryNamezzz/$currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
-
-    # replace marker with Category and link to Category
-    elif [[ $templateOut =~ "zzzcategoryLabelzzz" ]]; then
-
-      # sub in the Category with link to the appropriate Category page
-      templateOut="${templateOut//zzzcategoryLabelzzz/$currentLogCategory}"
-      echo "${templateOut//zzzLogPageNamezzz/$NEWLOGPAGE}" >> ./source/$NEWLOGPAGE.rst
-
-
-
+    # replace marker with Log Page name
+    # e.g. ./source/20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html
+    # e.g. http://z76-rtd.com:8000/docs/kdx175/en/latest/20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html
+    elif [[ $templateOut =~ "zzzCatPageNamezzz" ]]; then
+      echo "${templateOut//zzzCatPageNamezzz/$currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
 
 
 
 
     # replace marker with Log Link Tags (these are Sphinx include markers)
+    # e.g. .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
     elif [[ $templateOut =~ "zzzLogLinkTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Log_Link}
       echo "${templateOut//zzzLogLinkTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
 
-
-
-
     # replace marker with Log Page name
+    # e.g. ./source/20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html
+    # e.g. http://z76-rtd.com:8000/docs/kdx175/en/latest/20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html
     elif [[ $templateOut =~ "zzzLogPageNamezzz" ]]; then
       echo "${templateOut//zzzLogPageNamezzz/$NEWLOGPAGE}" >> ./source/$NEWLOGPAGE.rst
 
