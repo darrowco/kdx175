@@ -179,9 +179,16 @@ while (( ${#logPageTemplateArray[@]} > i )); do
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Log_Link}
       echo "${templateOut//zzzLogLinkTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
 
-    #### replace marker with Log Page name
-    ###elif [[ $templateOut =~ "zzzLogPageNamezzz" ]]; then
-    ###  echo "${templateOut//zzzLogPageNamezzz/$NEWLOGPAGE}" >> ./source/$NEWLOGPAGE.rst
+
+
+
+    # replace marker with Log Page name
+    elif [[ $templateOut =~ "zzzLogPageNamezzz" ]]; then
+      echo "${templateOut//zzzLogPageNamezzz/$NEWLOGPAGE}" >> ./source/$NEWLOGPAGE.rst
+
+
+
+
 
     # replace marker with Teaser Test Tags (these are Sphinx include markers)
     elif [[ $templateOut =~ "zzzTeaserTagzzz" ]]; then
