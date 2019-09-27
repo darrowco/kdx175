@@ -195,7 +195,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
     # e.g. ./source/20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html
     # e.g. http://z76-rtd.com:8000/docs/kdx175/en/latest/20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html
     elif [[ $templateOut =~ "zzzLogOnlyPagezzz" ]] && [[ $templateOut =~ "zzzCatPageNamezzz" ]]; then
-      ${templateOut}="${templateOut//zzzLogOnlyPagezzz/$NEWLOGPAGE}"
+      templateOut="${templateOut//zzzLogOnlyPagezzz/$NEWLOGPAGE}"
       echo "${templateOut//zzzCatPageNamezzz/$currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
 
 
