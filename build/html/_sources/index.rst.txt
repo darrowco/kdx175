@@ -11,6 +11,7 @@ Project: kdx175
    :hidden:
    :caption: Logs:
 
+   Body_logs
    Frame_logs
    parts_logs
    photos
@@ -26,6 +27,20 @@ Project: kdx175
 .. include:: 20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.rst
   :start-after: .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Teaser.Main_Shop
   :end-before: .. END - 20190815.0807.kdx175.Frame.Tire_mounting.Teaser.Main_Shop
+
+----
+
+.. include:: 20190915.1100.kdx175.Body.Sanding.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.1100.kdx175.Body.Sanding.Title.Main_Shop
+  :end-before: .. END - 20190915.1100.kdx175.Body.Sanding.Title.Main_Shop
+
+.. include:: 20190915.1100.kdx175.Body.Sanding.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.1100.kdx175.Body.Sanding.Cat_Log_Link.Main_Shop
+  :end-before: .. END - 20190915.1100.kdx175.Body.Sanding.Cat_Log_Link.Main_Shop
+
+.. include:: 20190915.1100.kdx175.Body.Sanding.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.1100.kdx175.Body.Sanding.Teaser.Main_Shop
+  :end-before: .. END - 20190915.1100.kdx175.Body.Sanding.Teaser.Main_Shop
 
 ----
 

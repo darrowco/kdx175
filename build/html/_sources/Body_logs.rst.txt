@@ -1,0 +1,23 @@
+:orphan:
+
+Category: Body
+==============
+==============
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+15-Sep-2019 --- Sanding
+-----------------------
+
+.. include:: 20190915.1100.kdx175.Body.Sanding.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.1100.kdx175.Body.Sanding.Log_Only_Link.Main_Shop
+  :end-before: .. END - 20190915.1100.kdx175.Body.Sanding.Log_Only_Link.Main_Shop
+
+
+.. include:: 20190915.1100.kdx175.Body.Sanding.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.1100.kdx175.Body.Sanding.Teaser.Main_Shop
+  :end-before: .. END - 20190915.1100.kdx175.Body.Sanding.Teaser.Main_Shop
+
+
