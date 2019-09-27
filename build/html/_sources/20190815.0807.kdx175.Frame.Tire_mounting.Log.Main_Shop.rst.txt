@@ -34,9 +34,9 @@ More detail: `see all Logs in this Category: Frame <Frame_logs.html>`__
 .. raw:: html
 
     <!--
-    .. START - zzzLogOnlyLinkTagzzz
+    .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
     More detail: `see this entire Log Entry <20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html>`__
-    .. END - zzzLogOnlyLinkTagzzz
+    .. END - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
     -->
 
     <!--
@@ -45,9 +45,9 @@ More detail: `see all Logs in this Category: Frame <Frame_logs.html>`__
     .. END - zzzCatLogLinkTagzzz
     -->
     <!--
-    .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
-    Click here to see the `entire Log Entry <20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html>`__
-    .. END - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
+    .. START - zzzLogLinkTagzzz
+    Click here to see the `entire Log Entry <zzzLogPageNamezzz.html>`__
+    .. END - zzzLogLinkTagzzz
     -->
 
 .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Teaser.Main_Shop
