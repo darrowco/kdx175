@@ -13,7 +13,7 @@ zzzTitlezzz
 .. START - zzzTitleTagzzz
 
 
-zzzTitlezzz
+More detail: `see all Logs in this Category: zzzCatPageNamezzz <zzzCatPageNamezzz_logs.html>`__
 
 
 .. END - zzzTitleTagzzz
