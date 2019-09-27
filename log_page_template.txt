@@ -10,7 +10,9 @@ zzzTitlezzz
 .. END - zzzTitleTagzzz
 
 .. START - zzzCatOnlyLinkTagzzz
+
 More detail: `see all Logs in this Category: zzzCatPageNamezzz <zzzCatPageNamezzz_logs.html>`__
+
 .. END - zzzCatOnlyLinkTagzzz
 
 .. contents::
