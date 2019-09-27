@@ -20,11 +20,11 @@ zzzTitlezzz
     More detail: `see this entire Log Entry <zzzLogPageNamezzz.html>`__
     .. END - zzzLogOnlyLinkTagzzz
     -->
-    <!--
+
     .. START - zzzCatOnlyLinkTagzzz
     More detail: `see all Logs in this Category: zzzCatPageNamezzz <zzzCatPageNamezzz_logs.html>`__
     .. END - zzzCatOnlyLinkTagzzz
-    -->
+
     <!--
     .. START - zzzCatLogLinkTagzzz
     More detail: `see this entire Log Entry <zzzLogPageNamezzz.html>`__ or `see all Logs in this Category: zzzCatPageNamezzz <zzzCatPageNamezzz_logs.html>`__
