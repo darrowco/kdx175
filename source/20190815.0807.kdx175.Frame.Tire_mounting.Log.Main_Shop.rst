@@ -41,7 +41,7 @@ More detail: `see all Logs in this Category: Frame <Frame_logs.html>`__
 
     <!--
     .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Cat_Log_Link.Main_Shop
-    More detail: `see this entire Log Entry <zzzLogOnlyPagezzz.html>`__ or `see all Logs in this Category: Frame <Frame_logs.html>`__
+    More detail: `see this entire Log Entry <20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html>`__ or `see all Logs in this Category: Frame <Frame_logs.html>`__
     .. END - 20190815.0807.kdx175.Frame.Tire_mounting.Cat_Log_Link.Main_Shop
     -->
     <!--
