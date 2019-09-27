@@ -40,7 +40,7 @@ More detail: `see all Logs in this Category: zzzCatPageNamezzz <zzzCatPageNamezz
 
     <!--
     .. START - zzzCatLogLinkTagzzz
-    More detail: `see this entire Log Entry <zzzLogPageNamezzz.html>`__ or `see all Logs in this Category: zzzCatPageNamezzz <zzzCatPageNamezzz_logs.html>`__
+    More detail: `see this entire Log Entry <zzzLogOnlyPagezzz.html>`__ or `see all Logs in this Category: zzzCatPageNamezzz <zzzCatPageNamezzz_logs.html>`__
     .. END - zzzCatLogLinkTagzzz
     -->
     <!--

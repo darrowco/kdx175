@@ -530,7 +530,7 @@ for currentLogFileName in "${logFilesSorted[@]}"
 
     # extract the Log_Link from the current Log file and insert it into the index file
     echo ".. include:: ${currentLogFileName}" >> ./source/index.rst
-    currentLogFileNameUpdated=${currentLogFileName//Log/Log_Link}
+    currentLogFileNameUpdated=${currentLogFileName//Log/Cat_Log_Link}
     currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
     echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/index.rst
     echo "  :end-before: .. END - ${currentLogFileNameUpdated}" >> ./source/index.rst

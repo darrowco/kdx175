@@ -41,7 +41,7 @@ More detail: `see all Logs in this Category: Frame <Frame_logs.html>`__
 
     <!--
     .. START - zzzCatLogLinkTagzzz
-    More detail: `see this entire Log Entry <zzzLogPageNamezzz.html>`__ or `see all Logs in this Category: Frame <Frame_logs.html>`__
+    More detail: `see this entire Log Entry <zzzLogOnlyPagezzz.html>`__ or `see all Logs in this Category: Frame <Frame_logs.html>`__
     .. END - zzzCatLogLinkTagzzz
     -->
     <!--
