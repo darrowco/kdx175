@@ -40,9 +40,9 @@ More detail: `see all Logs in this Category: Frame <Frame_logs.html>`__
     -->
 
     <!--
-    .. START - zzzCatLogLinkTagzzz
+    .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
     More detail: `see this entire Log Entry <zzzLogOnlyPagezzz.html>`__ or `see all Logs in this Category: Frame <Frame_logs.html>`__
-    .. END - zzzCatLogLinkTagzzz
+    .. END - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
     -->
     <!--
     .. START - zzzLogLinkTagzzz
