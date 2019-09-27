@@ -9,6 +9,10 @@ zzzTitlezzz
 
 .. END - zzzTitleTagzzz
 
+.. START - zzzCatOnlyLinkTagzzz
+More detail: `see all Logs in this Category: zzzCatPageNamezzz <zzzCatPageNamezzz_logs.html>`__
+.. END - zzzCatOnlyLinkTagzzz
+
 .. contents::
    :local:
    :depth: 1
@@ -20,10 +24,6 @@ zzzTitlezzz
     More detail: `see this entire Log Entry <zzzLogPageNamezzz.html>`__
     .. END - zzzLogOnlyLinkTagzzz
     -->
-
-    .. START - zzzCatOnlyLinkTagzzz
-    More detail: `see all Logs in this Category: zzzCatPageNamezzz <zzzCatPageNamezzz_logs.html>`__
-    .. END - zzzCatOnlyLinkTagzzz
 
     <!--
     .. START - zzzCatLogLinkTagzzz
