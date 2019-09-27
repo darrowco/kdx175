@@ -136,6 +136,8 @@ let i=0
 while (( ${#logPageTemplateArray[@]} > i )); do
     templateOut=${logPageTemplateArray[i]}
 
+
+    # Title ########################
     # replace marker with Title Tags (these are Sphinx include markers)
     if [[ $templateOut =~ "zzzTitleTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Title}
@@ -154,27 +156,20 @@ while (( ${#logPageTemplateArray[@]} > i )); do
       printf_new "=" ${#currentLogTitleComplete} >> ./source/$NEWLOGPAGE.rst
 
 
-
-
-
-    # replace marker with Log Link Tags (these are Sphinx include markers)
-    # e.g. .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
+    # Category+LogLink #############
+    # replace marker with Category+Log Link Tags for use on the Index page
     elif [[ $templateOut =~ "zzzCatLogLinkTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Cat_Log_Link}
       echo "${templateOut//zzzCatLogLinkTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
 
-    # replace marker with Log Page name
-    # e.g. ./source/20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html
-    # e.g. http://z76-rtd.com:8000/docs/kdx175/en/latest/20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html
+    # replace marker with Log Page name and Category Page name for use on the Index page
     elif [[ $templateOut =~ "zzzLogOnlyPagezzz" ]] && [[ $templateOut =~ "zzzCatPageNamezzz" ]]; then
       templateOut="${templateOut//zzzLogOnlyPagezzz/$NEWLOGPAGE}"
       echo "${templateOut//zzzCatPageNamezzz/$currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
 
 
-
-
-    # replace marker with Log Link Tags (these are Sphinx include markers)
-    # e.g. .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
+    # CategoryLink Only ############
+    # replace marker with Log Link Tags
     elif [[ $templateOut =~ "zzzCatOnlyLinkTagzzz" ]]; then
       NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Cat_Only_Link}
       echo "${templateOut//zzzCatOnlyLinkTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
@@ -186,25 +181,15 @@ while (( ${#logPageTemplateArray[@]} > i )); do
       echo "${templateOut//zzzCatPageNamezzz/$currentLogCategory}" >> ./source/$NEWLOGPAGE.rst
 
 
-
-
+    # LogLink Only #################
     # replace marker with Log Link Tags (these are Sphinx include markers)
-    # e.g. .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
     elif [[ $templateOut =~ "zzzLogOnlyLinkTagzzz" ]]; then
-      NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Log_Link}
+      NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Log_Only_Link}
       echo "${templateOut//zzzLogOnlyLinkTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
 
     # replace marker with Log Page name
-    # e.g. ./source/20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html
-    # e.g. http://z76-rtd.com:8000/docs/kdx175/en/latest/20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.html
     elif [[ $templateOut =~ "zzzLogOnlyPagezzz" ]]; then
       echo "${templateOut//zzzLogOnlyPagezzz/$NEWLOGPAGE}" >> ./source/$NEWLOGPAGE.rst
-
-
-
-
-
-
 
 
     # replace marker with Teaser Test Tags (these are Sphinx include markers)
@@ -425,7 +410,7 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
         #echo >> ./source/${currentCategory}_logs.rst
 
         # insert include, start, end into the currentLogCategory Logs file for: Log Link
-        currentLogFileNameUpdated=${currentLogFileName//Log/Log_Link}
+        currentLogFileNameUpdated=${currentLogFileName//Log/Log_Only_Link}
         currentLogFileNameUpdated=${currentLogFileNameUpdated//.rst/}
         echo ".. include:: ${currentLogFileName}" >> ./source/${currentCategory}_logs.rst
         echo "  :start-after: .. START - ${currentLogFileNameUpdated}" >> ./source/${currentCategory}_logs.rst
