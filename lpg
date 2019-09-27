@@ -188,7 +188,7 @@ while (( ${#logPageTemplateArray[@]} > i )); do
     # replace marker with Log Link Tags (these are Sphinx include markers)
     # e.g. .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Log_Link.Main_Shop
     elif [[ $templateOut =~ "zzzCatLogLinkTagzzz" ]]; then
-      NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Log_Link}
+      NEWLOGPAGEUPDATED=${NEWLOGPAGE//Log/Cat_Log_Link}
       echo "${templateOut//zzzCatLogLinkTagzzz/$NEWLOGPAGEUPDATED}" >> ./source/$NEWLOGPAGE.rst
 
     # replace marker with Log Page name
