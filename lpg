@@ -1,7 +1,9 @@
 #!/bin/bash
 
 #######################################################################################
-# read input string, check for new/old images and build log pages test
+#######################################################################################
+#######################################################################################
+# read input string, check for new/old images and build 1 log page
 
 declare -a logPageTemplateArray
 declare -a categoryLogsTemplateArray
@@ -108,7 +110,7 @@ IFS=$'\n' imgFilesRenamedSorted=($(sort <<<"${imgFilesRenamed[*]}")); unset IFS
 #printf "%s\n" "${imgFilesRenamedSorted[@]}"
 
 ### disabled during development
-#######################################################################################
+###############################
 # create the new Log Page file if it does not already exist
 #  if it exists, delete manually and then re-run this script
 # todo: add in menu choice (from zfs install)
@@ -303,6 +305,8 @@ done
 
 
 #############################################################################################################
+#############################################################################################################
+#############################################################################################################
 # overwrite each category Logs Page file if that category has a new log (this way, any new Logs are included)
 
 # Load the Category Logs template file into array.
@@ -437,6 +441,8 @@ for currentCategory in "${imgCatagoriesDeduped[@]}"
   done
 
 
+#############################################################################################################
+#############################################################################################################
 #############################################################################################################
 # overwrite the index page to include category listings and teasers for the log files, sorted by date
 
