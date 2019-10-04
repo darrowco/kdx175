@@ -25,6 +25,8 @@ readarray -t logPageTemplateArray < log_page_data.txt
 
 exit 1
 
+#
+
 } # function that builds the Logs from a file
 
 # parse any inputs on the command line (filename containing metadata)
