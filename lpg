@@ -18,15 +18,33 @@ printf_new() {
  echo "${v// /$str}"
 }
 
+# function that builds the Logs from a file
+build_from_file() {
+echo "Raeding Log Page Data and building installation data ..."
+readarray -t logPageTemplateArray < log_page_data.txt
+
+exit 1
+
+} # function that builds the Logs from a file
+
 # parse any inputs on the command line (filename containing metadata)
 while :; do
     case $1 in
 
-        -n|--new) # New - make a new Log Page and add to other pages
-                  #     - kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shop
+        -n|--new) # New page based on command line input
+                  #     - make a new Log Page and add to other pages
+                  #     -   e.g. 20190915.1100.kdx175.Body.Sanding.Log.Main_Shop
             shift
             NEWLOGPAGE="$1"
             printf "\nNew Log Page will be created: $NEWLOGPAGE\n\n"
+            ;;
+        -p|--page) # Build out the Log Pages based on Log Page Data File
+                  #     - all existing pages are recreated, new pages are added
+                  #     - add data for the new log page(s) to log_page_data.txt
+            shift
+            NEWLOGPAGE="$1"
+            printf "\nAll existing pages are recreated, new pages are added\n\n"
+            build_from_file
             ;;
         *)  # Default case: If no more options then break out of the loop.
             break
