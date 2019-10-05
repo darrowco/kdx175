@@ -31,24 +31,38 @@
         return comparison;
       }
 
-      var imageData = [         {"filename": "wiring.png", "aspectRatio": "1.4900"},
-        {"filename": "wiring (copy).png", "aspectRatio": "1.4900"},
-        {"filename": "spokes.jpeg", "aspectRatio": "1.7700"},
-        {"filename": "kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_002.jpeg", "aspectRatio": "1.4900"},
-        {"filename": "out.jpeg", "aspectRatio": "1.7700"},
-        {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
-        {"filename": "tools.png", "aspectRatio": "1.3300"},
-        {"filename": "kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_003.png", "aspectRatio": "1.3300"},
+      var imageData = [         {"filename": "spokes.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop^201909140907_003.png", "aspectRatio": "1.3300"},
         {"filename": "kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_000.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop^201909140907_001.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "wiring (copy).png", "aspectRatio": "1.4900"},
+        {"filename": "20190915.1100.kdx175.Body.Sanding.Log.Main_Shop^201909140907_001.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_003.png", "aspectRatio": "1.3300"},
+        {"filename": "20190915.1100.kdx175.Body.Sanding.Log.Main_Shop^201909140907_004.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "20190915.1100.kdx175.Body.Sanding.Log.Main_Shop^000.jpeg", "aspectRatio": "0.8100"},
+        {"filename": "20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop^201909140907_004.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "tools.png", "aspectRatio": "1.3300"},
+        {"filename": "wiring.png", "aspectRatio": "1.4900"},
+        {"filename": "kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_001.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "20190915.1100.kdx175.Body.Sanding.Log.Main_Shop^201909140907_000.png", "aspectRatio": "1.3300"},
+        {"filename": "20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop^201909140907_002.jpeg", "aspectRatio": "1.4900"},
         {"filename": "extract.jpeg", "aspectRatio": "1.3300"},
-        {"filename": "kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_001.jpeg", "aspectRatio": "1.7700"}, ];
+        {"filename": "20190915.1100.kdx175.Body.Sanding.Log.Main_Shop^201909140907_002.jpeg", "aspectRatio": "1.4900"},
+        {"filename": "20190915.1100.kdx175.Body.Sanding.Log.Main_Shop^201909140907_003.png", "aspectRatio": "1.3300"},
+        {"filename": "mess.jpeg", "aspectRatio": "1.4900"},
+        {"filename": "000.jpeg", "aspectRatio": "0.8100"},
+        {"filename": "kdx175.Engine.Prep_for_engine_removal.Log.20190714.0900.Main_Shopq^201909140907_002.jpeg", "aspectRatio": "1.4900"},
+        {"filename": "^000.jpeg", "aspectRatio": "0.8100"},
+        {"filename": "out.jpeg", "aspectRatio": "1.7700"},
+        {"filename": "20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop^000.jpeg", "aspectRatio": "0.8100"},
+        {"filename": "20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop^201909140907_000.png", "aspectRatio": "1.3300"}, ];
       imageData.sort(compare);
       var pig = new Pig(imageData, {
         urlForSize: function(filename, size) {
-        return '_static/images/' + 'img/' + size + '/' + filename;
+        return 'source/_static/images/' + 'img/' + size + '/' + filename;
       },
       addAnchorTag: true,
-      anchorTargetDir: "_static/images/",
+      anchorTargetDir: "source/_static/images/",
       anchorClass: "swipebox"
       }).enable();
       ;( function( $ ) {
