@@ -113,7 +113,7 @@ sub list_image_files {
   my $directory = $_[0] || $dir;
   my @files;
   opendir( my $dh, $directory );
-    @files = grep { /\.(jpg|JPG|jpeg|JPEG|gif|GIF|png|PNG)$/ } readdir $dh;
+    @files = grep { /\.(jpg|jpeg|gif|png)$/ } readdir $dh;
   closedir( $dh );
   return @files;
 }
