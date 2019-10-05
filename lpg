@@ -23,6 +23,7 @@ build_from_file() {
 echo "Raeding Log Page Data and building installation data ..."
 readarray -t logPageTemplateArray < log_page_data.txt
 
+echo "No code yet - EXITING"
 exit 1
 
 #
