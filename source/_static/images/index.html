@@ -69,10 +69,10 @@
       imageData.sort(compare);
       var pig = new Pig(imageData, {
         urlForSize: function(filename, size) {
-        return '_static/images/' + 'img/' + size + '/' + filename;
+        return 'source/_static/images/' + 'img/' + size + '/' + filename;
       },
       addAnchorTag: true,
-      anchorTargetDir: "_static/images/",
+      anchorTargetDir: "source/_static/images/",
       anchorClass: "swipebox"
       }).enable();
       ;( function( $ ) {
