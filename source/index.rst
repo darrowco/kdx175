@@ -59,6 +59,20 @@ Project: kdx175
 
 ----
 
+.. include:: 20190915.0807.kdx175.Engine.SubyII.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.0807.kdx175.Engine.SubyII.Title.Main_Shop
+  :end-before: .. END - 20190915.0807.kdx175.Engine.SubyII.Title.Main_Shop
+
+.. include:: 20190915.0807.kdx175.Engine.SubyII.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.0807.kdx175.Engine.SubyII.Cat_Log_Link.Main_Shop
+  :end-before: .. END - 20190915.0807.kdx175.Engine.SubyII.Cat_Log_Link.Main_Shop
+
+.. include:: 20190915.0807.kdx175.Engine.SubyII.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.0807.kdx175.Engine.SubyII.Teaser.Main_Shop
+  :end-before: .. END - 20190915.0807.kdx175.Engine.SubyII.Teaser.Main_Shop
+
+----
+
 .. include:: 20190915.0807.kdx175.Engine.Suby.Log.Main_Shop.rst
   :start-after: .. START - 20190915.0807.kdx175.Engine.Suby.Title.Main_Shop
   :end-before: .. END - 20190915.0807.kdx175.Engine.Suby.Title.Main_Shop
