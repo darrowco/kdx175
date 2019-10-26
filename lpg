@@ -29,6 +29,9 @@ exit 1
 
 } # function that builds the Logs from a file
 
+
+-############################################################################################################################
+-############################################################################################################################
 # parse any inputs on the command line (filename containing metadata)
 while :; do
     case $1 in
@@ -53,7 +56,7 @@ while :; do
     esac
 done
 
-# break input on each "." and read into array
+# break input string on each "." and read into array
 IFS='.' read -r -a array <<< "$NEWLOGPAGE"
 
 # extract vars and remove any underscores from the title
@@ -73,14 +76,36 @@ do
     let "n++"
 done
 
-# read in the names of any new images based on naming convention, e.e. 20190922_000_IMG987.jpeg
+
+ingestDateTime=`date +%Y%m%d%H%M%N`
+echo $ingestDateTime
+###exit 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# read in the names of any new images based on naming convention, e.e. 201909220702_000.png
+# for ARG input, images matching this pattern are section images
 cd ./source/_static/images
 imgFiles=([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9].*)
 cd ../../..
 #printf "%s\n" "${imgFiles[@]}"
 
 # check to see if any new images were actually found
-# if the first aray element contains the match string, then no new images were found
+# if the first aray element contains the regex match string, then no new images were found
+#   that is to say, if no matching images were found, the literal match string is inserted in the first element of the array
 # conversely, if the first array element does not contain the match string, a new image was found
 if ! [[ ${imgFiles[0]} == "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9].*" ]]; then
 
