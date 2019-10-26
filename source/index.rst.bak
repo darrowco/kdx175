@@ -12,6 +12,7 @@ Project: kdx175
    :caption: Logs:
 
    Body_logs
+   Engine_logs
    Frame_logs
    parts_logs
    photos
@@ -27,6 +28,34 @@ Project: kdx175
 .. include:: 20190815.0807.kdx175.Frame.Tire_mounting.Log.Main_Shop.rst
   :start-after: .. START - 20190815.0807.kdx175.Frame.Tire_mounting.Teaser.Main_Shop
   :end-before: .. END - 20190815.0807.kdx175.Frame.Tire_mounting.Teaser.Main_Shop
+
+----
+
+.. include:: 20190915.0807.kdx175.Engine.Engine_painting.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.0807.kdx175.Engine.Engine_painting.Title.Main_Shop
+  :end-before: .. END - 20190915.0807.kdx175.Engine.Engine_painting.Title.Main_Shop
+
+.. include:: 20190915.0807.kdx175.Engine.Engine_painting.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.0807.kdx175.Engine.Engine_painting.Cat_Log_Link.Main_Shop
+  :end-before: .. END - 20190915.0807.kdx175.Engine.Engine_painting.Cat_Log_Link.Main_Shop
+
+.. include:: 20190915.0807.kdx175.Engine.Engine_painting.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.0807.kdx175.Engine.Engine_painting.Teaser.Main_Shop
+  :end-before: .. END - 20190915.0807.kdx175.Engine.Engine_painting.Teaser.Main_Shop
+
+----
+
+.. include:: 20190915.0807.kdx175.Engine.polish.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.0807.kdx175.Engine.polish.Title.Main_Shop
+  :end-before: .. END - 20190915.0807.kdx175.Engine.polish.Title.Main_Shop
+
+.. include:: 20190915.0807.kdx175.Engine.polish.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.0807.kdx175.Engine.polish.Cat_Log_Link.Main_Shop
+  :end-before: .. END - 20190915.0807.kdx175.Engine.polish.Cat_Log_Link.Main_Shop
+
+.. include:: 20190915.0807.kdx175.Engine.polish.Log.Main_Shop.rst
+  :start-after: .. START - 20190915.0807.kdx175.Engine.polish.Teaser.Main_Shop
+  :end-before: .. END - 20190915.0807.kdx175.Engine.polish.Teaser.Main_Shop
 
 ----
 
